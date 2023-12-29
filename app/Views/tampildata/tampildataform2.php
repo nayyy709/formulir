@@ -17,7 +17,7 @@
 
 <body>
     <div class="container">
-        <a type="button" class="btn btn-primary my-3" href="<?= base_url('pasien/halaman') ?>">Back</a>
+        <a href="<?= base_url('pasien/halaman') ?>" class="btn btn-success my-3"><i class="bi bi-arrow-left"></i></a>
         <h1>Data Pasien</h1>
         <table class="table table-bordered">
             <thead>

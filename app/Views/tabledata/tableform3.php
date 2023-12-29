@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
+    <!-- Option 1: Include in HTML -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -17,29 +18,26 @@
 
 <body>
     <div class="container">
-        <a href="<?= base_url('pasien/halaman') ?>" class="btn btn-success my-3"><i class="bi bi-arrow-left"></i></a>
+        <a type="button" class="btn btn-success my-3" href="<?= base_url('pasien/halamandata') ?>"><i class="bi bi-arrow-left"></i></a>
         <h1>Data Pasien</h1>
         <table class="table table-bordered">
             <thead>
                 <tr align="center">
                     <th scope="col">No</th>
-                    <th scope="col">No. Rekam Medis</th>
+                    <th scope="col">No. MR</th>
                     <th scope="col">Nama</th>
-                    <th scope="col">Tanggal Lahir</th>
-                    <th scope="col">NIK</th>
                     <th scope="col">Aksi</th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($all_data as $pasien) : ?>
+                <?php $i = 1; ?>
+                <?php foreach ($viewdata as $datatampil) : ?>
                     <tr align="center">
-                        <td><?= $pasien['NOID'] ?></td>
-                        <td><?= $pasien['NO_REGISTRATION'] ?></td>
-                        <td><?= $pasien['THENAME'] ?></td>
-                        <td><?= $pasien['DATE_OF_BIRTH'] ?></td>
-                        <td><?= $pasien['THENIK'] ?></td>
+                        <td><?= $i++; ?></td>
+                        <td><?= $datatampil['NO_REGISTRATION'] ?></td>
+                        <td><?= $datatampil['THENAME'] ?></td>
                         <td>
-                            <a href="<?= base_url('pasien/form4/') . $pasien['NOID'] ?>" class="btn btn-warning"><i class="bi bi-file-earmark-plus-fill"></i></a>
+                            <a href="<?= base_url('') ?>" class="btn btn-danger"><i class="bi bi-trash-fill"></i></a>
                         </td>
                     </tr>
                 <?php endforeach ?>

@@ -42,7 +42,7 @@
   <!-- Style submit & back -->
   <style>
     .btn {
-      background-color: black;
+      background-color: green;
       /* Blue background */
       border: none;
       /* Remove borders */

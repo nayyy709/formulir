@@ -39,8 +39,8 @@
 
     <div class="container mt-5" style="margin: auto;">
         <h1 class="text-center mt-3">FORMULIR</h1>
-        <h4 class="text-center mb-4">RSUD DR. M. YUNUS</h4>
-        <img class="mx-auto d-block" src="<?= base_url('uploads/gambar.jpg') ?>" alt="" width="90px">
+        <h5 class="text-center mb-4">RSUD dr. M. YUNUS</h5>
+        <img class="mx-auto d-block" src="<?= base_url('uploads/gambar.jpg') ?>" alt="" width="70px">
 
         <div class="row">
             <div class="col-3"></div>

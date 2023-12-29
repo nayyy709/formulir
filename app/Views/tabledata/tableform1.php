@@ -18,7 +18,7 @@
 
 <body>
     <div class="container">
-        <a type="button" class="btn btn-primary my-3" href="<?= base_url('pasien/halaman') ?>">Back</a>
+        <a type="button" class="btn btn-success my-3" href="<?= base_url('pasien/halamandata') ?>"><i class="bi bi-arrow-left"></i></a>
         <h1>Data Pasien</h1>
         <table class="table table-bordered">
             <thead>
@@ -26,7 +26,6 @@
                     <th scope="col">No</th>
                     <th scope="col">No. RM</th>
                     <th scope="col">Nama</th>
-                    <th scope="col">Tanggal Lahir</th>
                     <th scope="col">Alamat</th>
                     <th scope="col">Umur</th>
                     <th scope="col">Ruangan</th>
@@ -35,18 +34,18 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($all_data as $pasien) : ?>
+                <?php $i = 1; ?>
+                <?php foreach ($viewdata as $datatampil) : ?>
                     <tr align="center">
-                        <td><?= $pasien['NOID'] ?></td>
-                        <td><?= $pasien['NO_REGISTRATION'] ?></td>
-                        <td><?= $pasien['THENAME'] ?></td>
-                        <td><?= $pasien['DATE_OF_BIRTH'] ?></td>
-                        <td><?= $pasien['THEADDRESS'] ?></td>
-                        <td><?= $pasien['AGEYEAR'] ?> T <?= $pasien['AGEMONTH'] ?> M <?= $pasien['AGEDAY'] ?> D</td>
-                        <td><?= $pasien['CLASS_ROOM_ID'] ?></td>
-                        <td><?= $pasien['EXAMINATION_DATE'] ?></td>
+                        <td><?= $i++; ?></td>
+                        <td><?= $datatampil['NO_REGISTRATION'] ?></td>
+                        <td><?= $datatampil['THENAME'] ?></td>
+                        <td><?= $datatampil['THEADDRESS'] ?></td>
+                        <td><?= $datatampil['AGEYEAR'] ?> T <?= $datatampil['AGEMONTH'] ?> M <?= $datatampil['AGEDAY'] ?> D</td>
+                        <td><?= $datatampil['CLASS_ROOM_ID'] ?></td>
+                        <td><?= $datatampil['EXAMINATION_DATE'] ?></td>
                         <td>
-                            <a href="<?= base_url('pasien/form1/') . $pasien['NOID'] ?>" class="btn btn-warning"><i class="bi bi-file-earmark-plus-fill"></i></a>
+                            <a href="<?= base_url('') ?>" class="btn btn-danger"><i class="bi bi-trash-fill"></i></a>
                         </td>
                     </tr>
                 <?php endforeach ?>
