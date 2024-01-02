@@ -186,6 +186,7 @@
         <form action="<?= site_url('assessment_info/add_data') ?>" method="post" autocomplete="off">
           <?php csrf_field() ?>
           <input type="hidden" id="FORM" name="FORM" value="Form1">
+          <input type="hidden" id="BODY_ID" name="BODY_ID">
           <td width="60%">
             <div class="row">
               <div class="col-5">
@@ -217,6 +218,8 @@
               </div>
               <div class="col-3">
                 <input class="form-control" type="text" name="AGEYEAR" id="AGEYEAR" value="<?= $data['AGEYEAR']; ?>Y <?= $data['AGEMONTH']; ?>M <?= $data['AGEDAY']; ?>D" readonly>
+                <input type="hidden" id="AGEMONTH" name="AGEMONTH" value="<?php echo $data['AGEMONTH']  ?>">
+                <input type="hidden" id="AGEDAY" name="AGEDAY" value="<?php echo $data['AGEDAY']  ?>">
               </div>
             </div>
 

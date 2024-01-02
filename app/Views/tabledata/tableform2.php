@@ -24,6 +24,7 @@
             <thead>
                 <tr align="center">
                     <th scope="col">No</th>
+                    <th scope="col">Body ID</th>
                     <th scope="col">No RekamMedis</th>
                     <th scope="col">Nama</th>
                     <th scope="col">Jenis Kelamin</th>
@@ -38,14 +39,17 @@
                 <?php foreach ($viewdata as $datatampil) : ?>
                     <tr align="center">
                         <td><?= $i++; ?></td>
+                        <td><?= $datatampil['BODY_ID'] ?></td>
                         <td><?= $datatampil['NO_REGISTRATION'] ?></td>
                         <td><?= $datatampil['THENAME'] ?></td>
                         <td><?= $datatampil['GENDER'] ?></td>
                         <td><?= $datatampil['CLASS_ROOM_ID'] ?></td>
                         <td><?= $datatampil['ANAMNASE'] ?></td>
                         <td><?= $datatampil['PEMERIKSAAN'] ?></td>
-                        <td>
-                            <a href="<?= base_url('') ?>" class="btn btn-danger"><i class="bi bi-trash-fill"></i></a>
+                        <td style='white-space: nowrap'>
+                            <a href="<?= base_url('') ?>" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Detail"><i class="bi bi-eye-fill"></i></i></a>
+                            <a href="<?= base_url('') ?>" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Update"><i class="bi bi-bookmark-plus-fill"></i></a>
+                            <a href="<?= base_url('') ?>" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Delete"><i class="bi bi-trash-fill"></i></a>
                         </td>
                     </tr>
                 <?php endforeach ?>

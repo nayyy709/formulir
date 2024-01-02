@@ -153,7 +153,7 @@
                 <label>Nama Lengkap</label>
               </div>
               <div class="col-8">
-                <input class="form-control" type="text" name="THENAME " id="THENAME  " placeholder="Nama Lengkap" value="<?= $data['THENAME']; ?>" readonly>
+                <input class="form-control" type="text" name="THENAME" id="THENAME" placeholder="Nama Lengkap" value="<?= $data['THENAME']; ?>" readonly>
               </div>
             </div>
 
