@@ -47,9 +47,9 @@
                         <td><?= $datatampil['CLASS_ROOM_ID'] ?></td>
                         <td><?= $datatampil['EXAMINATION_DATE'] ?></td>
                         <td style='white-space: nowrap'>
-                            <a href="<?= base_url('') ?>" class="btn btn-info" data-bs-toggle="tooltip" data-placement="top" title="Detail"><i class="bi bi-eye-fill"></i></i></a>
+                            <a href="<?= site_url('assessment_info/detail1/') . $datatampil['id']; ?>" class="btn btn-info" data-bs-toggle="tooltip" data-placement="top" title="Detail"><i class="bi bi-eye-fill"></i></i></a>
                             <a href="<?= base_url('') ?>" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Update"><i class="bi bi-bookmark-plus-fill"></i></a>
-                            <a href="<?= site_url('') ?>" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Delete"><i class="bi bi-trash-fill"></i></a>
+                            <a href="<?= site_url('assessment_info/delete1/') . $datatampil['id'];  ?>" class="btn btn-danger" onclick="javascript: return confirm('Apakah anda yakin ingin menghapus data?')" data-toggle="tooltip" data-placement="top" title="Delete"><i class="bi bi-trash-fill"></i></a>
                         </td>
                     </tr>
                 <?php endforeach ?>

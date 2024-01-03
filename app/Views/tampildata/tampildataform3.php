@@ -37,7 +37,7 @@
                         <td><?= $pasien['THENAME'] ?></td>
                         <td><?= $pasien['DATE_OF_BIRTH'] ?></td>
                         <td>
-                            <a href="<?= base_url('pasien/form3/') . $pasien['NOID'] ?>" class="btn btn-warning"><i class="bi bi-file-earmark-plus-fill"></i></a>
+                            <a href="<?= base_url('pasien/form3/') . $pasien['NOID'] ?>" class="btn btn-warning" data-bs-toggle="tooltip" data-placement="top" title="Insert"><i class="bi bi-file-earmark-plus-fill"></i></a>
                         </td>
                     </tr>
                 <?php endforeach ?>

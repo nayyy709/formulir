@@ -407,7 +407,7 @@ class assessment_info extends BaseController
 
         ]);
 
-        return redirect()->to('pasien/halaman');
+        return redirect()->to('pasien/halamandata');
     }
 
     public function assessment1()
@@ -441,5 +441,79 @@ class assessment_info extends BaseController
         $viewdata = $datatampil->getDataByValue('Form4');
 
         return view('tabledata/tableform4', ['viewdata' => $viewdata]);
+    }
+
+    public function delete1($id)
+    {
+        $hpsdata = new assessment_info_model();
+        $hpsdata->delete($id);
+
+        return redirect()->to('assessment_info/assessment1');
+    }
+
+    public function delete2($id)
+    {
+        $hpsdata = new assessment_info_model();
+        $hpsdata->delete($id);
+
+        return redirect()->to('assessment_info/assessment2');
+    }
+
+    public function delete3($id)
+    {
+        $hpsdata = new assessment_info_model();
+        $hpsdata->delete($id);
+
+        return redirect()->to('assessment_info/assessment3');
+    }
+
+    public function delete4($id)
+    {
+        $hpsdata = new assessment_info_model();
+        $hpsdata->delete($id);
+
+        return redirect()->to('assessment_info/assessment4');
+    }
+
+    public function detail1($id)
+    {
+        $dataJOIN = new assessment_info_model();
+        $dataJOIN = $dataJOIN->join('pasien', 'pasien.NO_REGISTRATION=assessment_info.NO_REGISTRATION')
+            ->where('assessment_info.id', $id)
+            ->first($id); // Menggunakan first() untuk mendapatkan hasil pertama dari query
+
+        $data = [
+            'detail' => $dataJOIN
+        ];
+
+        return view('detail/formulirdetail1', $data);
+    }
+
+    public function detail2($id)
+    {
+        $dataJOIN = new assessment_info_model();
+        $dataJOIN = $dataJOIN->join('pasien', 'pasien.NO_REGISTRATION=assessment_info.NO_REGISTRATION')
+            ->where('assessment_info.id', $id)
+            ->first($id); // Menggunakan first() untuk mendapatkan hasil pertama dari query
+
+        $data = [
+            'detail' => $dataJOIN
+        ];
+
+        return view('detail/formulirdetail2', $data);
+    }
+
+    public function detail3($id)
+    {
+        $dataJOIN = new assessment_info_model();
+        $dataJOIN = $dataJOIN->join('pasien', 'pasien.NO_REGISTRATION=assessment_info.NO_REGISTRATION')
+            ->where('assessment_info.id', $id)
+            ->first($id); // Menggunakan first() untuk mendapatkan hasil pertama dari query
+
+        $data = [
+            'detail' => $dataJOIN
+        ];
+
+        return view('detail/formulirdetail3', $data);
     }
 }
