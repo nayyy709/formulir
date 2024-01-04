@@ -516,4 +516,18 @@ class assessment_info extends BaseController
 
         return view('detail/formulirdetail3', $data);
     }
+
+    public function detail4($id)
+    {
+        $dataJOIN = new assessment_info_model();
+        $dataJOIN = $dataJOIN->join('pasien', 'pasien.NO_REGISTRATION=assessment_info.NO_REGISTRATION')
+            ->where('assessment_info.id', $id)
+            ->first($id); // Menggunakan first() untuk mendapatkan hasil pertama dari query
+
+        $data = [
+            'detail' => $dataJOIN
+        ];
+
+        return view('detail/formulirdetail4', $data);
+    }
 }

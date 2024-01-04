@@ -225,13 +225,13 @@
 
         <!-- a -->
 
-        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. <input type="text" name="v_01" id="v_01" placeholder="isi"></h5>
+        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. <input type="text" name="V_01" id="V_01" placeholder="isi"></h5>
 
         <!-- b -->
-        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. <input type="text" name="v_02" id="v_02" placeholder="isi"></h5>
+        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. <input type="text" name="V_02" id="V_02" placeholder="isi"></h5>
 
         <!-- c -->
-        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. <input type="text" name="v_03" id="v_03" placeholder="isi"></h5>
+        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. <input type="text" name="V_03" id="V_03" placeholder="isi"></h5>
 
 
         <!-- 5 -->
@@ -242,7 +242,7 @@
             <option selected>Pilih</option>
             <option value="1">menginginkan</option>
             <option value="2">tidak menginginkan</option>
-          </select>&nbsp;(*coret salah satu)privasi khusus, jika ada&nbsp;<input type="text" name="v_04" id="v_04" placeholder="isi">&nbsp;dan tidak<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ingin dikunjungi oleh <input type="text" name="v_05" id="v_05" placeholder="isi"></h5>
+          </select>&nbsp;(*coret salah satu)privasi khusus, jika ada&nbsp;<input type="text" name="V_04" id="V_04" placeholder="isi">&nbsp;dan tidak<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ingin dikunjungi oleh <input type="text" name="V_05" id="V_05" placeholder="isi"></h5>
 
         <!-- alert -->
         <h5 class="mt-3"><b>Dengan ini saya menyatakan bahwa saya telah menerima informasi sebagaimana di atas dan telah<br><select name="T_03" id="T_03_menerimainformasi">
@@ -258,10 +258,10 @@
       <table class="table table-bordered mb-5">
         <tr>
           <td class="text-center">
-            Bengkulu,<input type="date" name="v_06" id="v_06">
+            Bengkulu,<input type="date" name="V_06" id="V_06">
           </td>
           <td class="text-center">
-            Jam: <input type="time" name="v_07" id="v_07"> WIB
+            Jam: <input type="time" name="V_07" id="V_07"> WIB
           </td>
         </tr>
         <tr>
@@ -303,13 +303,13 @@
         </tr>
         <tr>
           <td class="text-center">
-            <input type="text" name="v_08" id="v_08" style="width: 150px;">
+            <input type="text" name="V_08" id="V_08" style="width: 150px;">
           </td>
           <td class="text-center">
-            <input type="text" name="v_09" id="v_09" style="width: 150px;">
+            <input type="text" name="V_09" id="V_09" style="width: 150px;">
           </td>
           <td class="text-center">
-            <input type="text" name="v_10" id="v_10" style="width: 150px;">
+            <input type="text" name="V_10" id="V_10" style="width: 150px;">
           </td>
         </tr>
       </table>

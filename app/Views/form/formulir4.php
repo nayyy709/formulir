@@ -895,11 +895,11 @@
   <script>
     $(function() {
       fungsi25_disabled();
-      $("#T_051_tidak").click(fungsi25_disabled);
+      $("#t_051_tidak").click(fungsi25_disabled);
     });
     $(function() {
       fungsi25_enable();
-      $("#T_051_ya").click(fungsi25_enable);
+      $("#t_051_ya").click(fungsi25_enable);
     })
 
     function fungsi25_disabled() {
@@ -927,11 +927,11 @@
   <script>
     $(function() {
       fungsi26_disabled();
-      $("#T_058_tidak").click(fungsi26_disabled);
+      $("#t_058_tidak").click(fungsi26_disabled);
     });
     $(function() {
       fungsi26_enable();
-      $("#T_058_ya").click(fungsi26_enable);
+      $("#t_058_ya").click(fungsi26_enable);
     })
 
     function fungsi26_disabled() {
@@ -959,11 +959,11 @@
   <script>
     $(function() {
       fungsi27_disabled();
-      $("#T_059_tidak").click(fungsi27_disabled);
+      $("#t_059_tidak").click(fungsi27_disabled);
     });
     $(function() {
       fungsi27_enable();
-      $("#T_059_ya").click(fungsi27_enable);
+      $("#t_059_ya").click(fungsi27_enable);
     })
 
     function fungsi27_disabled() {
@@ -991,11 +991,11 @@
   <script>
     $(function() {
       fungsi28_disabled();
-      $("#T_060_tidak").click(fungsi28_disabled);
+      $("#t_060_tidak").click(fungsi28_disabled);
     });
     $(function() {
       fungsi28_enable();
-      $("#T_060_ya").click(fungsi28_enable);
+      $("#t_060_ya").click(fungsi28_enable);
     })
 
     function fungsi28_disabled() {
@@ -1023,11 +1023,11 @@
   <script>
     $(function() {
       fungsi29_disabled();
-      $("#T_060_tidak").click(fungsi29_disabled);
+      $("#t_060_tidak").click(fungsi29_disabled);
     });
     $(function() {
       fungsi29_enable();
-      $("#T_060_ya").click(fungsi29_enable);
+      $("#t_060_ya").click(fungsi29_enable);
     });
 
     function fungsi29_disabled() {
@@ -1053,11 +1053,11 @@
   <script>
     $(function() {
       fungsi30_disabled();
-      $("#T_074_tidak").click(fungsi30_disabled);
+      $("#t_074_tidak").click(fungsi30_disabled);
     });
     $(function() {
       fungsi30_enable();
-      $("#T_074_ya").click(fungsi30_enable);
+      $("#t_074_ya").click(fungsi30_enable);
     });
 
     function fungsi30_disabled() {
@@ -1085,11 +1085,11 @@
   <script>
     $(function() {
       fungsi31_disabled();
-      $("#T_076_tidakada").click(fungsi31_disabled);
+      $("#t_076_tidakada").click(fungsi31_disabled);
     });
     $(function() {
       fungsi31_enable();
-      $("#T_076_ada").click(fungsi31_enable);
+      $("#t_076_ada").click(fungsi31_enable);
     });
 
     function fungsi31_disabled() {
@@ -1115,11 +1115,11 @@
   <script>
     $(function() {
       fungsi32_disabled();
-      $("#T_082_tidakada").click(fungsi32_disabled);
+      $("#t_082_tidakada").click(fungsi32_disabled);
     });
     $(function() {
       fungsi32_enable();
-      $("#T_082_ada").click(fungsi32_enable);
+      $("#t_082_ada").click(fungsi32_enable);
     });
 
     function fungsi32_disabled() {
@@ -1135,7 +1135,7 @@
     function fungsi32_enable() {
       if (this.click) {
         $("input.hambatan5").removeAttr("disabled");
-        $("#T_077").focus();
+        $("#t_077").focus();
       } else {
         $("input.hambatan5").attr("disabled", true);
       }
@@ -1147,11 +1147,11 @@
   <script>
     $(function() {
       fungsi33_disabled();
-      $("#T_088_tidak").click(fungsi33_disabled);
+      $("#t_088_tidak").click(fungsi33_disabled);
     });
     $(function() {
       fungsi33_enable();
-      $("#T_088_ya").click(fungsi33_enable);
+      $("#t_088_ya").click(fungsi33_enable);
     });
 
     function fungsi33_disabled() {
@@ -1179,11 +1179,11 @@
   <script>
     $(function() {
       fungsi34_disabled();
-      $("#T_092_normal, #T_092_kursiroda, #T_092_dibantu").click(fungsi34_disabled);
+      $("#t_092_normal, #t_092_kursiroda, #t_092_dibantu").click(fungsi34_disabled);
     });
     $(function() {
       fungsi34_enable();
-      $("#T_092_lainnya").click(fungsi34_enable);
+      $("#t_092_lainnya").click(fungsi34_enable);
     });
 
     function fungsi34_disabled() {
@@ -1210,55 +1210,55 @@
   <!-- fungsi disabled skrining nyeri -->
   <script type="text/javascript">
     $(function f15() {
-      $("input[name='T_093']").click(function f15() {
-        if ($("#T_093_ya").is(":checked")) {
-          $("#T_094_pain").removeAttr("disabled");
-          $("#T_096_wong").removeAttr("disabled");
+      $("input[name='t_093']").click(function f15() {
+        if ($("#t_093_ya").is(":checked")) {
+          $("#t_094_pain").removeAttr("disabled");
+          $("#t_096_wong").removeAttr("disabled");
           $("#V_61").removeAttr("disabled");
-          $("#T_098_tumpul").removeAttr("disabled");
-          $("#T_098_tajam").removeAttr("disabled");
-          $("#T_098_panas").removeAttr("disabled");
+          $("#t_098_tumpul").removeAttr("disabled");
+          $("#t_098_tajam").removeAttr("disabled");
+          $("#t_098_panas").removeAttr("disabled");
           $("#V_62").removeAttr("disabled");
-          $("#T_099_tidak").removeAttr("disabled");
-          $("#T_099_ya").removeAttr("disabled");
+          $("#t_099_tidak").removeAttr("disabled");
+          $("#t_099_ya").removeAttr("disabled");
           $("#V_63").removeAttr("disabled");
-          $("#T_100_jarang").removeAttr("disabled");
-          $("#T_100_hilangtimbul").removeAttr("disabled");
-          $("#T_100_terusmenerus").removeAttr("disabled");
+          $("#t_100_jarang").removeAttr("disabled");
+          $("#t_100_hilangtimbul").removeAttr("disabled");
+          $("#t_100_terusmenerus").removeAttr("disabled");
           $("#V_64").removeAttr("disabled");
         } else {
-          $("#T_094_pain").attr("disabled", true);
-          $("#T_094_pain").prop("checked", false);
-          $("#T_095_rangepain").attr("disabled", true);
-          $("#T_095_rangepain").prop("checked", false);
-          $("#T_095_rangepain").val("0");
-          $("#T_096_wong").attr("disabled", true);
-          $("#T_096_wong").prop("checked", false);
-          $("#T_097_rangewong").attr("disabled", true);
-          $("#T_097_rangewong").prop("checked", false);
-          $("#T_097_rangewong").val("0");
+          $("#t_094_pain").attr("disabled", true);
+          $("#t_094_pain").prop("checked", false);
+          $("#t_095_rangepain").attr("disabled", true);
+          $("#t_095_rangepain").prop("checked", false);
+          $("#t_095_rangepain").val("0");
+          $("#t_096_wong").attr("disabled", true);
+          $("#t_096_wong").prop("checked", false);
+          $("#t_097_rangewong").attr("disabled", true);
+          $("#t_097_rangewong").prop("checked", false);
+          $("#t_097_rangewong").val("0");
           $("#V_61").attr("disabled", true);
           $("#V_61").val("");
-          $("#T_098_tumpul").attr("disabled", true);
-          $("#T_098_tumpul").prop("checked", false);
-          $("#T_098_tajam").attr("disabled", true);
-          $("#T_098_tajam").prop("checked", false);
-          $("#T_098_panas").attr("disabled", true);
-          $("#T_098_panas").prop("checked", false);
+          $("#t_098_tumpul").attr("disabled", true);
+          $("#t_098_tumpul").prop("checked", false);
+          $("#t_098_tajam").attr("disabled", true);
+          $("#t_098_tajam").prop("checked", false);
+          $("#t_098_panas").attr("disabled", true);
+          $("#t_098_panas").prop("checked", false);
           $("#V_62").attr("disabled", true);
           $("#V_62").val("");
-          $("#T_099_tidak").attr("disabled", true);
-          $("#T_099_tidak").prop("checked", false);
-          $("#T_099_ya").attr("disabled", true);
-          $("#T_099_ya").prop("checked", false);
+          $("#t_099_tidak").attr("disabled", true);
+          $("#t_099_tidak").prop("checked", false);
+          $("#t_099_ya").attr("disabled", true);
+          $("#t_099_ya").prop("checked", false);
           $("#V_63").attr("disabled", true);
           $("#V_63").val("");
-          $("#T_100_jarang").attr("disabled", true);
-          $("#T_100_jarang").prop("checked", false);
-          $("#T_100_hilangtimbul").attr("disabled", true);
-          $("#T_100_hilangtimbul").prop("checked", false);
-          $("#T_100_terusmenerus").attr('disabled', true);
-          $("#T_100_terusmenerus").prop("checked", false);
+          $("#t_100_jarang").attr("disabled", true);
+          $("#t_100_jarang").prop("checked", false);
+          $("#t_100_hilangtimbul").attr("disabled", true);
+          $("#t_100_hilangtimbul").prop("checked", false);
+          $("#t_100_terusmenerus").attr('disabled', true);
+          $("#t_100_terusmenerus").prop("checked", false);
           $("#V_64").attr("disabled", true);
           $("#V_64").val("");
         }
@@ -1268,13 +1268,13 @@
 
   <script type="text/javascript">
     $(function f15() {
-      $("input[name='T_094']").click(function f15() {
-        if ($("#T_094_pain").is(":checked")) {
-          $("#T_095_rangepain").removeAttr("disabled");
+      $("input[name='t_094']").click(function f15() {
+        if ($("#t_094_pain").is(":checked")) {
+          $("#t_095_rangepain").removeAttr("disabled");
         } else {
-          $("#T_095_rangepain").attr("disabled", true);
-          $("#T_095_rangepain").prop("checked", false);
-          $("#T_095_rangepain").val("0");
+          $("#t_095_rangepain").attr("disabled", true);
+          $("#t_095_rangepain").prop("checked", false);
+          $("#t_095_rangepain").val("0");
         }
       });
     });
@@ -1282,13 +1282,13 @@
 
   <script type="text/javascript">
     $(function f15() {
-      $("input[name='T_096']").click(function f15() {
-        if ($("#T_096_wong").is(":checked")) {
-          $("#T_097_rangewong").removeAttr("disabled");
+      $("input[name='t_096']").click(function f15() {
+        if ($("#t_096_wong").is(":checked")) {
+          $("#t_097_rangewong").removeAttr("disabled");
         } else {
-          $("#T_097_rangewong").attr("disabled", true);
-          $("#T_097_rangewong").prop("checked", false);
-          $("#T_097_rangewong").val("0");
+          $("#t_097_rangewong").attr("disabled", true);
+          $("#t_097_rangewong").prop("checked", false);
+          $("#t_097_rangewong").val("0");
         }
       });
     });
@@ -1629,19 +1629,19 @@
               <label>Masuk Ruang Rawat :</label>
             </div>
             <div class="col-2">
-              <input class="form-control" type="text" name="room_id" id="room_id" readonly>
+              <input class="form-control" type="text" name="CLASS_ROOM_ID" id="CLASS_ROOM_ID" value="<?= $data['CLASS_ROOM_ID'] ?>" readonly>
             </div>
             <div class="col-1">
               <label>Kelas</label>
             </div>
             <div class="col-2">
-              <input class="form-control" type="text" name="class_room_id" id="class_room_id" readonly>
+              <input class="form-control" type="text" name="BED_ID" id="BED_ID" value="<?= $data['BED_ID'] ?>" readonly>
             </div>
             <div class="col-1">
               <label>Tanggal/Jam</label>
             </div>
             <div class="col-3">
-              <input class="form-control" type="datetime-local" name="examination_date" id="examination_date" readonly>
+              <input class="form-control" type="datetime-local" name="EXAMINATION_DATE" id="EXAMINATION_DATE" value="<?= $data['EXAMINATION_DATE'] ?>" readonly>
             </div>
             <div class="row align-items-center mb-3">
               <div class="col-2 align-items-center">
@@ -1862,7 +1862,7 @@
           <h5><b>KELUHAN UTAMA:</b></h5>
         </td>
         <td width="70%">
-          <textarea class="form-control" name="anamnase" id="anamnase" cols="6" rows="2" readonly></textarea>
+          <textarea class="form-control" name="ANAMNASE" id="ANAMNASE" cols="6" rows="2" readonly><?= $data['ANAMNASE'] ?></textarea>
         </td>
       </tr>
       <tr>
@@ -2545,7 +2545,7 @@
               <label>Suhu</label>
             </div>
             <div class="col-1">
-              <input class="form-control" type="text" name="temperature" id="temperature" readonly>
+              <input class="form-control" type="text" name="TEMPERATURE" id="TEMPERATURE" value="<?= $data['TEMPERATURE'] ?>" readonly>
             </div>
             <div class="col-1">
               <label>°C</label>
@@ -2562,7 +2562,7 @@
               <label>Pernafasan</label>
             </div>
             <div class="col-1">
-              <input class="form-control" type="text" name="nafas" id="nafas" readonly>
+              <input class="form-control" type="text" name="NAFAS" id="NAFAS" value="<?= $data['NAFAS'] ?>" readonly>
             </div>
             <div class="col-2">
               <label>x/menit</label>
@@ -2578,7 +2578,7 @@
               <label>Nadi</label>
             </div>
             <div class="col-1">
-              <input class="form-control" type="text" name="nadi" id="nadi" readonly>
+              <input class="form-control" type="text" name="NADI" id="NADI" value="<?= $data['NADI'] ?>" readonly>
             </div>
             <div class="col-2">
               <label>x/menit</label>
@@ -2596,13 +2596,13 @@
             <div class="col-md-4">
               <div class="row align-items-center">
                 <div class="col-md-3">
-                  <input class="form-control" type="text" name="tension_upper" id="tension_upper" readonly>
+                  <input class="form-control" type="text" name="TENSION_UPPER" id="TENSION_UPPER" value="<?= $data['TENSION_UPPER'] ?>" readonly>
                 </div>
                 <div class="col-md-1">
                   <label>/</label>
                 </div>
                 <div class="col-md-3">
-                  <input class="form-control" type="text" name="tension_bellow" id="tension_bellow" readonly>
+                  <input class="form-control" type="text" name="TENSION_BELLOW" id="TENSION_BELLOW" value="<?= $data['TENSION_BELLOW'] ?>" readonly>
                 </div>
                 <div class="col-md-2">
                   <label>mmHg</label>
@@ -2620,7 +2620,7 @@
               <label>Berat Badan</label>
             </div>
             <div class="col-1">
-              <input class="form-control" type="text" name="weight" id="weight" readonly>
+              <input class="form-control" type="text" name="WEIGHT" id="WEIGHT" value="<?= $data['WEIGHT'] ?>" readonly>
             </div>
             <div class="col-2">
               <label>Kg</label>
@@ -2636,7 +2636,7 @@
               <label>Tinggi Badan</label>
             </div>
             <div class="col-1">
-              <input class="form-control" type="text" name="height" id="height" readonly>
+              <input class="form-control" type="text" name="HEIGHT" id="HEIGHT" value="<?= $data['HEIGHT'] ?>" readonly>
             </div>
             <div class="col-2">
               <label>cm</label>
@@ -2686,7 +2686,7 @@
             <div class="col-md-4">
               <div class="row align-items-center">
                 <div class="col-md-3">
-                  <input class="form-control" type="text" name="head" id="head" readonly>
+                  <input class="form-control" type="text" name="HEAD" id="HEAD" value="<?= $data['HEAD'] ?>" readonly>
                 </div>
                 <div class="col-md-1">
                   <label>cm</label>
@@ -3054,12 +3054,12 @@
               <label>Kelainan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_051_tidak" name="T_051" value="1">
-              <label class="form-check-label" for="T_051_tidak">Tidak</label>
+              <input class="form-check-input" type="radio" id="t_051_tidak" name="t_051" value="1">
+              <label class="form-check-label" for="t_051_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_051_ya" name="T_051" value="2">
-              <label class="form-check-label" for="T_051_ya">Ya</label>
+              <input class="form-check-input" type="radio" id="t_051_ya" name="t_051" value="2">
+              <label class="form-check-label" for="t_051_ya">Ya</label>
             </div>
             <div class="col-2">
               <input class="form-control" type="text" name="V_48" id="V_48">
@@ -3075,12 +3075,12 @@
               <label>Pergerakan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_052_aktif" name="T_052" value="1">
-              <label class="form-check-label" for="T_052_aktif">Aktif</label>
+              <input class="form-check-input" type="radio" id="t_052_aktif" name="t_052" value="1">
+              <label class="form-check-label" for="t_052_aktif">Aktif</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_052_pasif" name="T_052" value="2">
-              <label class="form-check-label" for="T_052_pasif">Pasif</label>
+              <input class="form-check-input" type="radio" id="t_052_pasif" name="t_052" value="2">
+              <label class="form-check-label" for="t_052_pasif">Pasif</label>
             </div>
           </div>
 
@@ -3093,16 +3093,16 @@
               <label>Kekuatan otot:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_053_kuat" name="T_053" value="1">
-              <label class="form-check-label" for="T_053_kuat">Kuat</label>
+              <input class="form-check-input" type="radio" id="t_053_kuat" name="t_053" value="1">
+              <label class="form-check-label" for="t_053_kuat">Kuat</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_053_lemah" name="T_053" value="2">
-              <label class="form-check-label" for="T_053_lemah">Lemah</label>
+              <input class="form-check-input" type="radio" id="t_053_lemah" name="t_053" value="2">
+              <label class="form-check-label" for="t_053_lemah">Lemah</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_053_tidakada" name="T_053" value="3">
-              <label class="form-check-label" for="T_053_tidakada">Tidak ada</label>
+              <input class="form-check-input" type="radio" id="t_053_tidakada" name="t_053" value="3">
+              <label class="form-check-label" for="t_053_tidakada">Tidak ada</label>
             </div>
           </div>
 
@@ -3115,12 +3115,12 @@
               <label>Kontraktur:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_054_tidak" name="T_054" value="1">
-              <label class="form-check-label" for="T_054_tidak">Tidak</label>
+              <input class="form-check-input" type="radio" id="t_054_tidak" name="t_054" value="1">
+              <label class="form-check-label" for="t_054_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_054_ya" name="T_054" value="2">
-              <label class="form-check-label" for="T_054_ya">Ya</label>
+              <input class="form-check-input" type="radio" id="t_054_ya" name="t_054" value="2">
+              <label class="form-check-label" for="t_054_ya">Ya</label>
             </div>
           </div>
 
@@ -3136,16 +3136,16 @@
               <label>Warna:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_055_normal" name="T_055" value="1">
-              <label class="form-check-label" for="T_055_normal">Normal</label>
+              <input class="form-check-input" type="radio" id="t_055_normal" name="t_055" value="1">
+              <label class="form-check-label" for="t_055_normal">Normal</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_055_ikterus" name="T_055" value="2">
-              <label class="form-check-label" for="T_055_ikterus">Ikterus</label>
+              <input class="form-check-input" type="radio" id="t_055_ikterus" name="t_055" value="2">
+              <label class="form-check-label" for="t_055_ikterus">Ikterus</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_055_sianosis" name="T_055" value="3">
-              <label class="form-check-label" for="T_055_sianosis">Sianosis</label>
+              <input class="form-check-input" type="radio" id="t_055_sianosis" name="t_055" value="3">
+              <label class="form-check-label" for="t_055_sianosis">Sianosis</label>
             </div>
           </div>
 
@@ -3158,16 +3158,16 @@
               <label>Membran mukosa:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_056_lembab" name="T_056" value="1">
-              <label class="form-check-label" for="T_056_lembab">Lembab</label>
+              <input class="form-check-input" type="radio" id="t_056_lembab" name="t_056" value="1">
+              <label class="form-check-label" for="t_056_lembab">Lembab</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_056_kering" name="T_056" value="2">
-              <label class="form-check-label" for="T_056_kering">Kering</label>
+              <input class="form-check-input" type="radio" id="t_056_kering" name="t_056" value="2">
+              <label class="form-check-label" for="t_056_kering">Kering</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_056_stomatitis" name="T_056" value="3">
-              <label class="form-check-label" for="T_056_stomatitis">Stomatitis</label>
+              <input class="form-check-input" type="radio" id="t_056_stomatitis" name="t_056" value="3">
+              <label class="form-check-label" for="t_056_stomatitis">Stomatitis</label>
             </div>
           </div>
 
@@ -3180,12 +3180,12 @@
               <label>Hematome:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_057_tidak" name="T_057" value="1">
-              <label class="form-check-label" for="T_057_tidak">Tidak</label>
+              <input class="form-check-input" type="radio" id="t_057_tidak" name="t_057" value="1">
+              <label class="form-check-label" for="t_057_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_057_ya" name="T_057" value="2">
-              <label class="form-check-label" for="T_057_ya">Ya</label>
+              <input class="form-check-input" type="radio" id="t_057_ya" name="t_057" value="2">
+              <label class="form-check-label" for="t_057_ya">Ya</label>
             </div>
           </div>
 
@@ -3198,12 +3198,12 @@
               <label>Luka:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_058_tidak" name="T_058" value="1">
-              <label class="form-check-label" for="T_058_tidak">Tidak</label>
+              <input class="form-check-input" type="radio" id="t_058_tidak" name="t_058" value="1">
+              <label class="form-check-label" for="t_058_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_058_ya" name="T_058" value="2">
-              <label class="form-check-label" for="T_058_ya">Ya</label>
+              <input class="form-check-input" type="radio" id="t_058_ya" name="t_058" value="2">
+              <label class="form-check-label" for="t_058_ya">Ya</label>
             </div>
             <div class="col-1">
               <label>Lokasi</label>
@@ -3238,12 +3238,12 @@
               <label>Kelainan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_059_tidak" name="T_059" value="1">
-              <label class="form-check-label" for="T_059_tidak">Tidak</label>
+              <input class="form-check-input" type="radio" id="t_059_tidak" name="t_059" value="1">
+              <label class="form-check-label" for="t_059_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_059_ya" name="T_059" value="2">
-              <label class="form-check-label" for="T_059_ya">Ya</label>
+              <input class="form-check-input" type="radio" id="t_059_ya" name="t_059" value="2">
+              <label class="form-check-label" for="t_059_ya">Ya</label>
             </div>
             <div class="col-2">
               <input class="form-control" type="text" name="V_51" id="V_51">
@@ -3272,12 +3272,12 @@
               <label>Kesulitan bernafas:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_060_tidak" name="T_060" value="1">
-              <label class="form-check-label" for="T_060_tidak">Tidak</label>
+              <input class="form-check-input" type="radio" id="t_060_tidak" name="t_060" value="1">
+              <label class="form-check-label" for="t_060_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_060_ya" name="T_060" value="2">
-              <label class="form-check-label" for="T_060_ya">Ya</label>
+              <input class="form-check-input" type="radio" id="t_060_ya" name="t_060" value="2">
+              <label class="form-check-label" for="t_060_ya">Ya</label>
             </div>
           </div>
 
@@ -3309,12 +3309,12 @@
               <label>Menggunakan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan3" type="checkbox" id="T_062_nasalcanule" name="T_062" value="1">
-              <label class="form-check-label" for="T_062_nasalcanule">Nasal canule</label>
+              <input class="form-check-input hambatan3" type="checkbox" id="t_062_nasalcanule" name="t_062" value="1">
+              <label class="form-check-label" for="t_062_nasalcanule">Nasal canule</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan3" type="checkbox" id="T_063_sungkup" name="T_063" value="2">
-              <label class="form-check-label" for="T_063_sungkup">Sungkup</label>
+              <input class="form-check-input hambatan3" type="checkbox" id="t_063_sungkup" name="t_063" value="2">
+              <label class="form-check-label" for="t_063_sungkup">Sungkup</label>
             </div>
           </div>
 
@@ -3326,12 +3326,12 @@
             <div class="col-2">
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan3" type="checkbox" id="T_064_rebrethingmask" name="T_064" value="3">
-              <label class="form-check-label" for="T_064_rebrethingmask">Re-breathing mask</label>
+              <input class="form-check-input hambatan3" type="checkbox" id="t_064_rebrethingmask" name="t_064" value="3">
+              <label class="form-check-label" for="t_064_rebrethingmask">Re-breathing mask</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan3" type="checkbox" id="T_065_headbox" name="T_065" value="4">
-              <label class="form-check-label" for="T_065_headbox">Head box</label>
+              <input class="form-check-input hambatan3" type="checkbox" id="t_065_headbox" name="t_065" value="4">
+              <label class="form-check-label" for="t_065_headbox">Head box</label>
             </div>
           </div>
 
@@ -3347,12 +3347,12 @@
               <label>Nafsu makan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_066_baik" name="T_066" value="1">
-              <label class="form-check-label" for="T_066_baik">Baik</label>
+              <input class="form-check-input" type="radio" id="t_066_baik" name="t_066" value="1">
+              <label class="form-check-label" for="t_066_baik">Baik</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_066_tidak" name="T_066" value="2">
-              <label class="form-check-label" for="T_066_tidak">Tidak</label>
+              <input class="form-check-input" type="radio" id="t_066_tidak" name="t_066" value="2">
+              <label class="form-check-label" for="t_066_tidak">Tidak</label>
             </div>
           </div>
 
@@ -3365,16 +3365,16 @@
               <label>Jenis makanan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="T_067_bubur" name="T_067" value="1">
-              <label class="form-check-label" for="T_067_bubur">Bubur</label>
+              <input class="form-check-input" type="checkbox" id="t_067_bubur" name="t_067" value="1">
+              <label class="form-check-label" for="t_067_bubur">Bubur</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="T_068_nasi" name="T_068" value="2">
-              <label class="form-check-label" for="T_068_nasi">Nasi</label>
+              <input class="form-check-input" type="checkbox" id="t_068_nasi" name="t_068" value="2">
+              <label class="form-check-label" for="t_068_nasi">Nasi</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="T_069_susu" name="T_069" value="3">
-              <label class="form-check-label" for="T_069_susu">Susu formula</label>
+              <input class="form-check-input" type="checkbox" id="t_069_susu" name="t_069" value="3">
+              <label class="form-check-label" for="t_069_susu">Susu formula</label>
             </div>
           </div>
 
@@ -3387,7 +3387,7 @@
               <label>Jumlah</label>
             </div>
             <div class="col-1">
-              <input class="form-control" type="text" name="T_070" id="T_070">
+              <input class="form-control" type="text" name="t_070" id="t_070">
             </div>
             <div class="col-1">
               <label>/hari</label>
@@ -3403,12 +3403,12 @@
               <label>Kesulitan makan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_071_tidak" name="T_071" value="1">
-              <label class="form-check-label" for="T_071_tidak">Tidak</label>
+              <input class="form-check-input" type="radio" id="t_071_tidak" name="t_071" value="1">
+              <label class="form-check-label" for="t_071_tidak">Tidak</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_071_ya" name="T_071" value="2">
-              <label class="form-check-label" for="T_071_ya">Ya</label>
+              <input class="form-check-input" type="radio" id="t_071_ya" name="t_071" value="2">
+              <label class="form-check-label" for="t_071_ya">Ya</label>
 
               <div class="col-3">
               </div>
@@ -3425,16 +3425,16 @@
               <label>Kebiasaan makan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_072_mandiri" name="T_072" value="1">
-              <label class="form-check-label" for="T_072_mandiri">Mandiri</label>
+              <input class="form-check-input" type="radio" id="t_072_mandiri" name="t_072" value="1">
+              <label class="form-check-label" for="t_072_mandiri">Mandiri</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_072_dibantu" name="T_072" value="2">
-              <label class="form-check-label" for="T_072_dibantu">Dibantu</label>
+              <input class="form-check-input" type="radio" id="t_072_dibantu" name="t_072" value="2">
+              <label class="form-check-label" for="t_072_dibantu">Dibantu</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_072_ketergantungan" name="T_072" value="3">
-              <label class="form-check-label" for="T_072_ketergantungan">Ketergantungan</label>
+              <input class="form-check-input" type="radio" id="t_072_ketergantungan" name="t_072" value="3">
+              <label class="form-check-label" for="t_072_ketergantungan">Ketergantungan</label>
             </div>
           </div>
 
@@ -3450,12 +3450,12 @@
               <label>Mual</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_073_tidak" name="T_073" value="1">
-              <label class="form-check-label" for="T_073_tidak">Tidak</label>
+              <input class="form-check-input" type="radio" id="t_073_tidak" name="t_073" value="1">
+              <label class="form-check-label" for="t_073_tidak">Tidak</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_073_ya" name="T_073" value="2">
-              <label class="form-check-label" for="T_073_ya">Ya</label>
+              <input class="form-check-input" type="radio" id="t_073_ya" name="t_073" value="2">
+              <label class="form-check-label" for="t_073_ya">Ya</label>
             </div>
           </div>
 
@@ -3470,12 +3470,12 @@
               <label>Muntah</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_074_tidak" name="T_074" value="1">
-              <label class="form-check-label" for="T_074_tidak">Tidak</label>
+              <input class="form-check-input" type="radio" id="t_074_tidak" name="t_074" value="1">
+              <label class="form-check-label" for="t_074_tidak">Tidak</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_074_ya" name="T_074" value="2">
-              <label class="form-check-label" for="T_074_ya">Ya</label>
+              <input class="form-check-input" type="radio" id="t_074_ya" name="t_074" value="2">
+              <label class="form-check-label" for="t_074_ya">Ya</label>
             </div>
           </div>
 
@@ -3506,12 +3506,12 @@
               <label>BAK:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_075_normal" name="T_075" value="1">
-              <label class="form-check-label" for="T_075_normal">Normal</label>
+              <input class="form-check-input" type="radio" id="t_075_normal" name="t_075" value="1">
+              <label class="form-check-label" for="t_075_normal">Normal</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_075_tidak" name="T_075" value="2">
-              <label class="form-check-label" for="T_075_tidak">Tidak</label>
+              <input class="form-check-input" type="radio" id="t_075_tidak" name="t_075" value="2">
+              <label class="form-check-label" for="t_075_tidak">Tidak</label>
             </div>
           </div>
 
@@ -3524,12 +3524,12 @@
               <label>Masalah perkemihan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_076_tidakada" name="T_076" value="1">
-              <label class="form-check-label" for="T_076_tidakada">Tidak ada</label>
+              <input class="form-check-input" type="radio" id="t_076_tidakada" name="t_076" value="1">
+              <label class="form-check-label" for="t_076_tidakada">Tidak ada</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_076_ada" name="T_076" value="2">
-              <label class="form-check-label" for="T_076_ada">Ada</label>
+              <input class="form-check-input" type="radio" id="t_076_ada" name="t_076" value="2">
+              <label class="form-check-label" for="t_076_ada">Ada</label>
             </div>
           </div>
 
@@ -3543,8 +3543,8 @@
             <div class="col-2">
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan4" type="checkbox" id="T_077_retensiurine" name="T_077" value="1">
-              <label class="form-check-label" for="T_077_retensiurine">Retensi urine</label>
+              <input class="form-check-input hambatan4" type="checkbox" id="t_077_retensiurine" name="t_077" value="1">
+              <label class="form-check-label" for="t_077_retensiurine">Retensi urine</label>
             </div>
           </div>
 
@@ -3558,8 +3558,8 @@
             <div class="col-2">
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan4" type="checkbox" id="T_078_inkontinensia" name="T_078" value="2">
-              <label class="form-check-label" for="T_078_inkontinensia">Inkontinensia</label>
+              <input class="form-check-input hambatan4" type="checkbox" id="t_078_inkontinensia" name="t_078" value="2">
+              <label class="form-check-label" for="t_078_inkontinensia">Inkontinensia</label>
             </div>
           </div>
 
@@ -3573,8 +3573,8 @@
             <div class="col-2">
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan4" type="checkbox" id="T_079_dialysis" name="T_079" value="3">
-              <label class="form-check-label" for="T_079_dialysis">Dialysis</label>
+              <input class="form-check-input hambatan4" type="checkbox" id="t_079_dialysis" name="t_079" value="3">
+              <label class="form-check-label" for="t_079_dialysis">Dialysis</label>
             </div>
           </div>
 
@@ -3587,16 +3587,16 @@
               <label>Warna urine:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_080_kuning" name="T_080" value="1">
-              <label class="form-check-label" for="T_080_kuning">Kuning jernih</label>
+              <input class="form-check-input" type="radio" id="t_080_kuning" name="t_080" value="1">
+              <label class="form-check-label" for="t_080_kuning">Kuning jernih</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_080_keruh" name="T_080" value="2">
-              <label class="form-check-label" for="T_080_keruh">Keruh</label>
+              <input class="form-check-input" type="radio" id="t_080_keruh" name="t_080" value="2">
+              <label class="form-check-label" for="t_080_keruh">Keruh</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_080_kemerahan" name="T_080" value="3">
-              <label class="form-check-label" for="T_080_kemerahan">Kemerahan</label>
+              <input class="form-check-input" type="radio" id="t_080_kemerahan" name="t_080" value="3">
+              <label class="form-check-label" for="t_080_kemerahan">Kemerahan</label>
             </div>
           </div>
 
@@ -3622,12 +3622,12 @@
               <label>BAB:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_081_normal" name="T_081" value="1">
-              <label class="form-check-label" for="T_081_normal">Normal</label>
+              <input class="form-check-input" type="radio" id="t_081_normal" name="t_081" value="1">
+              <label class="form-check-label" for="t_081_normal">Normal</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_081_tidak" name="T_081" value="2">
-              <label class="form-check-label" for="T_081_tidak">Tidak</label>
+              <input class="form-check-input" type="radio" id="t_081_tidak" name="t_081" value="2">
+              <label class="form-check-label" for="t_081_tidak">Tidak</label>
             </div>
           </div>
 
@@ -3640,12 +3640,12 @@
               <label>Masalah defekasi:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_082_tidakada" name="T_082" value="1">
-              <label class="form-check-label" for="T_082_tidakada">Tidak ada</label>
+              <input class="form-check-input" type="radio" id="t_082_tidakada" name="t_082" value="1">
+              <label class="form-check-label" for="t_082_tidakada">Tidak ada</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_082_ada" name="T_082" value="2">
-              <label class="form-check-label" for="T_082_ada">Ada</label>
+              <input class="form-check-input" type="radio" id="t_082_ada" name="t_082" value="2">
+              <label class="form-check-label" for="t_082_ada">Ada</label>
             </div>
           </div>
 
@@ -3660,8 +3660,8 @@
             <div class="col-2">
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan5" type="checkbox" id="T_083_stoma" name="T_083" value="1">
-              <label class="form-check-label" for="T_083_stoma">Stoma</label>
+              <input class="form-check-input hambatan5" type="checkbox" id="t_083_stoma" name="t_083" value="1">
+              <label class="form-check-label" for="t_083_stoma">Stoma</label>
             </div>
           </div>
 
@@ -3675,8 +3675,8 @@
             <div class="col-2">
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan5" type="checkbox" id="T_084_atresiaani" name="T_084" value="2">
-              <label class="form-check-label" for="T_084_atresiaani">Athresia ani</label>
+              <input class="form-check-input hambatan5" type="checkbox" id="t_084_atresiaani" name="t_084" value="2">
+              <label class="form-check-label" for="t_084_atresiaani">Athresia ani</label>
             </div>
           </div>
 
@@ -3690,8 +3690,8 @@
             <div class="col-2">
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan5" type="checkbox" id="T_085_konstipasi" name="T_085" value="3">
-              <label class="form-check-label" for="T_085_konstipasi">Konstipasi</label>
+              <input class="form-check-input hambatan5" type="checkbox" id="t_085_konstipasi" name="t_085" value="3">
+              <label class="form-check-label" for="t_085_konstipasi">Konstipasi</label>
             </div>
           </div>
 
@@ -3705,8 +3705,8 @@
             <div class="col-2">
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan5" type="checkbox" id="T_086_diare" name="T_086" value="4">
-              <label class="form-check-label" for="T_086_diare">Diare</label>
+              <input class="form-check-input hambatan5" type="checkbox" id="t_086_diare" name="t_086" value="4">
+              <label class="form-check-label" for="t_086_diare">Diare</label>
             </div>
           </div>
 
@@ -3719,16 +3719,16 @@
               <label>Warna fases:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_087_kuning" name="T_087" value="1">
-              <label class="form-check-label" for="T_087_kuning">Kuning</label>
+              <input class="form-check-input" type="radio" id="t_087_kuning" name="t_087" value="1">
+              <label class="form-check-label" for="t_087_kuning">Kuning</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_087_kecoklatan" name="T_087" value="2">
-              <label class="form-check-label" for="T_087_kecoklatan">Kecoklatan</label>
+              <input class="form-check-input" type="radio" id="t_087_kecoklatan" name="t_087" value="2">
+              <label class="form-check-label" for="t_087_kecoklatan">Kecoklatan</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_087_kehitaman" name="T_087" value="3">
-              <label class="form-check-label" for="T_087_kehitaman">Kehitaman</label>
+              <input class="form-check-input" type="radio" id="t_087_kehitaman" name="t_087" value="3">
+              <label class="form-check-label" for="t_087_kehitaman">Kehitaman</label>
             </div>
           </div>
 
@@ -3741,12 +3741,12 @@
               <label>Perdarahan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_088_tidak" name="T_088" value="1">
-              <label class="form-check-label" for="T_088_tidak">Tidak</label>
+              <input class="form-check-input" type="radio" id="t_088_tidak" name="t_088" value="1">
+              <label class="form-check-label" for="t_088_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_088_ya" name="T_088" value="2">
-              <label class="form-check-label" for="T_088_ya">Ya</label>
+              <input class="form-check-input" type="radio" id="t_088_ya" name="t_088" value="2">
+              <label class="form-check-label" for="t_088_ya">Ya</label>
             </div>
             <div class="col-1">
               <label>frekuensi</label>
@@ -3768,7 +3768,7 @@
               <label>Lama tidur</label>
             </div>
             <div class="col-1">
-              <input class="form-control" type="text" name="T_089" id="T_089">
+              <input class="form-control" type="text" name="t_089" id="t_089">
             </div>
             <div class="col-1">
               <label>jam/hari</label>
@@ -3784,12 +3784,12 @@
               <label>Kesulitan tidur:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_090_tidak" name="T_090" value="1">
-              <label class="form-check-label" for="T_090_tidak">Tidak</label>
+              <input class="form-check-input" type="radio" id="t_090_tidak" name="t_090" value="1">
+              <label class="form-check-label" for="t_090_tidak">Tidak</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_090_ya" name="T_090" value="2">
-              <label class="form-check-label" for="T_090_ya">Ya</label>
+              <input class="form-check-input" type="radio" id="t_090_ya" name="t_090" value="2">
+              <label class="form-check-label" for="t_090_ya">Ya</label>
             </div>
           </div>
 
@@ -3802,12 +3802,12 @@
               <label>Tidur siang:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_091_tidak" name="T_091" value="1">
-              <label class="form-check-label" for="T_091_tidak">Tidak</label>
+              <input class="form-check-input" type="radio" id="t_091_tidak" name="t_091" value="1">
+              <label class="form-check-label" for="t_091_tidak">Tidak</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_091_ya" name="T_091" value="2">
-              <label class="form-check-label" for="T_091_ya">Ya</label>
+              <input class="form-check-input" type="radio" id="t_091_ya" name="t_091" value="2">
+              <label class="form-check-label" for="t_091_ya">Ya</label>
             </div>
           </div>
 
@@ -3820,12 +3820,12 @@
               </div>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_092_normal" name="T_092" value="1">
-              <label class="form-check-label" for="T_092_normal">Normal/mandiri</label>
+              <input class="form-check-input" type="radio" id="t_092_normal" name="t_092" value="1">
+              <label class="form-check-label" for="t_092_normal">Normal/mandiri</label>
             </div>
             <div class="col-3">
-              <input class="form-check-input" type="radio" id="T_092_kursiroda" name="T_092" value="2">
-              <label class="form-check-label" for="T_092_kursiroda">Menggunakan korsi roda</label>
+              <input class="form-check-input" type="radio" id="t_092_kursiroda" name="t_092" value="2">
+              <label class="form-check-label" for="t_092_kursiroda">Menggunakan korsi roda</label>
             </div>
           </div>
 
@@ -3835,13 +3835,13 @@
               </div>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_092_dibantu" name="T_092" value="3">
-              <label class="form-check-label" for="T_092_dibantu">Dibantu</label>
+              <input class="form-check-input" type="radio" id="t_092_dibantu" name="t_092" value="3">
+              <label class="form-check-label" for="t_092_dibantu">Dibantu</label>
             </div>
             <div class="col-2">
               <div class="col-12">
-                <input class="form-check-input" type="radio" id="T_092_lainnya" name="T_092" value="4">
-                <label class="form-check-label" for="T_092_lainnya">Lain-lain</label>
+                <input class="form-check-input" type="radio" id="t_092_lainnya" name="t_092" value="4">
+                <label class="form-check-label" for="t_092_lainnya">Lain-lain</label>
               </div>
             </div>
             <div class="col-2">
@@ -3866,12 +3866,12 @@
                   </div>
                 </div>
                 <div class="col-3">
-                  <input class="form-check-input" type="radio" id="T_093_tidak" name="T_093" value="1">
-                  <label class="form-check-label" for="T_093_tidak">Tidak</label>
+                  <input class="form-check-input" type="radio" id="t_093_tidak" name="t_093" value="1">
+                  <label class="form-check-label" for="t_093_tidak">Tidak</label>
                 </div>
                 <div class="col-2">
-                  <input class="form-check-input" type="radio" id="T_093_ya" name="T_093" value="2">
-                  <label class="form-check-label" for="T_093_ya">Ya</label>
+                  <input class="form-check-input" type="radio" id="t_093_ya" name="t_093" value="2">
+                  <label class="form-check-label" for="t_093_ya">Ya</label>
                 </div>
               </div>
 
@@ -3886,14 +3886,14 @@
               <div class="row align-items-center">
                 <div class="col-md-10">
                   <div class="col-12">
-                    <input class="form-check-input" type="checkbox" id="T_094_pain" name="T_094" value="1" disabled="disabled">
-                    <label class="form-check-label" for="T_094_pain">PAIN SCORE 0-10 NUMERICAL RATING</label>
+                    <input class="form-check-input" type="checkbox" id="t_094_pain" name="t_094" value="1" disabled="disabled">
+                    <label class="form-check-label" for="t_094_pain">PAIN SCORE 0-10 NUMERICAL RATING</label>
                   </div>
                 </div>
                 <div class="row align-items-center">
                   <div>
 
-                    <input type="range" id="T_095_rangepain" name="T_095" min="0" max="10" value="0" list="markers" style="width: 83%;" disabled="disabled" />
+                    <input type="range" id="t_095_rangepain" name="t_095" min="0" max="10" value="0" list="markers" style="width: 83%;" disabled="disabled" />
 
                     <datalist id="markers">
                       <option value="0"></option>
@@ -3919,14 +3919,14 @@
                   <div class="col-md-10">
                     <div class="col-12">
                       <br>
-                      <input class="form-check-input" type="checkbox" id="T_096_wong" name="T_096" value="2" disabled="disabled">
-                      <label class="form-check-label" for="T_096_wong">WONG-BAKER FACE PAIN Rating Scale</label>
+                      <input class="form-check-input" type="checkbox" id="t_096_wong" name="t_096" value="2" disabled="disabled">
+                      <label class="form-check-label" for="t_096_wong">WONG-BAKER FACE PAIN Rating Scale</label>
                     </div>
                   </div>
                   <div class="row align-items-center">
                     <div>
 
-                      <input type="range" id="T_097_rangewong" name="T_097" min="0" max="10" value="0" list="markers" style="width: 87%;" disabled="disabled" />
+                      <input type="range" id="t_097_rangewong" name="t_097" min="0" max="10" value="0" list="markers" style="width: 87%;" disabled="disabled" />
 
                       <datalist id="markers">
                         <option value="0"></option>
@@ -3968,16 +3968,16 @@
                             <label>(Q) Quality</label>
                           </div>
                           <div class="col-3">
-                            <input class="form-check-input" type="radio" id="T_098_tumpul" name="T_098" value="1" disabled="disabled">
-                            <label class="form-check-label" for="T_098_tumpul">Tumpul</label>
+                            <input class="form-check-input" type="radio" id="t_098_tumpul" name="t_098" value="1" disabled="disabled">
+                            <label class="form-check-label" for="t_098_tumpul">Tumpul</label>
                           </div>
                           <div class="col-2">
-                            <input class="form-check-input" type="radio" id="T_098_tajam" name="T_098" value="2" disabled="disabled">
-                            <label class="form-check-label" for="T_098_tajam">Tajam</label>
+                            <input class="form-check-input" type="radio" id="t_098_tajam" name="t_098" value="2" disabled="disabled">
+                            <label class="form-check-label" for="t_098_tajam">Tajam</label>
                           </div>
                           <div class="col-2">
-                            <input class="form-check-input" type="radio" id="T_098_panas" name="T_098" value="3" disabled="disabled">
-                            <label class="form-check-label" for="T_098_panas">Panas</label>
+                            <input class="form-check-input" type="radio" id="t_098_panas" name="t_098" value="3" disabled="disabled">
+                            <label class="form-check-label" for="t_098_panas">Panas</label>
                           </div>
                         </div>
 
@@ -3995,12 +3995,12 @@
                                 <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menjalar</label>
                               </div>
                               <div class="col-3">
-                                <input class="form-check-input" type="radio" id="T_099_tidak" name="T_099" value="1" disabled="disabled">
-                                <label class="form-check-label" for="T_099_tidak">Tidak</label>
+                                <input class="form-check-input" type="radio" id="t_099_tidak" name="t_099" value="1" disabled="disabled">
+                                <label class="form-check-label" for="t_099_tidak">Tidak</label>
                               </div>
                               <div class="col-2">
-                                <input class="form-check-input" type="radio" id="T_099_ya" name="T_099" value="2" disabled="disabled">
-                                <label class="form-check-label" for="T_099_ya">Ya</label>
+                                <input class="form-check-input" type="radio" id="t_099_ya" name="t_099" value="2" disabled="disabled">
+                                <label class="form-check-label" for="t_099_ya">Ya</label>
                               </div>
                             </div>
                           </div>
@@ -4023,18 +4023,18 @@
                             <div class="col-7">
                               <div class="row align-items-center">
                                 <div class="col-6">
-                                  <input class="form-check-input" type="radio" id="T_100_jarang" name="T_100" value="1" disabled="disabled">
-                                  <label class="form-check-label" for="T_100_jarang">Jarang</label>
+                                  <input class="form-check-input" type="radio" id="t_100_jarang" name="t_100" value="1" disabled="disabled">
+                                  <label class="form-check-label" for="t_100_jarang">Jarang</label>
                                 </div>
                                 <div class="col-6">
-                                  <input class="form-check-input" type="radio" id="T_100_hilangtimbul" name="T_100" value="2" disabled="disabled">
-                                  <label class="form-check-label" for="T_100_hilangtimbul">Hilang Timbul</label>
+                                  <input class="form-check-input" type="radio" id="t_100_hilangtimbul" name="t_100" value="2" disabled="disabled">
+                                  <label class="form-check-label" for="t_100_hilangtimbul">Hilang Timbul</label>
                                 </div>
                               </div>
                               <div class="row align-items-center">
                                 <div class="col-7">
-                                  <input class="form-check-input" type="radio" id="T_100_terusmenerus" name="T_100" value="3" disabled="disabled">
-                                  <label class="form-check-label" for="T_100_terusmenerus">Terus Menerus</label>
+                                  <input class="form-check-input" type="radio" id="t_100_terusmenerus" name="t_100" value="3" disabled="disabled">
+                                  <label class="form-check-label" for="t_100_terusmenerus">Terus Menerus</label>
                                 </div>
                               </div>
                             </div>

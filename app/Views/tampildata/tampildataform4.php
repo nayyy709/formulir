@@ -27,6 +27,10 @@
                     <th scope="col">Nama</th>
                     <th scope="col">Tanggal Lahir</th>
                     <th scope="col">NIK</th>
+                    <th scope="col">Ruangan</th>
+                    <th scope="col">Kelas</th>
+                    <th scope="col">Tanggal/Jam</th>
+                    <th scope="col">Keluhan</th>
                     <th scope="col">Aksi</th>
                 </tr>
             </thead>
@@ -38,6 +42,10 @@
                         <td><?= $pasien['THENAME'] ?></td>
                         <td><?= $pasien['DATE_OF_BIRTH'] ?></td>
                         <td><?= $pasien['THENIK'] ?></td>
+                        <td><?= $pasien['CLASS_ROOM_ID'] ?></td>
+                        <td><?= $pasien['BED_ID'] ?></td>
+                        <td><?= $pasien['EXAMINATION_DATE'] ?></td>
+                        <td><?= $pasien['ANAMNASE'] ?></td>
                         <td>
                             <a href="<?= base_url('pasien/form4/') . $pasien['NOID'] ?>" class="btn btn-warning" data-bs-toggle="tooltip" data-placement="top" title="Insert"><i class="bi bi-file-earmark-plus-fill"></i></a>
                         </td>

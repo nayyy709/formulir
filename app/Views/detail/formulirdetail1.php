@@ -168,7 +168,7 @@
 <body>
 
   <div class="container mt-3">
-    <a class="btn" href="<?= site_url('pasien/halamandata') ?>"><i class="fa fa-arrow-left"></i></a>
+    <a class="btn" href="<?= site_url('assessment_info/assessment1') ?>"><i class="fa fa-arrow-left"></i></a>
     <div style="text-align: right;">
       <h2>RM 08</h2>
     </div>
@@ -289,12 +289,14 @@
     <div class="row">
       <div class="col-md-5">
         <label>Penanggung Jawab *</label>
-        <select class="form-control" name="T_01" id="T_01" disabled>
+        <select class="form-select" name="T_01" id="T_01" disabled>
           <?php
-          $detail['T_01'] = ($detail['T_01'] == 'Penerima Informasi' ? 'selected' : '');
-          echo "<option value='1' " . $detail['T_01'] . ">Penerima Informasi</option>";
-          $detail['T_01'] = ($detail['T_01'] == 'Pemberi Persetujuan' ? 'selected' : '');
-          echo "<option value='2' " . $detail['T_01'] . ">Pemberi Persetujuan</option>";
+          // Menggunakan operator ternary untuk menentukan nilai terpilih
+          $selectedOption1 = ($detail['T_01'] == 1) ? 'selected' : '';
+          $selectedOption2 = ($detail['T_01'] == 2) ? 'selected' : '';
+
+          echo "<option value='1' $selectedOption1>Penerima Informasi</option>";
+          echo "<option value='2' $selectedOption2>Pemberi Persetujuan</option>";
           ?>
         </select>
       </div>

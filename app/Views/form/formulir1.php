@@ -288,7 +288,7 @@
     <div class="row">
       <div class="col-md-5">
         <label>Penanggung Jawab *</label>
-        <select class="form-control" name="T_01" id="T_01_penanggungjawab">
+        <select class="form-select" name="T_01" id="T_01_penanggungjawab">
           <option selected>Pilih</option>
           <option value="1">Penerima Informasi</option>
           <option value="2">Pemberi Persetujuan</option>

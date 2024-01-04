@@ -65,7 +65,7 @@
 
 <body>
   <div class="container mt-3">
-    <a class="btn" href="<?= site_url('pasien/halamandata') ?>"><i class="fa fa-arrow-left"></i></a>
+    <a class="btn" href="<?= site_url('assessment_info/assessment2') ?>"><i class="fa fa-arrow-left"></i></a>
     <div style="text-align: right;">
       <h2>RM 10</h2>
     </div>
@@ -302,16 +302,16 @@
               <label class="align-items-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.Sebagai</label>
             </div>
             <div class="col-2">
-              <select class="form-control" id="T_01_sebagai" name="T_01" disabled>
+              <select class="form-select" id="T_01_sebagai" name="T_01" disabled>
                 <?php
-                $detail['T_01'] = ($detail['T_01'] == 'Pasien' ? 'selected' : '');
-                echo "<option value='1' " . $detail['T_01'] . ">Pasien</option>";
+                // Menggunakan operator ternary untuk menentukan nilai terpilih
+                $selectedOption1 = ($detail['T_01'] == 1) ? 'selected' : '';
+                $selectedOption2 = ($detail['T_01'] == 2) ? 'selected' : '';
+                $selectedOption3 = ($detail['T_01'] == 3) ? 'selected' : '';
 
-                $detail['T_01'] = ($detail['T_01'] == 'Wali' ? 'selected' : '');
-                echo "<option value='2' " . $detail['T_01'] . ">Wali</option>";
-
-                $detail['T_01'] = ($detail['T_01'] == 'Keluarga' ? 'selected' : '');
-                echo "<option value='2' " . $detail['T_01'] . ">Keluarga</option>";
+                echo "<option value='1' $selectedOption1>Pasien</option>";
+                echo "<option value='2' $selectedOption2>Wali</option>";
+                echo "<option value='3' $selectedOption3>Keluarga</option>";
                 ?>
               </select>
             </div>

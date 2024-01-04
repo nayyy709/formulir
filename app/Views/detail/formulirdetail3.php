@@ -121,7 +121,7 @@
 <body>
 
   <div class="container mt-5">
-    <a class="btn mb-5" href="<?= site_url('pasien/tampildata3') ?>"><i class="fa fa-arrow-left"></i></a>
+    <a class="btn mb-5" href="<?= site_url('pasien/halamandata') ?>"><i class="fa fa-arrow-left"></i></a>
     <form action="<?= site_url('assessment_info/add_data') ?>" method="post" autocomplete="off">
       <?php csrf_field() ?>
       <input type="hidden" id="FORM" name="FORM" value="Form3">
@@ -219,11 +219,12 @@
         <!-- 4 -->
         <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Saya <select name="T_01" id="T_01_saya" disabled>
             <?php
-            $detail['T_01'] = ($detail['T_01'] == 'memberikan' ? 'selected' : '');
-            echo "<option value='1' " . $detail['T_01'] . ">memberikan</option>";
+            // Menggunakan operator ternary untuk menentukan nilai terpilih
+            $selectedOption1 = ($detail['T_01'] == 1) ? 'selected' : '';
+            $selectedOption2 = ($detail['T_01'] == 2) ? 'selected' : '';
 
-            $detail['T_01'] = ($detail['T_01'] == 'tidak memberikan' ? 'selected' : '');
-            echo "<option value='2' " . $detail['T_01'] . ">tidak memberikan</option>";
+            echo "<option value='1' $selectedOption1>memberikan</option>";
+            echo "<option value='2' $selectedOption2>tidak memberikan</option>";
             ?>
           </select>&nbsp;(*coret salah satu), wewenang kepada Rumah Sakit untuk memberikan data<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dan informasi kesehatan saya kepada keluarga saya, yaitu:</h5>
 
@@ -244,22 +245,24 @@
         <!-- 6 -->
         <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6. Saya <select name="T_02" id="T_02_saya" disabled>
             <?php
-            $detail['T_02'] = ($detail['T_02'] == 'menginginkan' ? 'selected' : '');
-            echo "<option value='1' " . $detail['T_02'] . "menginginkan</option>";
+            // Menggunakan operator ternary untuk menentukan nilai terpilih
+            $selectedOption1 = ($detail['T_02'] == 1) ? 'selected' : '';
+            $selectedOption2 = ($detail['T_02'] == 2) ? 'selected' : '';
 
-            $detail['T_02'] = ($detail['T_02'] == 'tidak menginginkan' ? 'selected' : '');
-            echo "<option value='2' " . $detail['T_02'] . ">tidak menginginkan</option>";
+            echo "<option value='1' $selectedOption1>menginginkan</option>";
+            echo "<option value='2' $selectedOption2>tidak menginginkan</option>";
             ?>
           </select>&nbsp;(*coret salah satu)privasi khusus, jika ada&nbsp;<input type="text" name="V_04" id="V_04" value="<?= $detail['V_04'] ?>" readonly>&nbsp;dan tidak<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ingin dikunjungi oleh <input type=" text" name="V_05" id="V_05" value="<?= $detail['V_05'] ?>" readonly></h5>
 
         <!-- alert -->
         <h5 class=" mt-3"><b>Dengan ini saya menyatakan bahwa saya telah menerima informasi sebagaimana di atas dan telah<br><select name="T_03" id="T_03_menerimainformasi" disabled>
               <?php
-              $detail['T_03'] = ($detail['T_03'] == 'memahami' ? 'selected' : '');
-              echo "<option value='1' " . $detail['T_03'] . "memahami</option>";
+              // Menggunakan operator ternary untuk menentukan nilai terpilih
+              $selectedOption1 = ($detail['T_03'] == 1) ? 'selected' : '';
+              $selectedOption2 = ($detail['T_03'] == 2) ? 'selected' : '';
 
-              $detail['T_03'] = ($detail['T_03'] == 'tidak memahami' ? 'selected' : '');
-              echo "<option value='2' " . $detail['T_03'] . ">tidak memahami</option>";
+              echo "<option value='1' $selectedOption1>memahami</option>";
+              echo "<option value='2' $selectedOption2>tidak memahami</option>";
               ?>
             </select>&nbsp;(*coret salah satu)</b></h5>
 
@@ -280,11 +283,12 @@
           <td class="text-center">
             Disetujui oleh * <select name="T_04" id="T_04_disetujui" disabled>
               <?php
-              $detail['T_03'] = ($detail['T_03'] == 'pasien' ? 'selected' : '');
-              echo "<option value='1' " . $detail['T_03'] . "pasien</option>";
+              // Menggunakan operator ternary untuk menentukan nilai terpilih
+              $selectedOption1 = ($detail['T_04'] == 1) ? 'selected' : '';
+              $selectedOption2 = ($detail['T_04'] == 2) ? 'selected' : '';
 
-              $detail['T_03'] = ($detail['T_03'] == 'keluarga' ? 'selected' : '');
-              echo "<option value='2' " . $detail['T_03'] . ">keluarga</option>";
+              echo "<option value='1' $selectedOption1>pasien</option>";
+              echo "<option value='2' $selectedOption2>keluarga pasien</option>";
               ?>
             </select>
           </td>
@@ -319,13 +323,13 @@
         </tr>
         <tr>
           <td class="text-center">
-            <input type="text" name="V_08" id="V_08" style="width: 150px;" value="<?= $detail['V_08'] ?>">
+            <input type="text" name="V_08" id="V_08" style="width: 150px;" value="<?= $detail['V_08'] ?>" readonly>
           </td>
           <td class="text-center">
-            <input type="text" name="V_09" id="V_09" style="width: 150px;" value="<?= $detail['V_09'] ?>">
+            <input type="text" name="V_09" id="V_09" style="width: 150px;" value="<?= $detail['V_09'] ?>" readonly>
           </td>
           <td class="text-center">
-            <input type="text" name="V_10" id="V_10" style="width: 150px;" value="<?= $detail['V_10'] ?>">
+            <input type="text" name="V_10" id="V_10" style="width: 150px;" value="<?= $detail['V_10'] ?>" readonly>
           </td>
         </tr>
       </table>

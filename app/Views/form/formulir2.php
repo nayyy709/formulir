@@ -302,7 +302,7 @@
               <label class="align-items-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.Sebagai</label>
             </div>
             <div class="col-2">
-              <select class="form-control" id="T_01_sebagai" name="T_01">
+              <select class="form-select" id="T_01_sebagai" name="T_01">
                 <option selected>Pilih</option>
                 <option value="1">Pasien</option>
                 <option value="2">Wali</option>
