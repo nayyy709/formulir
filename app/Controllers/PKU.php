@@ -15,4 +15,9 @@ class PKU extends BaseController
     {
         return view('pku/obsteric');
     }
+
+    public function form2()
+    {
+        return view('pku/assessment_saraf');
+    }
 }
