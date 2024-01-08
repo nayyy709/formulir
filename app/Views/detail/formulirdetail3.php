@@ -208,7 +208,7 @@
         <h4 class="mt-3">III. KERAHASIAAN INFORMASI, PRIVASI DAN PELEPASAN INFORMASI</h4>
 
         <!-- 1 -->
-        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Saya memberi kuasa kepada setiap dan seluruh orang yang merawat saya untuk memeriksa dan/atau<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;memberitahukan iinformasi kesehatan saya kepada pemberi kesehatan lain yang turut merawat saya selama di Rumah<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sakit ini.</h5>
+        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Saya memberi kuasa kepada setiap dan seluruh orang yang merawat saya untuk memeriksa dan/atau<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;memberitahukan informasi kesehatan saya kepada pemberi kesehatan lain yang turut merawat saya selama di Rumah<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sakit ini.</h5>
 
         <!-- 2 -->
         <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Saya memberi wewenang kepada Rumah Sakit untuk memberikan informasi tentang diagnosis, hasil pelayanan dan<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pengobatan yang diperlukan untuk proses klaim asuransi kesehatan/perusahaan dan atau lembaga pemerintahan.</h5>

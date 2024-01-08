@@ -17,6 +17,11 @@ class Pasien extends BaseController
         return view('halamandatatampil');
     }
 
+    public function halamanform1()
+    {
+        return view('dashboard');
+    }
+
     public function tampildata1()
     {
         $datapasien = new Pasien_model();

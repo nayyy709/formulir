@@ -41,7 +41,7 @@
 
     <div class="container mt-5" style="margin: auto;">
 
-        <a href="<?= base_url('home/index') ?>" class="btn btn-success mb-3"><i class="bi bi-arrow-left"></i></a>
+        <a href="<?= base_url('pasien/halamanform1') ?>" class="btn btn-success mb-3"><i class="bi bi-arrow-left"></i></a>
 
         <h2>Insert Data</h2>
 

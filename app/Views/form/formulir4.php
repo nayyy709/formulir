@@ -252,20 +252,20 @@
 
     function fungsi6_disabled() {
       if (this.click) {
-        $("#riwayaT_obat").attr("disabled", true);
-        $("#riwayaT_obat").val("");
+        $("#V_153").attr("disabled", true);
+        $("#V_153").val("");
       } else {
-        $("#riwayaT_obat").removeAttr("disabled");
+        $("#V_153").removeAttr("disabled");
       }
     }
 
     function fungsi6_enable() {
-      $("#riwayaT_obat").attr("disabled", true);
+      $("#V_153").attr("disabled", true);
       if (this.click) {
-        $("#riwayaT_obat").removeAttr("disabled");
-        $("#riwayaT_obat").focus();
+        $("#V_153").removeAttr("disabled");
+        $("#V_153").focus();
       } else {
-        $("#riwayaT_obat").attr("disabled", true);
+        $("#V_153").attr("disabled", true);
       }
     }
   </script>
@@ -1979,7 +1979,7 @@
                   </div>
                 </div>
                 <div class="col-5">
-                  <input class="form-control" type="text" name="riwayaT_obat" id="riwayaT_obat">
+                  <input class="form-control" type="text" name="V_153" id="V_153">
                 </div>
               </div>
             </div>
@@ -2077,7 +2077,7 @@
               <div class="row align-items-center">
                 <div class="col-md-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="T_08_tidakdik" name="T_08" value="2">
+                    <input class="form-check-input" type="radio" id="T_08_tidakdik" name="T_08" value="3">
                     <label class="form-check-label" for="T_08_tidakdik">Tidak diketahui</label>
                   </div>
                 </div>
@@ -2184,7 +2184,7 @@
               <div class="row align-items-center">
                 <div class="col-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="T_018_mandiri" name="T_018" value="Mandiri">
+                    <input class="form-check-input" type="radio" id="T_018_mandiri" name="T_018" value="1">
                     <label class="form-check-label" for="T_018_mandiri">Mandiri</label>
                   </div>
                 </div>
@@ -2194,7 +2194,7 @@
               <div class="row align-items-center">
                 <div class="col-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="T_018_bpjs" name="T_018" value="BPJS">
+                    <input class="form-check-input" type="radio" id="T_018_bpjs" name="T_018" value="2">
                     <label class="form-check-label" for="T_018_bpjs">BPJS</label>
                   </div>
                 </div>
@@ -2204,7 +2204,7 @@
               <div class="row align-items-center">
                 <div class="col-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="T_018_lainnya" name="T_018" value="Lainnya">
+                    <input class="form-check-input" type="radio" id="T_018_lainnya" name="T_018" value="3">
                     <label class="form-check-label" for="T_018_lainnya">Lainnya</label>
                   </div>
                 </div>
@@ -2229,8 +2229,7 @@
               <div class="row align-items-center">
                 <div class="col-12">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="T_019_tenang" name="T_019">
-                    <label class="form-check-label" for="T_019_tenang">Tenang, kooperatif</label>
+                    <input class="form-check-input" type="checkbox" id="T_019_tenang" name="T_019" value="1" <label class="form-check-label" for="T_019_tenang">Tenang, kooperatif</label>
                   </div>
                 </div>
               </div>
@@ -2239,7 +2238,7 @@
               <div class="row align-items-center">
                 <div class="col-12">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="T_020_kejiwaan" name="T_020">
+                    <input class="form-check-input" type="checkbox" id="T_020_kejiwaan" name="T_020" value="1">
                     <label class="form-check-label" for="T_020_kejiwaan">Kejiwaan; gelisah, murung, ketakutan</label>
                   </div>
                 </div>
@@ -2249,13 +2248,13 @@
           <div class="row align-items-center">
             <div class="col-md-5">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="T_021_lainnya" name="T_021">
+                <input class="form-check-input" type="checkbox" id="T_021_lainnya" name="T_021" value="1">
                 <input class="form-control" type="text" name="V_25" id="V_25" disabled="disabled">
               </div>
             </div>
             <div class="col-5">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="T_022_perubahan" name="T_022">
+                <input class="form-check-input" type="checkbox" id="T_022_perubahan" name="T_022" value="1">
                 <label class="form-check-label" for="T_022_perubahan">Perubahan suasana hati, gangguan tidur, sulit berpikir</label>
               </div>
             </div>
@@ -2466,11 +2465,11 @@
               </div>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_031_tidak" name="T_031" value="Tidak">
+              <input class="form-check-input" type="radio" id="T_031_tidak" name="T_031" value="1">
               <label class="form-check-label" for="T_031_tidak">Tidak</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_031_ya" name="T_031" value="Ya">
+              <input class="form-check-input" type="radio" id="T_031_ya" name="T_031" value="2">
               <label class="form-check-label" for="T_031_ya">Ya,Jelaskan</label>
             </div>
             <div class="col-3">
@@ -2545,7 +2544,7 @@
               <label>Suhu</label>
             </div>
             <div class="col-1">
-              <input class="form-control" type="text" name="TEMPERATURE" id="TEMPERATURE" value="<?= $data['TEMPERATURE'] ?>" readonly>
+              <input class="form-control" type="text" name="TEMPERATURE" id="TEMPERATURE">
             </div>
             <div class="col-1">
               <label>°C</label>
@@ -2602,7 +2601,7 @@
                   <label>/</label>
                 </div>
                 <div class="col-md-3">
-                  <input class="form-control" type="text" name="TENSION_BELLOW" id="TENSION_BELLOW" value="<?= $data['TENSION_BELLOW'] ?>" readonly>
+                  <input class="form-control" type="text" name="TENSION_BELOW" id="TENSION_BELOW" value="<?= $data['TENSION_BELOW'] ?>" readonly>
                 </div>
                 <div class="col-md-2">
                   <label>mmHg</label>
@@ -3893,24 +3892,11 @@
                 <div class="row align-items-center">
                   <div>
 
-                    <input type="range" id="t_095_rangepain" name="t_095" min="0" max="10" value="0" list="markers" style="width: 83%;" disabled="disabled" />
+                    &nbsp;&nbsp;<input type="range" name="t_095" id="t_095_rangepain" min="0" max="10" step="1" style="width: 95%;" value="0" disabled>
 
-                    <datalist id="markers">
-                      <option value="0"></option>
-                      <option value="1"></option>
-                      <option value="2"></option>
-                      <option value="3"></option>
-                      <option value="4"></option>
-                      <option value="5"></option>
-                      <option value="6"></option>
-                      <option value="7"></option>
-                      <option value="8"></option>
-                      <option value="9"></option>
-                      <option value="10"></option>
-                    </datalist>
                   </div>
                   <div>
-                    <img src="<?= base_url('uploads/range2.jpg') ?>" alt="Gambar" width="349px" height="100px">
+                    <img src="<?= base_url('uploads/range2.jpg') ?>" alt="Gambar" width="100%;" height="100px">
                   </div>
                 </div>
 
@@ -3926,19 +3912,11 @@
                   <div class="row align-items-center">
                     <div>
 
-                      <input type="range" id="t_097_rangewong" name="t_097" min="0" max="10" value="0" list="markers" style="width: 87%;" disabled="disabled" />
+                      &nbsp;&nbsp;<input type="range" id="t_097_rangewong" name="t_097" min="0" max="10" value="0" step="2" style="width: 95%;" value="0" disabled>
 
-                      <datalist id="markers">
-                        <option value="0"></option>
-                        <option value="2"></option>
-                        <option value="4"></option>
-                        <option value="6"></option>
-                        <option value="8"></option>
-                        <option value="10"></option>
-                      </datalist>
                     </div>
                     <div>
-                      <img src="<?= base_url('uploads/range3.jpg') ?>" alt="Gambar" width="350px" height="100px">
+                      <img src="<?= base_url('uploads/range3.jpg') ?>" alt="Gambar" width="100%;" height="100px">
                     </div>
                   </div>
                 </div>
@@ -4103,7 +4081,7 @@
             <h5>(Lingkari skor sesuai dengan jawaban, Total skor adalah jumlah skor yang dilingkari)</h5>
           </div>
 
-          <table class="table table-bordered" style="border:1px solid black">
+          <table class="table table-bordered">
             <tr class="text-center">
               <th width="10%">No</th>
               <th width="60%">Parameter</th>

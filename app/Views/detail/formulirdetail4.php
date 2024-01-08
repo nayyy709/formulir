@@ -252,20 +252,20 @@
 
     function fungsi6_disabled() {
       if (this.click) {
-        $("#riwayaT_obat").attr("disabled", true);
-        $("#riwayaT_obat").val("");
+        $("#V_153").attr("disabled", true);
+        $("#V_153").val("");
       } else {
-        $("#riwayaT_obat").removeAttr("disabled");
+        $("#V_153").removeAttr("disabled");
       }
     }
 
     function fungsi6_enable() {
-      $("#riwayaT_obat").attr("disabled", true);
+      $("#V_153").attr("disabled", true);
       if (this.click) {
-        $("#riwayaT_obat").removeAttr("disabled");
-        $("#riwayaT_obat").focus();
+        $("#V_153").removeAttr("disabled");
+        $("#V_153").focus();
       } else {
-        $("#riwayaT_obat").attr("disabled", true);
+        $("#V_153").attr("disabled", true);
       }
     }
   </script>
@@ -1692,7 +1692,7 @@
                 <div class="row align-items-center">
                   <div class="col-3">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" id="T_02_islam" name="T_02" value="1">
+                      <input class="form-check-input" type="radio" id="T_02_islam" name="T_02" <?= ($detail['T_02'] == "1" ? 'checked' : '') ?> disabled>
                       <label class="form-check-label" for="T_02_islam">Islam</label>
                     </div>
                   </div>
@@ -1702,7 +1702,7 @@
                 <div class="row align-items-center">
                   <div class="col-3">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" id="T_02_protestan" name="T_02" value="2 ">
+                      <input class="form-check-input" type="radio" id="T_02_protestan" name="T_02" <?= ($detail['T_02'] == "2" ? 'checked' : '') ?> disabled>
                       <label class="form-check-label" for="T_02_protestan">Protestan</label>
                     </div>
                   </div>
@@ -1712,7 +1712,7 @@
                 <div class="row align-items-center">
                   <div class="col-3">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" id="T_02_katholik" name="T_02" value="3">
+                      <input class="form-check-input" type="radio" id="T_02_katholik" name="T_02" <?= ($detail['T_02'] == "3" ? 'checked' : '') ?> disabled>
                       <label class="form-check-label" for="T_02_katholik">Katholik</label>
                     </div>
                   </div>
@@ -1722,7 +1722,7 @@
                 <div class="row align-items-center">
                   <div class="col-3">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" id="T_02_lainnya" name="T_02" value="7">
+                      <input class="form-check-input" type="radio" id="T_02_lainnya" name="T_02" <?= ($detail['T_02'] == "7" ? 'checked' : '') ?> disabled>
                       <label class="form-check-label" for="T_02_lainnya">Lainnya</label>
                     </div>
                   </div>
@@ -1738,7 +1738,7 @@
                 <div class="row align-items-center">
                   <div class="col-3">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" id="T_02_hindu" name="T_02" value="4">
+                      <input class="form-check-input" type="radio" id="T_02_hindu" name="T_02" <?= ($detail['T_02'] == "4" ? 'checked' : '') ?> disabled>
                       <label class="form-check-label" for="T_02_hindu">Hindu</label>
                     </div>
                   </div>
@@ -1748,7 +1748,7 @@
                 <div class="row align-items-center">
                   <div class="col-3">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" id="T_02_budha" name="T_02" value="5">
+                      <input class="form-check-input" type="radio" id="T_02_budha" name="T_02" <?= ($detail['T_02'] == "5" ? 'checked' : '') ?> disabled>
                       <label class="form-check-label" for="T_02_budha">Budha</label>
                     </div>
                   </div>
@@ -1758,7 +1758,7 @@
                 <div class="row align-items-center">
                   <div class="col-3">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" id="T_02_konghucu" name="T_02" value="6">
+                      <input class="form-check-input" type="radio" id="T_02_konghucu" name="T_02" <?= ($detail['T_02'] == "6" ? 'checked' : '') ?> disabled>
                       <label class="form-check-label" for="T_02_konghucu">Konghucu</label>
                     </div>
                   </div>
@@ -1773,7 +1773,7 @@
                 <div class="row align-items-center">
                   <div class="col-3">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" id="T_03_sd" name="T_03" value="1">
+                      <input class="form-check-input" type="radio" id="T_03_sd" name="T_03" <?= ($detail['T_03'] == "1" ? 'checked' : '') ?> disabled>
                       <label class="form-check-label" for="T_03_sd">SD</label>
                     </div>
                   </div>
@@ -1783,7 +1783,7 @@
                 <div class="row align-items-center">
                   <div class="col-3">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" id="T_03_smp" name="T_03" value="2">
+                      <input class="form-check-input" type="radio" id="T_03_smp" name="T_03" <?= ($detail['T_03'] == "2" ? 'checked' : '') ?> disabled>
                       <label class="form-check-label" for="T_03_smp">SMP</label>
                     </div>
                   </div>
@@ -1793,7 +1793,7 @@
                 <div class="row align-items-center">
                   <div class="col-3">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" id="T_03_sma" name="T_03" value="3">
+                      <input class="form-check-input" type="radio" id="T_03_sma" name="T_03" <?= ($detail['T_03'] == "3" ? 'checked' : '') ?> disabled>
                       <label class="form-check-label" for="T_03_sma">SMA</label>
                     </div>
                   </div>
@@ -1803,7 +1803,7 @@
                 <div class="row align-items-center">
                   <div class="col-3">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" id="T_03_lainnya" name="T_03" value="8">
+                      <input class="form-check-input" type="radio" id="T_03_lainnya" name="T_03" <?= ($detail['T_03'] == "8" ? 'checked' : '') ?> disabled>
                       <label class="form-check-label" for="T_03_lainnya">Lainnya</label>
                     </div>
                   </div>
@@ -1819,7 +1819,7 @@
                 <div class="row align-items-center">
                   <div class="col-3">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" id="T_03_diploma" name="T_03" value="4">
+                      <input class="form-check-input" type="radio" id="T_03_diploma" name="T_03" <?= ($detail['T_03'] == "4" ? 'checked' : '') ?> disabled>
                       <label class="form-check-label" for="T_03_diploma">Diploma</label>
                     </div>
                   </div>
@@ -1829,7 +1829,7 @@
                 <div class="row align-items-center">
                   <div class="col-3">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" id="T_03_s1" name="T_03" value="5">
+                      <input class="form-check-input" type="radio" id="T_03_s1" name="T_03" <?= ($detail['T_03'] == "5" ? 'checked' : '') ?> disabled>
                       <label class="form-check-label" for="T_03_s1">S1</label>
                     </div>
                   </div>
@@ -1839,7 +1839,7 @@
                 <div class="row align-items-center">
                   <div class="col-3">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" id="T_03_s2" name="T_03" value="6">
+                      <input class="form-check-input" type="radio" id="T_03_s2" name="T_03" <?= ($detail['T_03'] == "6" ? 'checked' : '') ?> disabled>
                       <label class="form-check-label" for="T_03_s2">S2</label>
                     </div>
                   </div>
@@ -1849,7 +1849,7 @@
                 <div class="row align-items-center">
                   <div class="col-3">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" id="T_03_s3" name="T_03" value="7">
+                      <input class="form-check-input" type="radio" id="T_03_s3" name="T_03" <?= ($detail['T_03'] == "7" ? 'checked' : '') ?> disabled>
                       <label class="form-check-label" for="T_03_s3">S3</label>
                     </div>
                   </div>
@@ -1870,7 +1870,7 @@
           <h5><b>KELUHAN SAAT INI:</b></h5>
         </td>
         <td width="70%">
-          <textarea class="form-control" name="V_12" id="V_12" cols="6" rows="3"></textarea>
+          <textarea class="form-control" name="V_12" id="V_12" cols="6" rows="3" readonly><?= $detail['V_12'] ?></textarea>
         </td>
       </tr>
       <tr>
@@ -1887,7 +1887,7 @@
               <div class="row align-items-center">
                 <div class="col-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="T_04_tidak" name="T_04" value="1">
+                    <input class="form-check-input" type="radio" id="T_04_tidak" name="T_04" <?= ($detail['T_04'] == "1" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_04_tidak">Tidak</label>
                   </div>
                 </div>
@@ -1897,12 +1897,12 @@
               <div class="row align-items-center">
                 <div class="col-5">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="T_04_ya" name="T_04" value="2">
+                    <input class="form-check-input" type="radio" id="T_04_ya" name="T_04" <?= ($detail['T_04'] == "2" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_04_ya">Ya,lamanya</label>
                   </div>
                 </div>
                 <div class="col-4">
-                  <input class="form-control" type="text" name="T_05" id="T_05">
+                  <input class="form-control" type="text" name="T_05" id="T_05" value="<?= $detail['T_05'] ?>" readonly>
                 </div>
                 <div class="col-1">
                   <label>hr,</label>
@@ -1915,7 +1915,7 @@
               <label>alasan:</label>
             </div>
             <div class="col-4">
-              <input class="form-control" type="text" name="V_14" id="V_14">
+              <input class="form-control" type="text" name="V_14" id="V_14" value="<?= $detail['V_14'] ?>" readonly>
             </div>
           </div>
           <div class="row align-items-center">
@@ -1927,7 +1927,7 @@
               <div class="row align-items-center">
                 <div class="col-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="T_06_tidak" name="T_06" value="1">
+                    <input class="form-check-input" type="radio" id="T_06_tidak" name="T_06" <?= ($detail['T_06'] == "1" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_06_tidak">Tidak</label>
                   </div>
                 </div>
@@ -1937,12 +1937,12 @@
               <div class="row align-items-center">
                 <div class="col-5">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="T_06_ya" name="T_06" value="2">
+                    <input class="form-check-input" type="radio" id="T_06_ya" name="T_06" <?= ($detail['T_06'] == "2" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_06_ya">Ya,jenisnya</label>
                   </div>
                 </div>
                 <div class="col-7">
-                  <input class="form-control" type="text" name="V_15" id="V_15">
+                  <input class="form-control" type="text" name="V_15" id="V_15" value="<?= $detail['V_15'] ?>" readonly>
                 </div>
               </div>
             </div>
@@ -1962,7 +1962,7 @@
               <div class="row align-items-center">
                 <div class="col-5">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="T_07_tidak" name="T_07" value="1">
+                    <input class="form-check-input" type="radio" id="T_07_tidak" name="T_07" <?= ($detail['T_07'] == "1" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_07_tidak">Tidak ada</label>
                   </div>
                 </div>
@@ -1974,12 +1974,12 @@
               <div class="row align-items-center">
                 <div class="col-5">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="T_07_ada" name="T_07" value="2">
+                    <input class="form-check-input" type="radio" id="T_07_ada" name="T_07" <?= ($detail['T_07'] == "2" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_07_ada">Ada, nama obat dan dosis</label>
                   </div>
                 </div>
                 <div class="col-5">
-                  <input class="form-control" type="text" name="riwayaT_obat" id="riwayaT_obat">
+                  <input class="form-control" type="text" name="V_153" id="V_153" value="<?= $detail['V_153'] ?>" readonly>
                 </div>
               </div>
             </div>
@@ -1998,12 +1998,12 @@
               <div class="row align-items-center">
                 <div class="col-md-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="T_08_tidak" name="T_08" value="1">
+                    <input class="form-check-input" type="radio" id="T_08_tidak" name="T_08" <?= ($detail['T_08'] == "1" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_08_tidak">Tidak</label>
                   </div>
                 </div>
                 <div class="col-2">
-                  <input class="form-check-input" type="radio" id="T_08_ya" name="T_08" value="2">
+                  <input class="form-check-input" type="radio" id="T_08_ya" name="T_08" <?= ($detail['T_08'] == "2" ? 'checked' : '') ?> disabled">
                   <label class="form-check-label" for="T_08_ya">Ya</label>
                 </div>
               </div>
@@ -2014,18 +2014,18 @@
               <div class="row align-items-center">
                 <div class="col-md-4">
                   <div class="form-check">
-                    <input class="form-check-input " type="checkbox" id="T_09_alergiobat" name="T_09" disabled="disabled" value="1">
+                    <input class="form-check-input " type="checkbox" id="T_09_alergiobat" name="T_09" <?= ($detail['T_09'] == "1" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_09_alergiobat">Alergi obat, sebutkan</label>
                   </div>
                 </div>
                 <div class="col-3">
-                  <input class="form-control " type="text" name="V_17" id="V_17" disabled="disabled">
+                  <input class="form-control " type="text" name="V_17" id="V_17" value="<?= $detail['V_17'] ?>" readonly>
                 </div>
                 <div class="col-1">
                   <label>Reaksi</label>
                 </div>
                 <div class="col-4">
-                  <input class="form-control " type="text" name="V_18" id="V_18" disabled="disabled">
+                  <input class="form-control " type="text" name="V_18" id="V_18" value="<?= $detail['V_18'] ?>" readonly>
                 </div>
               </div>
             </div>
@@ -2035,18 +2035,18 @@
               <div class="row align-items-center">
                 <div class="col-md-4">
                   <div class="form-check">
-                    <input class="form-check-input " type="checkbox" id="T_010_alergimakanan" name="T_010" disabled="disabled" value="2">
+                    <input class="form-check-input " type="checkbox" id="T_010_alergimakanan" name="T_010" <?= ($detail['T_010'] == "2" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_010_alergimakanan">&nbsp;&nbsp;&nbsp;&nbsp;Alergi makanan, sebutkan</label>
                   </div>
                 </div>
                 <div class="col-3">
-                  <input class="form-control " type="text" name="V_19" id="V_19" disabled="disabled">
+                  <input class="form-control " type="text" name="V_19" id="V_19" value="<?= $detail['V_19'] ?>" readonly>
                 </div>
                 <div class="col-1">
                   <label>Reaksi</label>
                 </div>
                 <div class="col-4">
-                  <input class="form-control " type="text" name="V_20" id="V_20" disabled="disabled">
+                  <input class="form-control " type="text" name="V_20" id="V_20" value="<?= $detail['V_20'] ?>" readonly>
                 </div>
               </div>
             </div>
@@ -2056,18 +2056,18 @@
               <div class="row align-items-center">
                 <div class="col-md-4">
                   <div class="form-check">
-                    <input class="form-check-input " type="checkbox" id="T_011_alergilainnya" name="T_011" disabled="disabled" value="3">
+                    <input class="form-check-input " type="checkbox" id="T_011_alergilainnya" name="T_011" <?= ($detail['T_011'] == "3" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_011_alergilainnya">&nbsp;&nbsp;&nbsp;&nbsp;Alergi lainnya, sebutkan</label>
                   </div>
                 </div>
                 <div class="col-3" disabled="disabled">
-                  <input class="form-control" type="text" name="V_21" id="V_21" disabled="disabled">
+                  <input class="form-control" type="text" name="V_21" id="V_21" value="<?= $detail['V_21'] ?>" readonly>
                 </div>
                 <div class="col-1">
                   <label>Reaksi</label>
                 </div>
                 <div class="col-4" disabled="disabled">
-                  <input class="form-control " type="text" name="V_22" id="V_22" disabled="disabled">
+                  <input class="form-control " type="text" name="V_22" id="V_22" value="<?= $detail['V_22'] ?>" readonly>
                 </div>
               </div>
             </div>
@@ -2077,7 +2077,7 @@
               <div class="row align-items-center">
                 <div class="col-md-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="T_08_tidakdik" name="T_08" value="2">
+                    <input class="form-check-input" type="radio" id="T_08_tidakdik" name="T_08" <?= ($detail['T_08'] == "3" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_08_tidakdik">Tidak diketahui</label>
                   </div>
                 </div>
@@ -2096,13 +2096,13 @@
               <div class="row align-items-center">
                 <div class="col-6">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="T_012_tidak" name="T_012" value="1">
+                    <input class="form-check-input" type="radio" id="T_012_tidak" name="T_012" <?= ($detail['T_012'] == "1" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_012_tidak">Tidak ada</label>
                   </div>
                 </div>
                 <div class="col-2">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="T_012_ada" name="T_012" value="2">
+                    <input class="form-check-input" type="radio" id="T_012_ada" name="T_012" <?= ($detail['T_012'] == "2" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_012_ada">Ada</label>
                   </div>
                 </div>
@@ -2114,7 +2114,7 @@
               <div class="row align-items-center">
                 <div class="col-2">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="T_013_jantung" name="T_013" disabled="disabled" value="1">
+                    <input class="form-check-input" type="checkbox" id="T_013_jantung" name="T_013" <?= ($detail['T_013'] == "1" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_013_jantung">Jantung</label>
                   </div>
                 </div>
@@ -2124,7 +2124,7 @@
               <div class="row align-items-center">
                 <div class="col-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="T_014_asma" name="T_014" disabled="disabled" value="2">
+                    <input class="form-check-input" type="checkbox" id="T_014_asma" name="T_014" <?= ($detail['T_014'] == "2" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_014_asma">Asma</label>
                   </div>
                 </div>
@@ -2134,7 +2134,7 @@
               <div class="row align-items-center">
                 <div class="col-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="T_015_dm" name="T_015" disabled="disabled" value="3">
+                    <input class="form-check-input" type="checkbox" id="T_015_dm" name="T_015" <?= ($detail['T_015'] == "3" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_015_dm">DM</label>
                   </div>
                 </div>
@@ -2144,7 +2144,7 @@
               <div class="row align-items-center">
                 <div class="col-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="T_016_hipertensi" name="T_016" disabled="disabled" value="4">
+                    <input class="form-check-input" type="checkbox" id="T_016_hipertensi" name="T_016" <?= ($detail['T_016'] == "4" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_016_hipertensi">Hipertensi</label>
                   </div>
                 </div>
@@ -2156,12 +2156,12 @@
               <div class="row align-items-center">
                 <div class="col-3">
                   <div class="form-check">
-                    <input class="form-check-input  " type="checkbox" id="T_017_lainnya" name="T_017" disabled="disabled" value="5">
+                    <input class="form-check-input  " type="checkbox" id="T_017_lainnya" name="T_017" <?= ($detail['T_017'] == "5" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_017_lainnya">Lainnya</label>
                   </div>
                 </div>
                 <div class="col-7">
-                  <input class="form-control" type="text" name="V_23" id="V_23" disabled="disabled">
+                  <input class="form-control" type="text" name="V_23" id="V_23" value="<?= $detail['V_23'] ?>" readonly>
                 </div>
               </div>
             </div>
@@ -2184,7 +2184,7 @@
               <div class="row align-items-center">
                 <div class="col-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="T_018_mandiri" name="T_018" value="Mandiri">
+                    <input class="form-check-input" type="radio" id="T_018_mandiri" name="T_018" <?= ($detail['T_018'] == "1" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_018_mandiri">Mandiri</label>
                   </div>
                 </div>
@@ -2194,7 +2194,7 @@
               <div class="row align-items-center">
                 <div class="col-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="T_018_bpjs" name="T_018" value="BPJS">
+                    <input class="form-check-input" type="radio" id="T_018_bpjs" name="T_018" <?= ($detail['T_018'] == "2" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_018_bpjs">BPJS</label>
                   </div>
                 </div>
@@ -2204,12 +2204,12 @@
               <div class="row align-items-center">
                 <div class="col-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" id="T_018_lainnya" name="T_018" value="Lainnya">
+                    <input class="form-check-input" type="radio" id="T_018_lainnya" name="T_018" <?= ($detail['T_018'] == "3" ? 'checked' : '') ?> disabled>
                     <label class="form-check-label" for="T_018_lainnya">Lainnya</label>
                   </div>
                 </div>
                 <div class="col-6">
-                  <input class="form-control" type="text" name="V_24" id="V_24">
+                  <input class="form-control" type="text" name="V_24" id="V_24" value="<?= $detail['V_24'] ?>" readonly>
                 </div>
               </div>
             </div>
@@ -2229,7 +2229,7 @@
               <div class="row align-items-center">
                 <div class="col-12">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="T_019_tenang" name="T_019">
+                    <input class="form-check-input" type="checkbox" id="T_019_tenang" name="T_019" <?= ($detail['T_019'] == "1" ? 'checked' : ''); ?> disabled>
                     <label class="form-check-label" for="T_019_tenang">Tenang, kooperatif</label>
                   </div>
                 </div>
@@ -2239,7 +2239,7 @@
               <div class="row align-items-center">
                 <div class="col-12">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="T_020_kejiwaan" name="T_020">
+                    <input class="form-check-input" type="checkbox" id="T_020_kejiwaan" name="T_020" <?= ($detail['T_020'] == "1" ? 'checked' : ''); ?> disabled>
                     <label class="form-check-label" for="T_020_kejiwaan">Kejiwaan; gelisah, murung, ketakutan</label>
                   </div>
                 </div>
@@ -2249,13 +2249,13 @@
           <div class="row align-items-center">
             <div class="col-md-5">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="T_021_lainnya" name="T_021">
-                <input class="form-control" type="text" name="V_25" id="V_25" disabled="disabled">
+                <input class="form-check-input" type="checkbox" id="T_021_lainnya" name="T_021" <?= ($detail['T_021'] == "1" ? 'checked' : ''); ?> disabled>
+                <input class="form-control" type="text" name="V_25" id="V_25" value="<?= $detail['V_25'] ?>" readonly>
               </div>
             </div>
             <div class="col-5">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="T_022_perubahan" name="T_022">
+                <input class="form-check-input" type="checkbox" id="T_022_perubahan" name="T_022" <?= ($detail['T_022'] == "1" ? 'checked' : ''); ?> disabled>
                 <label class="form-check-label" for="T_022_perubahan">Perubahan suasana hati, gangguan tidur, sulit berpikir</label>
               </div>
             </div>
@@ -2277,21 +2277,21 @@
               </div>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_023_rumah" name="T_023" value="1">
+              <input class="form-check-input" type="radio" id="T_023_rumah" name="T_023" <?= ($detail['T_023'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_023_rumah">Rumah</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_023_lainnya" name="T_023" value="3">
+              <input class="form-check-input" type="radio" id="T_023_lainnya" name="T_023" <?= ($detail['T_023'] == "3" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_023_lainnya">Lain-lain, sebutkan</label>
             </div>
             <div class="col-3">
-              <input class="form-control" type="text" name="V_26" id="V_26">
+              <input class="form-control" type="text" name="V_26" id="V_26" value="<?= $detail['V_26'] ?>">
             </div>
           </div>
           <div class="row align-items-center">
             <div class="col-md-3"></div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_023_panti" name="T_023" value="2">
+              <input class="form-check-input" type="radio" id="T_023_panti" name="T_023" <?= ($detail['T_023'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_023_panti">Panti</label>
             </div>
           </div>
@@ -2302,26 +2302,26 @@
               </div>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_024_orangtua" name="T_024" value="1">
+              <input class="form-check-input" type="radio" id="T_024_orangtua" name="T_024" <?= ($detail['T_024'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_024_orangtua">Orang tua kandung</label>
             </div>
             <div class="col-3">
-              <input class="form-check-input" type="radio" id="T_024_anggota" name="T_024" value="2">
+              <input class="form-check-input" type="radio" id="T_024_anggota" name="T_024" <?= ($detail['T_024'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_024_anggota">Anggota keluarga lain</label>
             </div>
           </div>
           <div class="row align-items-center">
             <div class="col-md-3"></div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_024_tiri" name="T_024" value="3">
+              <input class="form-check-input" type="radio" id="T_024_tiri" name="T_024" <?= ($detail['T_024'] == "3" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_024_tiri">Bapak/ibu tiri</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_024_lainnya" name="T_024" value="4 ">
+              <input class="form-check-input" type="radio" id="T_024_lainnya" name="T_024" <?= ($detail['T_024'] == "4" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_024_lainnya">Lain-lain,</label>
             </div>
             <div class="col-3">
-              <input class="form-control" type="text" name="V_27" id="V_27">
+              <input class="form-control" type="text" name="V_27" id="V_27" value="<?= $detail['V_27'] ?>" readonly>
             </div>
           </div>
           <div class="row align-items-center mt-3">
@@ -2331,21 +2331,21 @@
               </div>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_025_sekolah" name="T_025" value="1">
+              <input class="form-check-input" type="radio" id="T_025_sekolah" name="T_025" <?= ($detail['T_025'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_025_sekolah">Sekolah umum</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_025_sekolahink" name="T_025" value="3">
+              <input class="form-check-input" type="radio" id="T_025_sekolahink" name="T_025" <?= ($detail['T_025'] == "3" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_025_sekolahink">Sekolah inklusi</label>
             </div>
             <div class="col-3">
-              <input class="form-control" type="text" name="V_28" id="V_28">
+              <input class="form-control" type="text" name="V_28" id="V_28" value="<?= $detail['V_28'] ?>" readonly>
             </div>
           </div>
           <div class="row align-items-center">
             <div class="col-md-3"></div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_025_tidak" name="T_025" value="2">
+              <input class="form-check-input" type="radio" id="T_025_tidak" name="T_025" <?= ($detail['T_025'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_025_tidak">Tidak sekolah</label>
             </div>
           </div>
@@ -2356,15 +2356,15 @@
               </div>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_026_tidak" name="T_026" value="1">
+              <input class="form-check-input" type="radio" id="T_026_tidak" name="T_026" <?= ($detail['T_026'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_026_tidak">Tidak</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_026_ya" name="T_026" value="2">
+              <input class="form-check-input" type="radio" id="T_026_ya" name="T_026" <?= ($detail['T_026'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_026_ya">Ya,Jelaskan</label>
             </div>
             <div class="col-3">
-              <input class="form-control" type="text" name="V_29" id="V_29">
+              <input class="form-control" type="text" name="V_29" id="V_29" value="<?= $detail['V_29'] ?>" readonly>
             </div>
           </div>
           <div class="row align-items-center mt-3">
@@ -2374,15 +2374,15 @@
               </div>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_027_tidak" name="T_027" value="1">
+              <input class="form-check-input" type="radio" id="T_027_tidak" name="T_027" <?= ($detail['T_027'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_027_tidak">Tidak pernah</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_027_pernah" name="T_027" value="2">
+              <input class="form-check-input" type="radio" id="T_027_pernah" name="T_027" <?= ($detail['T_027'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_027_pernah">Pernah,Jelaskan</label>
             </div>
             <div class="col-3">
-              <input class="form-control" type="text" name="V_30" id="V_30">
+              <input class="form-control" type="text" name="V_30" id="V_30" value="<?= $detail['V_30'] ?>" readonly>
             </div>
           </div>
           <div class="row align-items-center mt-3">
@@ -2392,11 +2392,11 @@
               </div>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_028_ya" name="T_028" value="1">
+              <input class="form-check-input" type="radio" id="T_028_ya" name="T_028" <?= ($detail['T_028'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_028_ya">Ya</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_028_tidak" name="T_028" value="2">
+              <input class="form-check-input" type="radio" id="T_028_tidak" name="T_028" <?= ($detail['T_028'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_028_tidak">Tidak</label>
             </div>
           </div>
@@ -2407,12 +2407,11 @@
               </div>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_029_pernah" name="T_029" value="1">
+              <input class="form-check-input" type="radio" id="T_029_pernah" name="T_029" <?= ($detail['T_029'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_029_pernah">Pernah</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_029_tidak" name="T_029" value="2">
-              <label class="form-check-label" for="T_029_tidak">Tidak</label>
+              <input class="form-check-input" type="radio" id="T_029_tidak" name="T_029" <?= ($detail['T_029'] == "2" ? 'checked' : ''); ?> <label class="form-check-label" for="T_029_tidak">Tidak</label>
             </div>
           </div>
 
@@ -2432,14 +2431,14 @@
               </div>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_030_selalu" name="T_030" value="1">
+              <input class="form-check-input" type="radio" id="T_030_selalu" name="T_030" <?= ($detail['T_030'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_030_selalu">Selalu</label>
             </div>
           </div>
           <div class="row align-items-center">
             <div class="col-md-3"></div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_030_kadang" name="T_030" value="2">
+              <input class="form-check-input" type="radio" id="T_030_kadang" name="T_030" <?= ($detail['T_030'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_030_kadang">Kadang</label>
             </div>
           </div>
@@ -2449,13 +2448,13 @@
               <label>Kegiatan keagamaan yang dilakukan,</label>
             </div>
             <div class="col-3">
-              <input class="form-control" type="text" name="V_31" id="V_31">
+              <input class="form-control" type="text" name="V_31" id="V_31" value="<?= $detail['V_31'] ?>">
             </div>
           </div>
           <div class="row align-items-center">
             <div class="col-md-3"></div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_030_tidak" name="T_030" value="3">
+              <input class="form-check-input" type="radio" id="T_030_tidak" name="T_030" <?= ($detail['T_030'] == "3" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_030_tidak">Tidak pernah</label>
             </div>
           </div>
@@ -2466,15 +2465,15 @@
               </div>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_031_tidak" name="T_031" value="Tidak">
+              <input class="form-check-input" type="radio" id="T_031_tidak" name="T_031" <?= ($detail['T_031'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_031_tidak">Tidak</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_031_ya" name="T_031" value="Ya">
+              <input class="form-check-input" type="radio" id="T_031_ya" name="T_031" <?= ($detail['T_031'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_031_ya">Ya,Jelaskan</label>
             </div>
             <div class="col-3">
-              <input class="form-control" type="text" name="V_32" id="V_32">
+              <input class="form-control" type="text" name="V_32" id="V_32" value="<?= $detail['V_32'] ?>" readonly>
             </div>
           </div>
           <div class="row align-items-center mt-3">
@@ -2484,7 +2483,7 @@
               </div>
             </div>
             <div class="col-4">
-              <input class="form-control" type="text" name="V_33" id="V_33">
+              <input class="form-control" type="text" name="V_33" id="V_33" value="<?= $detail['V_33'] ?>" readonly>
             </div>
           </div>
         </td>
@@ -2503,15 +2502,15 @@
               </div>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_032_composmentis" name="T_032" value="1">
+              <input class="form-check-input" type="radio" id="T_032_composmentis" name="T_032" <?= ($detail['T_032'] == "1" ? "checked" : ''); ?> disabled>
               <label class="form-check-label" for="T_032_composmentis">Compos mentis</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_032_apatis" name="T_032" value="2">
+              <input class="form-check-input" type="radio" id="T_032_apatis" name="T_032" <?= ($detail['T_032'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_032_apatis">Apatis</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_032_coma" name="T_032" value="3">
+              <input class="form-check-input" type="radio" id="T_032_coma" name="T_032" <?= ($detail['T_032'] == "3" ? 'chceked' : ''); ?> disabled>
               <label class="form-check-label" for="T_032_coma">Coma</label>
             </div>
           </div>
@@ -2519,11 +2518,11 @@
           <div class="row align-items-center">
             <div class="col-md-3"></div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_032_somolen" name="T_032" value="4">
+              <input class="form-check-input" type="radio" id="T_032_somolen" name="T_032" <?= ($detail['T_032'] == "4" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_032_somolen">Somnolen</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_032_soporocoma" name="T_032" value="5">
+              <input class="form-check-input" type="radio" id="T_032_soporocoma" name="T_032" <?= ($detail['T_032'] == "5" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_032_soporocoma">Soporocoma</label>
             </div>
           </div>
@@ -2602,7 +2601,7 @@
                   <label>/</label>
                 </div>
                 <div class="col-md-3">
-                  <input class="form-control" type="text" name="TENSION_BELLOW" id="TENSION_BELLOW" value="<?= $detail['TENSION_BELLOW'] ?>" readonly>
+                  <input class="form-control" type="text" name="TENSION_BELOW" id="TENSION_BELOW" value="<?= $detail['TENSION_BELLOW'] ?>" readonly>
                 </div>
                 <div class="col-md-2">
                   <label>mmHg</label>
@@ -2662,15 +2661,15 @@
               </div>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_033_normosefali" name="T_033" value="1">
+              <input class="form-check-input" type="radio" id="T_033_normosefali" name="T_033" <?= ($detail['T_033'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_033_normosefali">Normosefali</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_033_mikrosefali" name="T_033" value="2">
+              <input class="form-check-input" type="radio" id="T_033_mikrosefali" name="T_033" <?= ($detail['T_033'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_033_mikrosefali">Mikrosefali</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_033_hidrosefali" name="T_033" value="3">
+              <input class="form-check-input" type="radio" id="T_033_hidrosefali" name="T_033" <?= ($detail['T_033'] == "3" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_033_hidrosefali">Hidrosefali</label>
             </div>
           </div>
@@ -2704,7 +2703,7 @@
               <label>Ubun-ubun</label>
             </div>
             <div class="col-1">
-              <input class="form-control" type="text" name="T_034" id="T_034">
+              <input class="form-control" type="text" name="T_034" id="T_034" value="<?= $detail['T_034'] ?>" readonly>
             </div>
           </div>
 
@@ -2720,11 +2719,11 @@
               <label>Konjungtiva:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_035_merahmuda" name="T_035" value="1">
+              <input class="form-check-input" type="radio" id="T_035_merahmuda" name="T_035" <?= ($detail['T_035'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_035_merahmuda">Merah muda</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_035_pucat" name="T_035" value="2">
+              <input class="form-check-input" type="radio" id="T_035_pucat" name="T_035" <?= ($detail['T_035'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_035_pucat">Pucat</label>
             </div>
           </div>
@@ -2738,11 +2737,11 @@
               <label>Sklera:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_036_normal" name="T_036" value="1">
+              <input class="form-check-input" type="radio" id="T_036_normal" name="T_036" <?= ($detail['T_036'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_036_normal">Normal</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_036_ikterus" name="T_036" value="2">
+              <input class="form-check-input" type="radio" id="T_036_ikterus" name="T_036" <?= ($detail['T_036'] == "2" ? 'checekd' : ''); ?> disabled>
               <label class="form-check-label" for="T_036_ikterus">Ikterus,</label>
             </div>
           </div>
@@ -2754,11 +2753,11 @@
             </div>
             <div class="col-2"></div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" name="T_036" id="T_036_lainnya" value="3">
+              <input class="form-check-input" type="radio" name="T_036" id="T_036_lainnya" <?= ($detail['T_036'] == "3" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_036_lainnya">Lain-lain</label>
             </div>
             <div class="col-2">
-              <input class="form-control" type="text" name="V_42" id="V_42">
+              <input class="form-control" type="text" name="V_42" id="V_42" value="<?= $detail['V_42'] ?>" readonly>
             </div>
           </div>
 
@@ -2774,7 +2773,7 @@
               <label>Bentuk:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="T_037_normal" name="T_037" value="1">
+              <input class="form-check-input" type="checkbox" id="T_037_normal" name="T_037" <?= ($detail['T_037'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_037_normal">Normal</label>
             </div>
           </div>
@@ -2788,15 +2787,15 @@
               <label>Kelainan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan2" type="radio" id="T_038_tidak" name="T_038" value="1">
+              <input class="form-check-input hambatan2" type="radio" id="T_038_tidak" name="T_038" <?= ($detail['T_038'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_038_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input hambatan2" type="radio" id="T_038_ya" name="T_038" value="2">
+              <input class="form-check-input hambatan2" type="radio" id="T_038_ya" name="T_038" <?= ($detail['T_038'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_038_ya">Ya</label>
             </div>
             <div class="col-2">
-              <input class="form-control" type="text" name="V_43" id="V_43">
+              <input class="form-control" type="text" name="V_43" id="V_43" value="<?= $detail['V_43'] ?>">
             </div>
           </div>
 
@@ -2809,11 +2808,11 @@
               <label>Pembesaran vena jugularis:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_039_tidak" name="T_039" value="1">
+              <input class="form-check-input" type="radio" id="T_039_tidak" name="T_039" <?= ($detail['T_039'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_039_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_039_ya" name="T_039" value="2">
+              <input class="form-check-input" type="radio" id="T_039_ya" name="T_039" <?= ($detail['T_039'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_039_ya">Ya</label>
             </div>
           </div>
@@ -2830,7 +2829,7 @@
               <label>Bentuk:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="T_040_simetris" name="T_040" value="1">
+              <input class="form-check-input" type="checkbox" id="T_040_simetris" name="T_040" <?= ($detail['T_040'] == "1" ? 'checked' : ''); ?> disabledx>
               <label class="form-check-label" for="T_040_simetris">Simetris</label>
             </div>
           </div>
@@ -2844,15 +2843,15 @@
               <label>Kelainan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_041_tidak" name="T_041" value="1">
+              <input class="form-check-input" type="radio" id="T_041_tidak" name="T_041" <?= ($detail['T_041'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_041_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_041_ya" name="T_041" value="2">
+              <input class="form-check-input" type="radio" id="T_041_ya" name="T_041" <?= ($detail['T_041'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_041_ya">Ya</label>
             </div>
             <div class="col-2">
-              <input class="form-control" type="text" name="V_44" id="V_44">
+              <input class="form-control" type="text" name="V_44" id="V_44" value="<?= $detail['V_44'] ?>" readonly>
             </div>
           </div>
 
@@ -2865,15 +2864,15 @@
               <label>Irama nafas:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_042_reguler" name="T_042" value="1">
+              <input class="form-check-input" type="radio" id="T_042_reguler" name="T_042" <?= ($detail['T_042'] == "1" ? 'checked' : '');  ?> disabled>
               <label class="form-check-label" for="T_042_reguler">Reguler</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_042_irreguler" name="T_042" value="2">
+              <input class="form-check-input" type="radio" id="T_042_irreguler" name="T_042" <?= ($detail['T_042'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_042_irreguler">Irreguler</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_042_apnea" name="T_042" value="3">
+              <input class="form-check-input" type="radio" id="T_042_apnea" name="T_042" <?= ($detail['T_042'] == "3" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_042_apnea">Apnea</label>
             </div>
           </div>
@@ -2887,7 +2886,7 @@
               <label>Suara Nafas:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="T_043_normal" name="T_043" value="1">
+              <input class="form-check-input" type="checkbox" id="T_043_normal" name="T_043" <?= ($detail['T_043'] == "1" ? 'checked' : '') ?> disabled>
               <label class="form-check-label" for="T_043_normal">Normal</label>
             </div>
           </div>
@@ -2901,11 +2900,11 @@
               <label>Wheezing:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_044_tidak" name="T_044" value="1">
+              <input class="form-check-input" type="radio" id="T_044_tidak" name="T_044" <?= ($detail['T_044'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_044_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_044_ya" name="T_044" value="2">
+              <input class="form-check-input" type="radio" id="T_044_ya" name="T_044" <?= ($detail['T_044'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_044_ya">Ya</label>
             </div>
           </div>
@@ -2919,11 +2918,11 @@
               <label>Batuk:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_045_tidak" name="T_045" value="1">
+              <input class="form-check-input" type="radio" id="T_045_tidak" name="T_045" <?= ($detail['T_045'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_045_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_045_ya" name="T_045" value="2">
+              <input class="form-check-input" type="radio" id="T_045_ya" name="T_045" <?= ($detail['T_045'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_045_ya">Ya</label>
             </div>
           </div>
@@ -2937,11 +2936,11 @@
               <label>Sekret:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_046_tidak" name="T_046" value="1">
+              <input class="form-check-input" type="radio" id="T_046_tidak" name="T_046" <?= ($detail['T_046'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_046_tidak">Tidak ada</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_046_ada" name="T_046" value="2">
+              <input class="form-check-input" type="radio" id="T_046_ada" name="T_046" <?= ($detail['T_046'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_046_ada">Ada</label>
             </div>
             <div class="col-md-4">
@@ -2949,11 +2948,11 @@
                 <label>Warna/jumlah</label>
               </div>
               <div class="col-3">
-                <input class="form-control" type="text" name="V_45" id="V_45" placeholder="warna">
+                <input class="form-control" type="text" name="V_45" id="V_45" value="<?= $detail['V_45'] ?>" readonly>
               </div>
 
               <div class="col-3">
-                <input class="form-control" type="text" name="V_46" id="V_46" placeholder="jumlah">
+                <input class="form-control" type="text" name="V_46" id="V_46" value="<?= $detail['V_46'] ?>" readonly>
               </div>
             </div>
           </div>
@@ -2970,11 +2969,11 @@
               <label>Kembung:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_047_tidak" name="T_047" value="1">
+              <input class="form-check-input" type="radio" id="T_047_tidak" name="T_047" <?= ($detail['T_047'] == "1" ? 'checked' : '') ?> disabled>
               <label class="form-check-label" for="T_047_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_047_ya" name="T_047" value="2">
+              <input class="form-check-input" type="radio" id="T_047_ya" name="T_047" <?= ($detail['T_047'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_047_ya">Ya</label>
             </div>
           </div>
@@ -2988,18 +2987,18 @@
               <label>Nyeri:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_048_tidak" name="T_048" value="1">
+              <input class="form-check-input" type="radio" id="T_048_tidak" name="T_048" <?= ($detail['T_048'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_048_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_048_ya" name="T_048" value="2">
+              <input class="form-check-input" type="radio" id="T_048_ya" name="T_048" <?= ($detail['T_048'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_048_ya">Ya</label>
             </div>
             <div class="col-1">
               <label>Lokasi</label>
             </div>
             <div class="col-2">
-              <input class="form-control" type="text" name="V_47" id="V_47">
+              <input class="form-control" type="text" name="V_47" id="V_47" value="<?= $detail['V_47'] ?>" readonly>
             </div>
           </div>
 
@@ -3012,15 +3011,15 @@
               <label>Bising usus:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_049_normal" name="T_049" value="1">
+              <input class="form-check-input" type="radio" id="T_049_normal" name="T_049" <?= ($detail['T_049'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_049_normal">Normal</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_049_abnormal" name="T_049" value="2">
+              <input class="form-check-input" type="radio" id="T_049_abnormal" name="T_049" <?= ($detail['T_049'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_049_abnormal">Abnormal</label>
             </div>
             <div class="col-2">
-              <input class="form-control" type="text" name="V_13" id="V_13">
+              <input class="form-control" type="text" name="V_13" id="V_13" value="<?= $detail['V_13'] ?>">
             </div>
           </div>
 
@@ -3036,11 +3035,11 @@
               <label>Akral:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="T_050_hangat" name="T_050" value="1">
+              <input class="form-check-input" type="radio" id="T_050_hangat" name="T_050" <?= ($detail['T_050'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_050_hangat">Hangat</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="T_050_dingin" name="T_050" value="2">
+              <input class="form-check-input" type="radio" id="T_050_dingin" name="T_050" <?= ($detail['T_050'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="T_050_dingin">Dingin</label>
             </div>
           </div>
@@ -3054,15 +3053,15 @@
               <label>Kelainan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_051_tidak" name="t_051" value="1">
+              <input class="form-check-input" type="radio" id="t_051_tidak" name="t_051" <?= ($detail['t_051'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_051_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="t_051_ya" name="t_051" value="2">
+              <input class="form-check-input" type="radio" id="t_051_ya" name="t_051" <?= ($detail['t_051'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_051_ya">Ya</label>
             </div>
             <div class="col-2">
-              <input class="form-control" type="text" name="V_48" id="V_48">
+              <input class="form-control" type="text" name="V_48" id="V_48" value="<?= $detail['V_48'] ?>">
             </div>
           </div>
 
@@ -3075,11 +3074,11 @@
               <label>Pergerakan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_052_aktif" name="t_052" value="1">
+              <input class="form-check-input" type="radio" id="t_052_aktif" name="t_052" <?= ($detail['t_052'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_052_aktif">Aktif</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="t_052_pasif" name="t_052" value="2">
+              <input class="form-check-input" type="radio" id="t_052_pasif" name="t_052" <?= ($detail['t_052'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_052_pasif">Pasif</label>
             </div>
           </div>
@@ -3093,15 +3092,15 @@
               <label>Kekuatan otot:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_053_kuat" name="t_053" value="1">
+              <input class="form-check-input" type="radio" id="t_053_kuat" name="t_053" <?= ($detail['t_053'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_053_kuat">Kuat</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_053_lemah" name="t_053" value="2">
+              <input class="form-check-input" type="radio" id="t_053_lemah" name="t_053" <?= ($detail['t_053'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_053_lemah">Lemah</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_053_tidakada" name="t_053" value="3">
+              <input class="form-check-input" type="radio" id="t_053_tidakada" name="t_053" <?= ($detail['t_054'] == "3" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_053_tidakada">Tidak ada</label>
             </div>
           </div>
@@ -3115,11 +3114,11 @@
               <label>Kontraktur:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_054_tidak" name="t_054" value="1">
+              <input class="form-check-input" type="radio" id="t_054_tidak" name="t_054" <?= ($detail['t_054'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_054_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="t_054_ya" name="t_054" value="2">
+              <input class="form-check-input" type="radio" id="t_054_ya" name="t_054" <?= ($detail['t_054'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_054_ya">Ya</label>
             </div>
           </div>
@@ -3136,15 +3135,15 @@
               <label>Warna:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_055_normal" name="t_055" value="1">
+              <input class="form-check-input" type="radio" id="t_055_normal" name="t_055" <?= ($detail['t_055'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_055_normal">Normal</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_055_ikterus" name="t_055" value="2">
+              <input class="form-check-input" type="radio" id="t_055_ikterus" name="t_055" <?= ($detail['t_055'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_055_ikterus">Ikterus</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_055_sianosis" name="t_055" value="3">
+              <input class="form-check-input" type="radio" id="t_055_sianosis" name="t_055" <?= ($detail['t_055'] == "4" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_055_sianosis">Sianosis</label>
             </div>
           </div>
@@ -3158,15 +3157,15 @@
               <label>Membran mukosa:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_056_lembab" name="t_056" value="1">
+              <input class="form-check-input" type="radio" id="t_056_lembab" name="t_056" <?= ($detail['t_056'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_056_lembab">Lembab</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_056_kering" name="t_056" value="2">
+              <input class="form-check-input" type="radio" id="t_056_kering" name="t_056" <?= ($detail['t_056'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_056_kering">Kering</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_056_stomatitis" name="t_056" value="3">
+              <input class="form-check-input" type="radio" id="t_056_stomatitis" name="t_056" <?= ($detail['t_056'] == "3" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_056_stomatitis">Stomatitis</label>
             </div>
           </div>
@@ -3180,11 +3179,11 @@
               <label>Hematome:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_057_tidak" name="t_057" value="1">
+              <input class="form-check-input" type="radio" id="t_057_tidak" name="t_057" <?= ($detail['t_057'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_057_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="t_057_ya" name="t_057" value="2">
+              <input class="form-check-input" type="radio" id="t_057_ya" name="t_057" <?= ($detail['t_057'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_057_ya">Ya</label>
             </div>
           </div>
@@ -3198,18 +3197,18 @@
               <label>Luka:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_058_tidak" name="t_058" value="1">
+              <input class="form-check-input" type="radio" id="t_058_tidak" name="t_058" <?= ($detail['t_058'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_058_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="t_058_ya" name="t_058" value="2">
+              <input class="form-check-input" type="radio" id="t_058_ya" name="t_058" <?= ($detail['t_058'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_058_ya">Ya</label>
             </div>
             <div class="col-1">
               <label>Lokasi</label>
             </div>
             <div class="col-2">
-              <input class="form-control" type="text" name="V_49" id="V_49">
+              <input class="form-control" type="text" name="V_49" id="V_49" value="<?= $detail['V_49'] ?>" readonly>
             </div>
           </div>
 
@@ -3222,7 +3221,7 @@
               <label>Lain-lain</label>
             </div>
             <div class="col-5">
-              <input class="form-control" type="text" name="V_50" id="V_50">
+              <input class="form-control" type="text" name="V_50" id="V_50" value="<?= $detail['V_50'] ?>" readonly>
             </div>
           </div>
 
@@ -3238,15 +3237,15 @@
               <label>Kelainan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_059_tidak" name="t_059" value="1">
+              <input class="form-check-input" type="radio" id="t_059_tidak" name="t_059" <?= ($detail['t_059'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_059_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="t_059_ya" name="t_059" value="2">
+              <input class="form-check-input" type="radio" id="t_059_ya" name="t_059" <?= ($detail['t_059'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_059_ya">Ya</label>
             </div>
             <div class="col-2">
-              <input class="form-control" type="text" name="V_51" id="V_51">
+              <input class="form-control" type="text" name="V_51" id="V_51" value="<?= $detail['V_51'] ?>" readonly>
             </div>
           </div>
 
@@ -3272,11 +3271,11 @@
               <label>Kesulitan bernafas:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_060_tidak" name="t_060" value="1">
+              <input class="form-check-input" type="radio" id="t_060_tidak" name="t_060" <?= ($detail['t_060'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_060_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="t_060_ya" name="t_060" value="2">
+              <input class="form-check-input" type="radio" id="t_060_ya" name="t_060" <?= ($detail['t_060'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_060_ya">Ya</label>
             </div>
           </div>
@@ -3293,7 +3292,7 @@
               <label>O2</label>
             </div>
             <div class="col-1">
-              <input class="form-control" type="text" name="T_061" id="T_061">
+              <input class="form-control" type="text" name="t_061" id="t_061" value="<?= $detail['t_61']  ?>">
             </div>
             <div class="col-1">
               <label>lt/menit</label>
@@ -3309,11 +3308,11 @@
               <label>Menggunakan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan3" type="checkbox" id="t_062_nasalcanule" name="t_062" value="1">
+              <input class="form-check-input hambatan3" type="checkbox" id="t_062_nasalcanule" name="t_062" <?= ($detail['t_062'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_062_nasalcanule">Nasal canule</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan3" type="checkbox" id="t_063_sungkup" name="t_063" value="2">
+              <input class="form-check-input hambatan3" type="checkbox" id="t_063_sungkup" name="t_063" <?= ($detail['t_063'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_063_sungkup">Sungkup</label>
             </div>
           </div>
@@ -3326,11 +3325,11 @@
             <div class="col-2">
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan3" type="checkbox" id="t_064_rebrethingmask" name="t_064" value="3">
+              <input class="form-check-input hambatan3" type="checkbox" id="t_064_rebrethingmask" name="t_064" <?= ($detail['t_064'] == "3" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_064_rebrethingmask">Re-breathing mask</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan3" type="checkbox" id="t_065_headbox" name="t_065" value="4">
+              <input class="form-check-input hambatan3" type="checkbox" id="t_065_headbox" name="t_065" <?= ($detail['t_065'] == "4" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_065_headbox">Head box</label>
             </div>
           </div>
@@ -3347,11 +3346,11 @@
               <label>Nafsu makan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_066_baik" name="t_066" value="1">
+              <input class="form-check-input" type="radio" id="t_066_baik" name="t_066" <?= ($detail['t_066'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_066_baik">Baik</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="t_066_tidak" name="t_066" value="2">
+              <input class="form-check-input" type="radio" id="t_066_tidak" name="t_066" <?= ($detail['t_066'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_066_tidak">Tidak</label>
             </div>
           </div>
@@ -3365,15 +3364,15 @@
               <label>Jenis makanan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="t_067_bubur" name="t_067" value="1">
+              <input class="form-check-input" type="checkbox" id="t_067_bubur" name="t_067" <?= ($detail['t_067'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_067_bubur">Bubur</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="t_068_nasi" name="t_068" value="2">
+              <input class="form-check-input" type="checkbox" id="t_068_nasi" name="t_068" <?= ($detail['t_068'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_068_nasi">Nasi</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="t_069_susu" name="t_069" value="3">
+              <input class="form-check-input" type="checkbox" id="t_069_susu" name="t_069" <?= ($detail['t_069'] == "3" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_069_susu">Susu formula</label>
             </div>
           </div>
@@ -3387,7 +3386,7 @@
               <label>Jumlah</label>
             </div>
             <div class="col-1">
-              <input class="form-control" type="text" name="t_070" id="t_070">
+              <input class="form-control" type="text" name="t_070" id="t_070" value="<?= $detail['t_070'] ?>">
             </div>
             <div class="col-1">
               <label>/hari</label>
@@ -3403,11 +3402,11 @@
               <label>Kesulitan makan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_071_tidak" name="t_071" value="1">
+              <input class="form-check-input" type="radio" id="t_071_tidak" name="t_071" <?= ($detail['t_071'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_071_tidak">Tidak</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_071_ya" name="t_071" value="2">
+              <input class="form-check-input" type="radio" id="t_071_ya" name="t_071" <?= ($detail['t_071'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_071_ya">Ya</label>
 
               <div class="col-3">
@@ -3425,15 +3424,15 @@
               <label>Kebiasaan makan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_072_mandiri" name="t_072" value="1">
+              <input class="form-check-input" type="radio" id="t_072_mandiri" name="t_072" <?= ($detail['t_072'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_072_mandiri">Mandiri</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_072_dibantu" name="t_072" value="2">
+              <input class="form-check-input" type="radio" id="t_072_dibantu" name="t_072" <?= ($detail['t_072'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_072_dibantu">Dibantu</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_072_ketergantungan" name="t_072" value="3">
+              <input class="form-check-input" type="radio" id="t_072_ketergantungan" name="t_072" <?= ($detail['t_072'] == "3" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_072_ketergantungan">Ketergantungan</label>
             </div>
           </div>
@@ -3450,11 +3449,11 @@
               <label>Mual</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_073_tidak" name="t_073" value="1">
+              <input class="form-check-input" type="radio" id="t_073_tidak" name="t_073" <?= ($detail['t_073'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_073_tidak">Tidak</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_073_ya" name="t_073" value="2">
+              <input class="form-check-input" type="radio" id="t_073_ya" name="t_073" <?= ($detail['t_073'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_073_ya">Ya</label>
             </div>
           </div>
@@ -3470,11 +3469,11 @@
               <label>Muntah</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_074_tidak" name="t_074" value="1">
+              <input class="form-check-input" type="radio" id="t_074_tidak" name="t_074" <?= ($detail['t_074'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_074_tidak">Tidak</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_074_ya" name="t_074" value="2">
+              <input class="form-check-input" type="radio" id="t_074_ya" name="t_074" <?= ($detail['t_074'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_074_ya">Ya</label>
             </div>
           </div>
@@ -3486,11 +3485,11 @@
               <label>Warna/Volume</label>
             </div>
             <div class="col-1">
-              <input class="form-control" type="text" name="V_55" id="V_55" placeholder="warna">
+              <input class="form-control" type="text" name="V_55" id="V_55" value="<?= $detail['V_55'] ?>" readonly>
             </div>
 
             <div class="col-1">
-              <input class="form-control" type="text" name="V_56" id="V_56" placeholder="volume">
+              <input class="form-control" type="text" name="V_56" id="V_56" value="<?= $detail['V_56'] ?>" readonly>
             </div>
           </div>
 
@@ -3506,11 +3505,11 @@
               <label>BAK:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_075_normal" name="t_075" value="1">
+              <input class="form-check-input" type="radio" id="t_075_normal" name="t_075" <?= ($detail['t_075'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_075_normal">Normal</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="t_075_tidak" name="t_075" value="2">
+              <input class="form-check-input" type="radio" id="t_075_tidak" name="t_075" <?= ($detail['t_075'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_075_tidak">Tidak</label>
             </div>
           </div>
@@ -3524,11 +3523,11 @@
               <label>Masalah perkemihan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_076_tidakada" name="t_076" value="1">
+              <input class="form-check-input" type="radio" id="t_076_tidakada" name="t_076" <?= ($detail['t_076'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_076_tidakada">Tidak ada</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_076_ada" name="t_076" value="2">
+              <input class="form-check-input" type="radio" id="t_076_ada" name="t_076" <?= ($detail['t_076'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_076_ada">Ada</label>
             </div>
           </div>
@@ -3543,7 +3542,7 @@
             <div class="col-2">
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan4" type="checkbox" id="t_077_retensiurine" name="t_077" value="1">
+              <input class="form-check-input hambatan4" type="checkbox" id="t_077_retensiurine" name="t_077" <?= ($detail['t_077'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_077_retensiurine">Retensi urine</label>
             </div>
           </div>
@@ -3558,7 +3557,7 @@
             <div class="col-2">
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan4" type="checkbox" id="t_078_inkontinensia" name="t_078" value="2">
+              <input class="form-check-input hambatan4" type="checkbox" id="t_078_inkontinensia" name="t_078" <?= ($detail['t_078'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_078_inkontinensia">Inkontinensia</label>
             </div>
           </div>
@@ -3573,7 +3572,7 @@
             <div class="col-2">
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan4" type="checkbox" id="t_079_dialysis" name="t_079" value="3">
+              <input class="form-check-input hambatan4" type="checkbox" id="t_079_dialysis" name="t_079" <?= ($detail['t_079'] == "3" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_079_dialysis">Dialysis</label>
             </div>
           </div>
@@ -3587,15 +3586,15 @@
               <label>Warna urine:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_080_kuning" name="t_080" value="1">
+              <input class="form-check-input" type="radio" id="t_080_kuning" name="t_080" <?= ($detail['t_080'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_080_kuning">Kuning jernih</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_080_keruh" name="t_080" value="2">
+              <input class="form-check-input" type="radio" id="t_080_keruh" name="t_080" <?= ($detail['t_080'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_080_keruh">Keruh</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_080_kemerahan" name="t_080" value="3">
+              <input class="form-check-input" type="radio" id="t_080_kemerahan" name="t_080" <?= ($detail['t_080'] == "3" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_080_kemerahan">Kemerahan</label>
             </div>
           </div>
@@ -3609,7 +3608,7 @@
               <label>Frekuensi:</label>
             </div>
             <div class="col-2">
-              <input class="form-control" type="text" name="V_57" id="V_57">
+              <input class="form-control" type="text" name="V_57" id="V_57" value="<?= $detail['V_57'] ?>" readonly>
             </div>
           </div>
 
@@ -3622,11 +3621,11 @@
               <label>BAB:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_081_normal" name="t_081" value="1">
+              <input class="form-check-input" type="radio" id="t_081_normal" name="t_081" <?= ($detail['t_081'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_081_normal">Normal</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_081_tidak" name="t_081" value="2">
+              <input class="form-check-input" type="radio" id="t_081_tidak" name="t_081" <?= ($detail['t_081'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_081_tidak">Tidak</label>
             </div>
           </div>
@@ -3640,11 +3639,11 @@
               <label>Masalah defekasi:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_082_tidakada" name="t_082" value="1">
+              <input class="form-check-input" type="radio" id="t_082_tidakada" name="t_082" <?= ($detail['t_082'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_082_tidakada">Tidak ada</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_082_ada" name="t_082" value="2">
+              <input class="form-check-input" type="radio" id="t_082_ada" name="t_082" <?= ($detail['t_082'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_082_ada">Ada</label>
             </div>
           </div>
@@ -3660,7 +3659,7 @@
             <div class="col-2">
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan5" type="checkbox" id="t_083_stoma" name="t_083" value="1">
+              <input class="form-check-input hambatan5" type="checkbox" id="t_083_stoma" name="t_083" <?= ($detail['t_083'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_083_stoma">Stoma</label>
             </div>
           </div>
@@ -3675,7 +3674,7 @@
             <div class="col-2">
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan5" type="checkbox" id="t_084_atresiaani" name="t_084" value="2">
+              <input class="form-check-input hambatan5" type="checkbox" id="t_084_atresiaani" name="t_084" <?= ($detail['t_084'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_084_atresiaani">Athresia ani</label>
             </div>
           </div>
@@ -3690,7 +3689,7 @@
             <div class="col-2">
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan5" type="checkbox" id="t_085_konstipasi" name="t_085" value="3">
+              <input class="form-check-input hambatan5" type="checkbox" id="t_085_konstipasi" name="t_085" <?= ($detail['t_085'] == "3" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_085_konstipasi">Konstipasi</label>
             </div>
           </div>
@@ -3705,7 +3704,7 @@
             <div class="col-2">
             </div>
             <div class="col-2">
-              <input class="form-check-input hambatan5" type="checkbox" id="t_086_diare" name="t_086" value="4">
+              <input class="form-check-input hambatan5" type="checkbox" id="t_086_diare" name="t_086" <?= ($detail['t_086'] == "4" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_086_diare">Diare</label>
             </div>
           </div>
@@ -3719,15 +3718,15 @@
               <label>Warna fases:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_087_kuning" name="t_087" value="1">
+              <input class="form-check-input" type="radio" id="t_087_kuning" name="t_087" <?= ($detail['t_087'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_087_kuning">Kuning</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_087_kecoklatan" name="t_087" value="2">
+              <input class="form-check-input" type="radio" id="t_087_kecoklatan" name="t_087" <?= ($detail['t_087'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_087_kecoklatan">Kecoklatan</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_087_kehitaman" name="t_087" value="3">
+              <input class="form-check-input" type="radio" id="t_087_kehitaman" name="t_087" <?= ($detail['t_087'] == "3" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_087_kehitaman">Kehitaman</label>
             </div>
           </div>
@@ -3741,18 +3740,18 @@
               <label>Perdarahan:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_088_tidak" name="t_088" value="1">
+              <input class="form-check-input" type="radio" id="t_088_tidak" name="t_088" <?= ($detail['t_088'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_088_tidak">Tidak</label>
             </div>
             <div class="col-1">
-              <input class="form-check-input" type="radio" id="t_088_ya" name="t_088" value="2">
+              <input class="form-check-input" type="radio" id="t_088_ya" name="t_088" <?= ($detail['t_088'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_088_ya">Ya</label>
             </div>
             <div class="col-1">
               <label>frekuensi</label>
             </div>
             <div class="col-2">
-              <input class="form-control" type="text" name="V_58" id="V_58">
+              <input class="form-control" type="text" name="V_58" id="V_58" value="<?= $detail['V_58'] ?>" readonly>
             </div>
           </div>
 
@@ -3768,7 +3767,7 @@
               <label>Lama tidur</label>
             </div>
             <div class="col-1">
-              <input class="form-control" type="text" name="t_089" id="t_089">
+              <input class="form-control" type="text" name="t_089" id="t_089" value="<?= $detail['t_089'] ?>" readonly>
             </div>
             <div class="col-1">
               <label>jam/hari</label>
@@ -3784,11 +3783,11 @@
               <label>Kesulitan tidur:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_090_tidak" name="t_090" value="1">
+              <input class="form-check-input" type="radio" id="t_090_tidak" name="t_090" <?= ($detail['t_090'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_090_tidak">Tidak</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_090_ya" name="t_090" value="2">
+              <input class="form-check-input" type="radio" id="t_090_ya" name="t_090" <?= ($detail['t_090'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_090_ya">Ya</label>
             </div>
           </div>
@@ -3802,11 +3801,11 @@
               <label>Tidur siang:</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_091_tidak" name="t_091" value="1">
+              <input class="form-check-input" type="radio" id="t_091_tidak" name="t_091" <?= ($detail['t_091'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_091_tidak">Tidak</label>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_091_ya" name="t_091" value="2">
+              <input class="form-check-input" type="radio" id="t_091_ya" name="t_091" <?= ($detail['t_091'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_091_ya">Ya</label>
             </div>
           </div>
@@ -3820,11 +3819,11 @@
               </div>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_092_normal" name="t_092" value="1">
+              <input class="form-check-input" type="radio" id="t_092_normal" name="t_092" <?= ($detail['t_092'] == "1" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_092_normal">Normal/mandiri</label>
             </div>
             <div class="col-3">
-              <input class="form-check-input" type="radio" id="t_092_kursiroda" name="t_092" value="2">
+              <input class="form-check-input" type="radio" id="t_092_kursiroda" name="t_092" <?= ($detail['t_092'] == "2" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_092_kursiroda">Menggunakan korsi roda</label>
             </div>
           </div>
@@ -3835,17 +3834,17 @@
               </div>
             </div>
             <div class="col-2">
-              <input class="form-check-input" type="radio" id="t_092_dibantu" name="t_092" value="3">
+              <input class="form-check-input" type="radio" id="t_092_dibantu" name="t_092" <?= ($detail['t_092'] == "3" ? 'checked' : ''); ?> disabled>
               <label class="form-check-label" for="t_092_dibantu">Dibantu</label>
             </div>
             <div class="col-2">
               <div class="col-12">
-                <input class="form-check-input" type="radio" id="t_092_lainnya" name="t_092" value="4">
+                <input class="form-check-input" type="radio" id="t_092_lainnya" name="t_092" <?= ($detail['t_092'] == "4" ? 'checked' : ''); ?> disabled>
                 <label class="form-check-label" for="t_092_lainnya">Lain-lain</label>
               </div>
             </div>
             <div class="col-2">
-              <input class="form-control" type="text" name="V_60" id="V_60">
+              <input class="form-control" type="text" name="V_60" id="V_60" value="<?= $detail['V_60'] ?>" readonly>
             </div>
           </div>
         </td>
@@ -3866,11 +3865,11 @@
                   </div>
                 </div>
                 <div class="col-3">
-                  <input class="form-check-input" type="radio" id="t_093_tidak" name="t_093" value="1">
+                  <input class="form-check-input" type="radio" id="t_093_tidak" name="t_093" <?= ($detail['t_093'] == "1" ? 'checked' : ''); ?> disabled>
                   <label class="form-check-label" for="t_093_tidak">Tidak</label>
                 </div>
                 <div class="col-2">
-                  <input class="form-check-input" type="radio" id="t_093_ya" name="t_093" value="2">
+                  <input class="form-check-input" type="radio" id="t_093_ya" name="t_093" <?= ($detail['t_093'] == "2" ? 'checked' : ''); ?> disabled>
                   <label class="form-check-label" for="t_093_ya">Ya</label>
                 </div>
               </div>
@@ -3886,31 +3885,18 @@
               <div class="row align-items-center">
                 <div class="col-md-10">
                   <div class="col-12">
-                    <input class="form-check-input" type="checkbox" id="t_094_pain" name="t_094" value="1" disabled="disabled">
+                    <input class="form-check-input" type="checkbox" id="t_094_pain" name="t_094" <?= ($detail['t_094'] == "1" ? 'checked' : ''); ?> disabled>
                     <label class="form-check-label" for="t_094_pain">PAIN SCORE 0-10 NUMERICAL RATING</label>
                   </div>
                 </div>
                 <div class="row align-items-center">
                   <div>
 
-                    <input type="range" id="t_095_rangepain" name="t_095" min="0" max="10" value="0" list="markers" style="width: 83%;" disabled="disabled" />
+                    &nbsp;&nbsp;<input type="range" name="t_095" id="t_095_rangepain" min="0" max="10" step="1" style="width: 95%;" value="<?= $detail['t_095'] ?>" disabled>
 
-                    <datalist id="markers">
-                      <option value="0"></option>
-                      <option value="1"></option>
-                      <option value="2"></option>
-                      <option value="3"></option>
-                      <option value="4"></option>
-                      <option value="5"></option>
-                      <option value="6"></option>
-                      <option value="7"></option>
-                      <option value="8"></option>
-                      <option value="9"></option>
-                      <option value="10"></option>
-                    </datalist>
                   </div>
                   <div>
-                    <img src="<?= base_url('uploads/range2.jpg') ?>" alt="Gambar" width="349px" height="100px">
+                    <img src="<?= base_url('uploads/range2.jpg') ?>" alt="Gambar" width="100%;" height="100px">
                   </div>
                 </div>
 
@@ -3919,26 +3905,18 @@
                   <div class="col-md-10">
                     <div class="col-12">
                       <br>
-                      <input class="form-check-input" type="checkbox" id="t_096_wong" name="t_096" value="2" disabled="disabled">
+                      <input class="form-check-input" type="checkbox" id="t_096_wong" name="t_096" <?= ($detail['t_096'] == "2" ? 'checked' : ''); ?> disabled>
                       <label class="form-check-label" for="t_096_wong">WONG-BAKER FACE PAIN Rating Scale</label>
                     </div>
                   </div>
                   <div class="row align-items-center">
                     <div>
 
-                      <input type="range" id="t_097_rangewong" name="t_097" min="0" max="10" value="0" list="markers" style="width: 87%;" disabled="disabled" />
+                      &nbsp;&nbsp;<input type="range" id="t_097_rangewong" name="t_097" min="0" max="10" value="0" step="2" style="width: 95%;" value="<?= $detail['t_097'] ?>" disabled>
 
-                      <datalist id="markers">
-                        <option value="0"></option>
-                        <option value="2"></option>
-                        <option value="4"></option>
-                        <option value="6"></option>
-                        <option value="8"></option>
-                        <option value="10"></option>
-                      </datalist>
                     </div>
                     <div>
-                      <img src="<?= base_url('uploads/range3.jpg') ?>" alt="Gambar" width="350px" height="100px">
+                      <img src="<?= base_url('uploads/range3.jpg') ?>" alt="Gambar" width="100%;" height="100px">
                     </div>
                   </div>
                 </div>
@@ -3959,7 +3937,7 @@
                             <label>(P) Faktor Pencetus </label>
                           </div>
                           <div class="col-7">
-                            <input class="form-control" type="text" name="V_61" id="V_61" disabled="disabled">
+                            <input class="form-control" type="text" name="V_61" id="V_61" value="<?= $detail['V_61'] ?>" readonly>
                           </div>
                         </div>
 
@@ -3968,15 +3946,15 @@
                             <label>(Q) Quality</label>
                           </div>
                           <div class="col-3">
-                            <input class="form-check-input" type="radio" id="t_098_tumpul" name="t_098" value="1" disabled="disabled">
+                            <input class="form-check-input" type="radio" id="t_098_tumpul" name="t_098" <?= ($detail['t_098'] == "1" ? 'checked' : ''); ?> disabled>
                             <label class="form-check-label" for="t_098_tumpul">Tumpul</label>
                           </div>
                           <div class="col-2">
-                            <input class="form-check-input" type="radio" id="t_098_tajam" name="t_098" value="2" disabled="disabled">
+                            <input class="form-check-input" type="radio" id="t_098_tajam" name="t_098" <?= ($detail['t_098'] == "2" ? 'checked' : ''); ?> disabled>
                             <label class="form-check-label" for="t_098_tajam">Tajam</label>
                           </div>
                           <div class="col-2">
-                            <input class="form-check-input" type="radio" id="t_098_panas" name="t_098" value="3" disabled="disabled">
+                            <input class="form-check-input" type="radio" id="t_098_panas" name="t_098" <?= ($detail['t_098'] == "3" ? 'checked' : ''); ?> disabled>
                             <label class="form-check-label" for="t_098_panas">Panas</label>
                           </div>
                         </div>
@@ -3986,7 +3964,7 @@
                             <label>(R) Lokasi </label>
                           </div>
                           <div class="col-7">
-                            <input class="form-control" type="text" name="V_62" id="V_62" disabled="disabled">
+                            <input class="form-control" type="text" name="V_62" id="V_62" value="<?= $detail['V_62'] ?>" readonly>
                           </div>
 
                           <div class="container">
@@ -3995,11 +3973,11 @@
                                 <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menjalar</label>
                               </div>
                               <div class="col-3">
-                                <input class="form-check-input" type="radio" id="t_099_tidak" name="t_099" value="1" disabled="disabled">
+                                <input class="form-check-input" type="radio" id="t_099_tidak" name="t_099" <?= ($detail['t_099'] == "1" ? 'checked' : ''); ?> disabled>
                                 <label class="form-check-label" for="t_099_tidak">Tidak</label>
                               </div>
                               <div class="col-2">
-                                <input class="form-check-input" type="radio" id="t_099_ya" name="t_099" value="2" disabled="disabled">
+                                <input class="form-check-input" type="radio" id="t_099_ya" name="t_099" <?= ($detail['t_099'] == "2" ? 'checked' : ''); ?> disabled>
                                 <label class="form-check-label" for="t_099_ya">Ya</label>
                               </div>
                             </div>
@@ -4011,7 +3989,7 @@
                             <label>(S) Skala Nyeri </label>
                           </div>
                           <div class="col-7">
-                            <input class="form-control" type="text" name="V_63" id="V_63" disabled="disabled">
+                            <input class="form-control" type="text" name="V_63" id="V_63" value="<?= $detail['V_63'] ?>" readonly>
                           </div>
                         </div>
 
@@ -4023,17 +4001,17 @@
                             <div class="col-7">
                               <div class="row align-items-center">
                                 <div class="col-6">
-                                  <input class="form-check-input" type="radio" id="t_100_jarang" name="t_100" value="1" disabled="disabled">
+                                  <input class="form-check-input" type="radio" id="t_100_jarang" name="t_100" <?= ($detail['t_100'] == "1" ? 'checked' : ''); ?> disabled>
                                   <label class="form-check-label" for="t_100_jarang">Jarang</label>
                                 </div>
                                 <div class="col-6">
-                                  <input class="form-check-input" type="radio" id="t_100_hilangtimbul" name="t_100" value="2" disabled="disabled">
+                                  <input class="form-check-input" type="radio" id="t_100_hilangtimbul" name="t_100" <?= ($detail['t_100'] == "2" ? 'checked' : ''); ?> disabled>
                                   <label class="form-check-label" for="t_100_hilangtimbul">Hilang Timbul</label>
                                 </div>
                               </div>
                               <div class="row align-items-center">
                                 <div class="col-7">
-                                  <input class="form-check-input" type="radio" id="t_100_terusmenerus" name="t_100" value="3" disabled="disabled">
+                                  <input class="form-check-input" type="radio" id="t_100_terusmenerus" name="t_100" <?= ($detail['t_100'] == "3" ? 'checked' : ''); ?> disabled>
                                   <label class="form-check-label" for="t_100_terusmenerus">Terus Menerus</label>
                                 </div>
                               </div>
@@ -4046,7 +4024,7 @@
                             <label>(T) Lamanya Nyeri </label>
                           </div>
                           <div class="col-7">
-                            <input class="form-control" type="text" name="V_64" id="V_64" disabled="disabled">
+                            <input class="form-control" type="text" name="V_64" id="V_64" value="<?= $detail['V_64'] ?>" readonly>
                           </div>
                         </div>
                       </div>
