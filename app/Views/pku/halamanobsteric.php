@@ -35,7 +35,7 @@
         <h5 class="text-center mb-4">RS PKU MUHAMMADIYAH SAMPANGAN</h5>
         <img class="mx-auto d-block" src="<?= base_url('uploads/pku.png') ?>" alt="" width="70px">
 
-        <div class="row">
+        <div class="row mt-3">
             <div class="col-3"></div>
             <div class="col-6 text-center">
                 <div class="col-xl-4 col-md-12 mb-4">
@@ -61,6 +61,23 @@
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
                                     <div class="text-xs font-weight-bold text-success text-uppercase mb-1"><a class="card-title" style="text-decoration:none" href="<?= base_url('pku/form2') ?>">R.M 2.1.6 Assessment Saraf RI</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 text-center">
+                <div class="col-xl-4 col-md-12 mb-4">
+                    <div class="card border border-5 border-success border-top-0 border-bottom-0 border-end-0 shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1"><a class="card-title" style="text-decoration:none" href="<?= base_url('pku/form3') ?>">RM 2.1.7 Asesmen THT RI</a></div>
                                 </div>
                             </div>
                         </div>

@@ -20,4 +20,9 @@ class PKU extends BaseController
     {
         return view('pku/assessment_saraf');
     }
+
+    public function form3()
+    {
+        return view('pku/assessment_tht');
+    }
 }
