@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <h1 class="text-center mt-3">FORMULIR</h1>
+    <h1 class="text-center my-5">FORMULIR</h1>
 
     <div class="container">
         <div class="row justify-content-center">

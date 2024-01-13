@@ -131,19 +131,19 @@
                                     <p><strong>A. Keadaan Umum:</strong></p>
                                 </div>
                                 <div class="col">
-                                    <input type="text" id="V_68" name="V_68" style="width: 50%;">
+                                    <input type="text" id="V_69" name="V_69" style="width: 50%;">
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col">
                                         <span><strong>GCS</strong></span>
-                                        <label for="V_69">E:</label>
-                                        <input type="text" id="V_69" name="V_69" style="width: 5%;">
-                                        <label for="V_70">M:</label>
+                                        <label for="V_70">E:</label>
                                         <input type="text" id="V_70" name="V_70" style="width: 5%;">
-                                        <label for="V_71">V:</label>
+                                        <label for="V_71">M:</label>
                                         <input type="text" id="V_71" name="V_71" style="width: 5%;">
-                                        <span>=</span>
+                                        <label for="V_72">V:</label>
                                         <input type="text" id="V_72" name="V_72" style="width: 5%;">
+                                        <span>=</span>
+                                        <input type="text" id="V_73" name="V_73" style="width: 5%;">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -264,60 +264,182 @@
                                     <p><strong>C. Status Lokalis</strong></p>
                                 </div>
                             </div>
-                            <div class="row">
-                                <table class="table table-bordered">
-                                    <tr>
-                                        <td>
-                                            <span>a. Telinga</span>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>
-                                                    <span>Telinga Luar</span>
-                                                </li>
-                                                <li>
-                                                    <span>Daun telinga</span>
-                                                </li>
-                                                <li>
-                                                    <span>Liang telinga</span>
-                                                </li>
-                                                <li>
-                                                    <span>Telinga tengah</span>
-                                                </li>
-                                                <li>
-                                                    <span>Membran tympani</span>
-                                                </li>
-                                                <li>
-                                                    <span>Audiometri</span>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>
-                                                    <input type="text" id="V_23" name="V_23">
-                                                </li>
-                                                <li>
-                                                    <input type="text" id="V_24" name="V_24">
-                                                </li>
-                                                <li>
-                                                    <input type="text" id="V_25" name="V_25">
-                                                </li>
-                                                <li>
-                                                    <input type="text" id="V_26" name="V_26">
-                                                </li>
-                                                <li>
-                                                    <input type="text" id="V_27" name="V_27">
-                                                </li>
-                                                <li>
-                                                    <input type="text" id="V_28" name="V_28">
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <table class="table table-bordered" style="border: 1px;">
+                                        <tr>
+                                            <td>
+                                                <span>a. Telinga</span>
+                                            </td>
+                                            <td>
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span>Telinga Luar</span>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input type="text" id="V_23" name="V_23" style="width: 100%;">
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span>Daun Telinga</span>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input type="text" id="V_24" name="V_24" style="width: 100%;">
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span>Liang Telinga</span>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input type="text" id="V_25" name="V_25" style="width: 100%;">
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span>Telinga Tengah</span>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input type="text" id="V_26" name="V_26" style="width: 100%;">
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span>Membran tympani</span>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input type="text" id="V_27" name="V_27" style="width: 100%;">
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span>Audiometri</span>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input type="text" id="V_28" name="V_28" style="width: 100%;">
+                                                    </div>
+                                                </div>
 
+                                            </td>
+                                            <td class="text-center">
+                                                <img src="<?= base_url('uploads/telinga.png') ?>" alt="Telinga" width="180px" style="margin-top: 100px;">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>b. Hidung</span>
+                                            </td>
+                                            <td>
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span><b>Hidung Luar</b> Cavum Nasi</span>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input type="text" id="V_29" name="V_29" style="width: 100%;">
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span><b>Hidung Dalam</b> Cavum Nasi</span>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input type="text" id="V_30" name="V_30" style="width: 100%;">
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span>Concae</span>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input type="text" id="V_31" name="V_31" style="width: 100%;">
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span>Septum Nasi</span>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input type="text" id="V_32" name="V_32" style="width: 100%;">
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span>Concae Inferior</span>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input type="text" id="V_33" name="V_33" style="width: 100%;">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <img src="<?= base_url('uploads/hidung.png') ?>" alt="Hidung" width="170px" style="margin-top: 50px;">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>c. Tenggorokan</span>
+                                            </td>
+                                            <td>
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span>Tonsil</span>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input type="text" id="V_34" name="V_34" style="width: 100%;">
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row align-items-center">
+                                                    <div class="col-5">
+                                                        <span>Daerah Posterior Farinx</span>
+                                                    </div>
+                                                    <div class="col-7">
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span>Epiglotis</span>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input type="text" id="V_35" name="V_35" style="width: 100%;">
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span>Larinx</span>
+                                                    </div>
+                                                    <div class="col-9">
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row align-items-center">
+                                                    <div class="col-3">
+                                                        <span>Pita Suara</span>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input type="text" id="V_36" name="V_36" style="width: 100%;">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <img src="<?= base_url('uploads/tenggorokan.png') ?>" alt="Tenggorokan" width="170px" style="margin-top: 30px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
                             <div class="mt-3">
                                 <p><strong>PEMERIKSAAN PENUNJANG</strong></p>
                                 <ul>
@@ -340,6 +462,17 @@
                                             <div class="col-9">
                                                 <span>:</span>
                                                 <input type="text" id="V_61" name="V_61" style="width: 98%;">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row align-items-center mb-2">
+                                            <div class="col-3">
+                                                <label for="V_37">ECG</label>
+                                            </div>
+                                            <div class="col-9">
+                                                <span>:</span>
+                                                <input type="text" id="V_37" name="V_37" style="width: 98%;">
                                             </div>
                                         </div>
                                     </li>
@@ -383,7 +516,7 @@
                             </div>
                             <div class="mt-2">
                                 <p><strong>RENCANA ASUHAN/ TERAPI/INSTRUKSI <i>(standing order)</i>:</strong></p>
-                                <textarea name="V_67" id="V_67" cols="125" rows="10"></textarea>
+                                <textarea name="V_68" id="V_68" cols="125" rows="10"></textarea>
                             </div>
                     </td>
                 </tr>
