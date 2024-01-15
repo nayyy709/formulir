@@ -30,4 +30,14 @@ class PKU extends BaseController
     {
         return view('pku/assessment_pasien_terminal');
     }
+
+    public function form5()
+    {
+        return view('pku/assessment_gizi_anak');
+    }
+
+    public function form6()
+    {
+        return view('pku/assessment_gizi_dewasa');
+    }
 }

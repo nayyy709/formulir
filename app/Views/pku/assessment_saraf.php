@@ -12,6 +12,7 @@
 
 <body>
     <div class="container">
+        <a href="<?= base_url('pku/halamanform2') ?>" class="btn btn-success mt-3"><i class="bi bi-arrow-left"></i></a>
         <div class="row align-items-center">
             <p class="text-end">RM.2.1.6</p>
             <h6 class="text-center">REKAM MEDIS RAWAT INAP</h6>
@@ -525,7 +526,33 @@
                         </div>
                         <div class="mt-2">
                             <p><strong>RENCANA ASUHAN/ TERAPI/INSTRUKSI <i>(standing order)</i>:</strong></p>
-                            <textarea name="V_67" id="V_67" cols="125" rows="10"></textarea>
+                            <textarea name="V_68" id="V_68" cols="125" rows="10"></textarea>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-6 text-center">
+                                <span>Dokter</span>
+                            </div>
+                            <div class="col-6 text-center">
+                                Penerima Penjelasan
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 text-center">
+                                <canvas id="canvas" width="150" height="90" style="border:1px solid #000;"></canvas>
+                                <input type="hidden" name="TTD" id="TTD">
+                            </div>
+                            <div class="col-6 text-center">
+                                <canvas id="canvas1" width="150" height="90" style="border:1px solid #000;"></canvas>
+                                <input type="hidden" name="TTD_1" id="TTD_1">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 text-center">
+                                <span>(<input type="text" id="V_69" name="V_69" placeholder="Masukan Nama" style="text-align: center;">)</span>
+                            </div>
+                            <div class="col-6 text-center">
+                                <span>(<input type="text" id="V_70" name="V_70" placeholder="Masukan Nama" style="text-align: center;">)</span>
+                            </div>
                         </div>
                     </td>
                 </tr>
@@ -533,5 +560,165 @@
         </form>
     </div>
 </body>
+<script>
+    var canvas = document.getElementById('canvas');
+    const canvasDataInput = document.getElementById('TTD');
+    var context = canvas.getContext('2d');
+    var drawing = false;
+
+    canvas.addEventListener('mousedown', startDrawing);
+    canvas.addEventListener('mousemove', draw);
+    canvas.addEventListener('mouseup', stopDrawing);
+    canvas.addEventListener('mouseout', stopDrawing);
+
+    function startDrawing(e) {
+        drawing = true;
+        draw(e);
+    }
+
+    function draw(e) {
+        if (!drawing) return;
+
+        context.lineWidth = 2;
+        context.lineCap = 'round';
+        context.strokeStyle = '#000';
+
+        context.lineTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
+        context.stroke();
+        context.beginPath();
+        context.moveTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
+    }
+
+    function stopDrawing() {
+        drawing = false;
+        context.beginPath();
+    }
+
+    function saveSignatureData() {
+        const canvasData = canvas.toDataURL('image/png');
+
+        canvasDataInput.value = canvasData;
+    }
+</script>
+<script>
+    var canvas1 = document.getElementById('canvas1');
+    const canvasDataInput1 = document.getElementById('TTD_1');
+    var context1 = canvas1.getContext('2d');
+    var drawing = false;
+
+    canvas1.addEventListener('mousedown', startDrawing);
+    canvas1.addEventListener('mousemove', draw);
+    canvas1.addEventListener('mouseup', stopDrawing);
+    canvas1.addEventListener('mouseout', stopDrawing);
+
+    function startDrawing(e) {
+        drawing = true;
+        draw(e);
+    }
+
+    function draw(e) {
+        if (!drawing) return;
+
+        context1.lineWidth = 2;
+        context1.lineCap = 'round';
+        context1.strokeStyle = '#000';
+
+        context1.lineTo(e.clientX - canvas1.getBoundingClientRect().left, e.clientY - canvas1.getBoundingClientRect().top);
+        context1.stroke();
+        context1.beginPath();
+        context1.moveTo(e.clientX - canvas1.getBoundingClientRect().left, e.clientY - canvas1.getBoundingClientRect().top);
+    }
+
+    function stopDrawing() {
+        drawing = false;
+        context1.beginPath();
+    }
+
+    function saveSignatureData1() {
+        const canvasData1 = canvas1.toDataURL('image/png');
+
+        canvasDataInput1.value = canvasData1;
+    }
+</script>
+<script>
+    var canvas2 = document.getElementById('canvas2');
+    const canvasDataInput2 = document.getElementById('TTD_2');
+    var context2 = canvas2.getContext('2d');
+    var drawing = false;
+
+    canvas2.addEventListener('mousedown', startDrawing);
+    canvas2.addEventListener('mousemove', draw);
+    canvas2.addEventListener('mouseup', stopDrawing);
+    canvas2.addEventListener('mouseout', stopDrawing);
+
+    function startDrawing(e) {
+        drawing = true;
+        draw(e);
+    }
+
+    function draw(e) {
+        if (!drawing) return;
+
+        context2.lineWidth = 2;
+        context2.lineCap = 'round';
+        context2.strokeStyle = '#000';
+
+        context2.lineTo(e.clientX - canvas2.getBoundingClientRect().left, e.clientY - canvas2.getBoundingClientRect().top);
+        context2.stroke();
+        context2.beginPath();
+        context2.moveTo(e.clientX - canvas2.getBoundingClientRect().left, e.clientY - canvas2.getBoundingClientRect().top);
+    }
+
+    function stopDrawing() {
+        drawing = false;
+        context2.beginPath();
+    }
+
+    function saveSignatureData2() {
+        const canvasData2 = canvas2.toDataURL('image/png');
+
+        canvasDataInput2.value = canvasData2;
+    }
+</script>
+<script>
+    var canvas3 = document.getElementById('canvas3');
+    const canvasDataInput3 = document.getElementById('TTD_3');
+    var context3 = canvas3.getContext('2d');
+    var drawing = false;
+
+    canvas3.addEventListener('mousedown', startDrawing);
+    canvas3.addEventListener('mousemove', draw);
+    canvas3.addEventListener('mouseup', stopDrawing);
+    canvas3.addEventListener('mouseout', stopDrawing);
+
+    function startDrawing(e) {
+        drawing = true;
+        draw(e);
+    }
+
+    function draw(e) {
+        if (!drawing) return;
+
+        context3.lineWidth = 2;
+        context3.lineCap = 'round';
+        context3.strokeStyle = '#000';
+
+        context3.lineTo(e.clientX - canvas3.getBoundingClientRect().left, e.clientY - canvas3.getBoundingClientRect().top);
+        context3.stroke();
+        context3.beginPath();
+        context3.moveTo(e.clientX - canvas3.getBoundingClientRect().left, e.clientY - canvas3.getBoundingClientRect().top);
+    }
+
+    function stopDrawing() {
+        drawing = false;
+        context3.beginPath();
+    }
+
+    function saveSignatureData3() {
+        const canvasData3 = canvas3.toDataURL('image/png');
+
+        canvasDataInput3.value = canvasData3;
+    }
+</script>
 
 </html>
