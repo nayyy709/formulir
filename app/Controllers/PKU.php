@@ -40,4 +40,9 @@ class PKU extends BaseController
     {
         return view('pku/assessment_gizi_dewasa');
     }
+
+    public function form7()
+    {
+        return view('rmj/assessment_gigi_dan_mulut');
+    }
 }

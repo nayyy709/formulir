@@ -236,7 +236,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <textarea name="V_19" id="V_19" cols="30" rows="10" style="width: 100%;"></textarea>
+                        <textarea name="V_19" id="V_19" cols="30" rows="2" style="width: 100%;"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -246,7 +246,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <textarea name="V_20" id="V_20" cols="30" rows="10" style="width: 100%;"></textarea>
+                        <textarea name="V_20" id="V_20" cols="30" rows="2" style="width: 100%;"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -422,7 +422,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2"></td>
+                    <td colspan="2">
+                        <textarea name="V_23" id="V_23" cols="30" rows="2" style="width: 100%;"></textarea>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="2" class="text-center">
@@ -430,7 +432,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2"></td>
+                    <td colspan="2">
+                        <textarea name="V_24" id="V_24" cols="30" rows="2" style="width: 100%;"></textarea>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="2" class="text-center">
@@ -438,7 +442,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2"></td>
+                    <td colspan="2">
+                        <textarea name="V_25" id="V_25" cols="30" rows="2" style="width: 100%;"></textarea>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -581,19 +587,19 @@
                                     <tbody id="addTable">
                                         <tr>
                                             <td>
-                                                <input class="form-control" type="date" id="V_21" name="V_21">
+                                                <input class="form-control" type="date" id="V_26" name="V_26">
                                             </td>
                                             <td>
-                                                <input class="form-control" type="text" id="V_22" name="V_22">
+                                                <input class="form-control" type="text" id="V_27" name="V_27">
                                             </td>
                                             <td>
-                                                <input class="form-control" type="text" id="V_23" name="V_23">
+                                                <input class="form-control" type="text" id="V_28" name="V_28">
                                             </td>
                                             <td>
-                                                <input class="form-control" type="text" id="V_24" name="V_24">
+                                                <input class="form-control" type="text" id="V_29" name="V_29">
                                             </td>
                                             <td>
-                                                <input class="form-control" type="text" id="V_25" name="V_25">
+                                                <input class="form-control" type="text" id="V_30" name="V_25">
                                             </td>
                                         </tr>
                                     </tbody>
@@ -634,7 +640,7 @@
 
 </body>
 <script type="text/javascript">
-    var i = 26;
+    var i = 31;
 
     function addrow1(tableID) {
 
