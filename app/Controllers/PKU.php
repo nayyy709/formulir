@@ -8,7 +8,7 @@ class PKU extends BaseController
 {
     public function halamanform2()
     {
-        return view('pku/halamanobsteric');
+        return view('pku/halamanpku');
     }
 
     public function form1()
@@ -44,5 +44,20 @@ class PKU extends BaseController
     public function form7()
     {
         return view('rmj/assessment_gigi_dan_mulut');
+    }
+
+    public function form8()
+    {
+        return view('rmj/assessment_keperawatan_rawat_jalan');
+    }
+
+    public function form9()
+    {
+        return view('pku/assessment_early_warning_scoring_system');
+    }
+
+    public function form10()
+    {
+        return view('pku/evaluasi_awal_case_manager');
     }
 }
