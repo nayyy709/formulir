@@ -60,4 +60,9 @@ class PKU extends BaseController
     {
         return view('pku/evaluasi_awal_case_manager');
     }
+
+    public function form11()
+    {
+        return view('pku/assessment_keperawatan_rawat_inap_pasien_anak');
+    }
 }
