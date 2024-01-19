@@ -70,4 +70,9 @@ class PKU extends BaseController
     {
         return view('pku/assessment_kulit_dan_kelamin');
     }
+
+    public function form13()
+    {
+        return view('pku/assessment_awal_kebidanan_dan_kandungan');
+    }
 }
