@@ -970,9 +970,272 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <strong>L. Pemeriksaan Fisik</strong>
+                        <div class="row align-items-center md-2" style="margin-left: 5px;">
+                            <div class="col-md-3">
+                                <span>Kepala</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_045_1" name="T_045" value="1">
+                                <label for="T_045_1" class="form-check-label">Normal</label>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_045_2" name="T_045" value="2">
+                                <label for="T_045_2" class="from-check-label">Kelainan</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" id="V_35" name="V_35">
+                            </div>
+                        </div>
+                        <div class="row align-items-center" style="margin-left: 5px;">
+                            <div class="col-md-3">
+                                <span>Mata</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_046_1" name="T_046" value="1">
+                                <label for="T_046_1" class="form-check-label">Normal</label>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_046_2" name="T_046" value="2">
+                                <label for="T_046_2" class="from-check-label">Kelainan</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" id="V_36" name="V_36">
+                            </div>
+                        </div>
+                        <div class="row align-items-center" style="margin-left: 5px;">
+                            <div class="col-md-3">
+                                <span>Telinga</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_047_1" name="T_047" value="1">
+                                <label for="T_047_1" class="form-check-label">Normal</label>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_047_2" name="T_047" value="2">
+                                <label for="T_047_2" class="from-check-label">Kelainan</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" id="V_37" name="V_37">
+                            </div>
+                        </div>
+                        <div class="row align-items-center" style="margin-left: 5px;">
+                            <div class="col-md-3">
+                                <span>Hidung</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_048_1" name="T_048" value="1">
+                                <label for="T_048_1" class="form-check-label">Normal</label>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_048_2" name="T_048" value="2">
+                                <label for="T_048_2" class="from-check-label">Kelainan</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" id="V_38" name="V_38">
+                            </div>
+                        </div>
+                        <div class="row align-items-center" style="margin-left: 5px;">
+                            <div class="col-md-3">
+                                <span>Tenggorok</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_049_1" name="T_049" value="1">
+                                <label for="T_049_1" class="form-check-label">Normal</label>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_049_2" name="T_049" value="2">
+                                <label for="T_049_2" class="from-check-label">Kelainan</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" id="V_39" name="V_39">
+                            </div>
+                        </div>
+                        <div class="row align-items-center" style="margin-left: 5px;">
+                            <div class="col-md-3">
+                                <span>Leher</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_050_1" name="T_050" value="1">
+                                <label for="T_050_1" class="form-check-label">Normal</label>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_050_2" name="T_050" value="2">
+                                <label for="T_050_2" class="from-check-label">Kelainan</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" id="V_40" name="V_40">
+                            </div>
+                        </div>
+                        <div class="row align-items-center" style="margin-left: 5px;">
+                            <div class="col-md-3">
+                                <span>Dada</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_051_1" name="T_051" value="1">
+                                <label for="T_051_1" class="form-check-label">Normal</label>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_051_2" name="T_051" value="2">
+                                <label for="T_051_2" class="from-check-label">Kelainan</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" id="V_41" name="V_41">
+                            </div>
+                        </div>
+                        <div class="row align-items-center" style="margin-left: 5px;">
+                            <div class="col-md-3">
+                                <span>Jantung</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_052_1" name="T_052" value="1">
+                                <label for="T_052_1" class="form-check-label">Normal</label>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_052_2" name="T_052" value="2">
+                                <label for="T_052_2" class="from-check-label">Kelainan</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" id="V_42" name="V_42">
+                            </div>
+                        </div>
+                        <div class="row align-items-center" style="margin-left: 5px;">
+                            <div class="col-md-3">
+                                <span>Paru-paru</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_053_1" name="T_053" value="1">
+                                <label for="T_053_1" class="form-check-label">Normal</label>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_053_2" name="T_053" value="2">
+                                <label for="T_053_2" class="from-check-label">Kelainan</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" id="V_43" name="V_43">
+                            </div>
+                        </div>
+                        <div class="row align-items-center" style="margin-left: 5px;">
+                            <div class="col-md-3">
+                                <span>Perut</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_054_1" name="T_054" value="1">
+                                <label for="T_054_1" class="form-check-label">Normal</label>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_054_2" name="T_054" value="2">
+                                <label for="T_054_2" class="from-check-label">Kelainan</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" id="V_44" name="V_44">
+                            </div>
+                        </div>
+                        <div class="row align-items-center" style="margin-left: 5px;">
+                            <div class="col-md-3">
+                                <span>Anggota gerak atas</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_055_1" name="T_055" value="1">
+                                <label for="T_055_1" class="form-check-label">Oedema</label>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_055_2" name="T_055" value="2">
+                                <label for="T_055_2" class="from-check-label">Tidak Oedema</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" id="V_45" name="V_45">
+                            </div>
+                        </div>
+                        <div class="row align-items-center" style="margin-left: 5px;">
+                            <div class="col-md-3">
+                                <span>Anggota gerak bawah</span>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_056_1" name="T_056" value="1">
+                                <label for="T_056_1" class="form-check-label">Oedema</label>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input" id="T_056_2" name="T_056" value="2">
+                                <label for="T_056_2" class="from-check-label">Tidak Oedema</label>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" id="V_46" name="V_46">
+                            </div>
+                        </div>
+                        <strong>M. Alat Yang Terpasang</strong>
+                        <div class="row align-items-center">
+                            <div class="col" style="margin-left: 20px;">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="T_057_1" name="T_057" value="1">
+                                    <label class="form-check-label" for="T_057_1">O2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="T_058_1" name="T_058" value="1">
+                                    <label class="form-check-label" for="T_058_1">Infus</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="T_059_1" name="T_059" value="1">
+                                    <label class="form-check-label" for="T_059_1">DC</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="T_060_1" name="T_060" value="1">
+                                    <label class="form-check-label" for="T_060_1">NGT</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="T_061_1" name="T_061" value="1">
+                                    <label class="form-check-label" for="T_061_1">Lainnya:</label>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" id="V_47" name="V_47">
+                            </div>
+                        </div>
                     </td>
                 </tr>
             </table>
+            <div class="text-end">
+                <div class="row">
+                    <div class="col" style="margin-right: 40px;">
+                        <p>
+                            Surakarta,
+                            <input type="text" id="V_48" name="V_48">
+                        </p>
+                    </div>
+                </div>
+                <p style="margin-right: 70px;">Perawat yang mengkaji</p>
+                <div class="row">
+                    <div class="col">
+                        <label>Dinas:</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="T_062" id="T_062_1" value="1">
+                            <label class="form-check-label" for="T_062_1">Pagi</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="T_062" id="T_062_2" value="2">
+                            <label class="form-check-label" for="T_062_2">Sore</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="T_062" id="T_062_3" value="3">
+                            <label class="form-check-label" for="T_062_3">Malam</label>
+                        </div>
+                        <label>Jam:</label>
+                        <input type="time">
+                    </div>
+                </div>
+                <div class="mb-3" style="margin-right: 70px;">
+                    <canvas id="canvas" width="150" height="90" style="border:1px solid #000;"></canvas>
+                    <input type="hidden" name="TTD" id="TTD">
+                </div>
+                <div class="mb-3" style="margin-right: 50px;">
+                    <input type="text" id="V_49" name="V_49">
+                </div>
+            </div>
         </form>
     </div>
 </body>
