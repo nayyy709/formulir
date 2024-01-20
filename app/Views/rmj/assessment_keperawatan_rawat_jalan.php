@@ -753,7 +753,7 @@
         i2 = i + 2;
         i3 = i + 3;
         canvas1 = canvas + 1;
-        TTD1 = TTD + 1
+        TTD1 = TTD + 1;
 
         $("#" + tableID).append($("<tr >")
             .append($("<td>").html('<input type="datetime-local" class="form-control" id="V_' + i + '" name="V_' + i + '" >'))
@@ -763,6 +763,8 @@
         )
 
         i += 4;
+        canvas += 1;
+        TTD += 1;
 
 
     }

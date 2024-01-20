@@ -75,4 +75,14 @@ class PKU extends BaseController
     {
         return view('pku/assessment_awal_kebidanan_dan_kandungan');
     }
+
+    public function form14()
+    {
+        return view('pku/serah_terima_bayi_rawat_gabung');
+    }
+
+    public function form15()
+    {
+        return view('pku/observasi_asi_keistimewaan_dan_tindakan');
+    }
 }

@@ -18,6 +18,7 @@
 
 <body>
     <div class="container">
+        <a href="<?= base_url('pku/halamanform2') ?>" class="btn btn-success mt-3"><i class="bi bi-arrow-left"></i></a>
         <h6 style="text-align:right">RM 5 OG 1</h6>
         <form action="" autocomplete="off" style="vertical-align:middle">
             <table class="table table-bordered border-black mb-0">
@@ -39,7 +40,7 @@
                     </td>
                 </tr>
             </table>
-            <table class="table table-bordered border-black mt-0">
+            <table class="table table-bordered border-black mt-0 mb-0">
                 <tr>
                     <td colspan="2">
                         <div class="row">
@@ -1391,21 +1392,21 @@
                                         <label class="col-2" for="">Inspeksi</label>
                                         <label>: Pengeluaran per vagina </label>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="t_04" id="t_04_tidak" value="1">
-                                            <label class="form-check-label" for="t_04_tidak">Darah</label>
+                                            <input class="form-check-input" type="radio" name="T_60" id="T_60_0" value="0">
+                                            <label class="form-check-label" for="T_60_0">Darah</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="t_04" id="t_04_tidak" value="1">
-                                            <label class="form-check-label" for="t_04_tidak">Lendir</label>
+                                            <input class="form-check-input" type="radio" name="T_60" id="T_60_1" value="1">
+                                            <label class="form-check-label" for="T_60_1">Lendir</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="t_04" id="t_04_tidak" value="1">
-                                            <label class="form-check-label" for="t_04_tidak">Air Ketuban</label>
+                                            <input class="form-check-input" type="radio" name="T_60" id="T_60_2" value="2">
+                                            <label class="form-check-label" for="T_60_2">Air Ketuban</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="t_04" id="t_04_tidak" value="1">
-                                            <label class="form-check-label" for="t_04_tidak">Lainnya</label>
-                                            <input type="text" id="" name="">
+                                            <input class="form-check-input" type="radio" name="T_60" id="T_60_3" value="3">
+                                            <label class="form-check-label" for="T_60_3">Lainnya</label>
+                                            <input type="text" id="V_111" name="V_111">
                                         </div>
                                     </div>
                                     <div class="row mb-1">
@@ -1413,7 +1414,7 @@
                                             <label for="">Vagina Toucher</label>
                                         </div>
                                         <div class="col">
-                                            : <input type="text" id="V_" name="V_" style="width: 750px">
+                                            : <input type="text" id="V_112" name="V_112" style="width: 750px">
                                         </div>
                                     </div>
                                     <div class="row mb-5">
@@ -1421,7 +1422,7 @@
                                             <label for="">Lain-lain</label>
                                         </div>
                                         <div class="col">
-                                            : <input type="text" id="V_" name="V_" style="width: 750px">
+                                            : <input type="text" id="V_113" name="V_113" style="width: 750px">
                                         </div>
                                     </div>
                                 </div>
@@ -1433,58 +1434,58 @@
                                 <div class="row mb-1">
                                     <div class="col-2">a. Laboraturium</div>
                                     <div class="col-2">
-                                        : HB <input type="text" id="V_" name="V_" style="width: 100px;">
+                                        : HB <input type="text" id="V_114" name="V_114" style="width: 100px;">
                                     </div>
                                     <div class="col-1">Leukosit</div>
                                     <div class="col-3">
-                                        : <input type="text" id="V_" name="V_" style="width: 150px;">
+                                        : <input type="text" id="V_115" name="V_115" style="width: 150px;">
                                     </div>
                                     <div class="col-2">HTC</div>
                                     <div class="col-2">
-                                        : <input type="text" id="V_" name="V_" style="width: 120px;">
+                                        : <input type="text" id="V_116" name="V_116" style="width: 120px;">
                                     </div>
                                 </div>
                                 <div class="row mb-1">
                                     <div class="col-2">Eritrosit</div>
                                     <div class="col-2">
-                                        : <input type="text" id="V_" name="V_" style="width: 120px;">
+                                        : <input type="text" id="V_117" name="V_117" style="width: 120px;">
                                     </div>
                                     <div class="col-1">Trombosit</div>
                                     <div class="col-3">
-                                        : <input type="text" id="V_" name="V_" style="width: 150px;">
+                                        : <input type="text" id="V_118" name="V_118" style="width: 150px;">
                                     </div>
                                 </div>
                                 <div class="row mb-1">
                                     <div class="col-2">b. Golongan darah</div>
                                     <div class="col-2">
-                                        : <input type="text" id="V_" name="V_" style="width: 120px;">
+                                        : <input type="text" id="V_119" name="V_119" style="width: 120px;">
                                     </div>
                                     <div class="col-1">PT</div>
                                     <div class="col-3">
-                                        : <input type="text" id="V_" name="V_" style="width: 150px;">
+                                        : <input type="text" id="V_120" name="V_120" style="width: 150px;">
                                     </div>
                                     <div class="col-2">APTT</div>
                                     <div class="col-2">
-                                        : <input type="text" id="V_" name="V_" style="width: 120px;">
+                                        : <input type="text" id="V_121" name="V_121" style="width: 120px;">
                                     </div>
                                 </div>
                                 <div class="row mb-1">
                                     <div class="col-4"></div>
                                     <div class="col-1">HBSAG</div>
                                     <div class="col-3">
-                                        : <input type="text" id="V_" name="V_" style="width: 150px;">
+                                        : <input type="text" id="V_122" name="V_122" style="width: 150px;">
                                     </div>
                                     <div class="col-2">Protein Urine</div>
                                     <div class="col-2">
-                                        : <input type="text" id="V_" name="V_" style="width: 120px;">
+                                        : <input type="text" id="V_123" name="V_123" style="width: 120px;">
                                     </div>
                                 </div>
                                 <div class="row mb-5">
                                     <div class="col-2">
-                                        <label for="V_">Lainnya</label>
+                                        <label for="V_124">Lainnya</label>
                                     </div>
                                     <div class="col">
-                                        : <input type="text" id="V_" name="V_" style="width: 785px">
+                                        : <input type="text" id="V_124" name="V_124" style="width: 785px">
                                     </div>
                                 </div>
                             </div>
@@ -1508,12 +1509,12 @@
                                 <td rowspan="2" width="25%">Riwayat jatuh (tidak termasuk) kecelakaan kerja dan lalu lintas</td>
                                 <td>Tidak</td>
                                 <td class="text-center">0</td>
-                                <td class="text-center"><input class="form-check-input" type="radio" id="t_0" name="t_0" value="0"></td>
+                                <td class="text-center"><input class="form-check-input" type="radio" id="t_061" name="t_061" value="0"></td>
                             </tr>
                             <tr style="vertical-align: middle;">
                                 <td>Ya</td>
                                 <td class="text-center">25</td>
-                                <td class="text-center"><input class="form-check-input" type="radio" id="t_0" name="t_0" value="25"></td>
+                                <td class="text-center"><input class="form-check-input" type="radio" id="t_061" name="t_061" value="25"></td>
                             </tr>
 
                             <tr style="vertical-align: middle;">
@@ -1521,12 +1522,12 @@
                                 <td rowspan="2" width="25%">Diagnose Sekunder</td>
                                 <td>Tidak</td>
                                 <td class="text-center">0</td>
-                                <td class="text-center"><input class="form-check-input" type="radio" id="t_0" name="t_0" value="0"></td>
+                                <td class="text-center"><input class="form-check-input" type="radio" id="t_062" name="t_062" value="0"></td>
                             </tr>
                             <tr style="vertical-align: middle;">
                                 <td>Ya</td>
                                 <td class="text-center">25</td>
-                                <td class="text-center"><input class="form-check-input" type="radio" id="t_0" name="t_0" value="25"></td>
+                                <td class="text-center"><input class="form-check-input" type="radio" id="t_062" name="t_062" value="25"></td>
                             </tr>
 
                             <tr style="vertical-align: middle;">
@@ -1534,17 +1535,17 @@
                                 <td rowspan="3" width="25%">Menggunakan Alat Bantu</td>
                                 <td>Tidak ada/Bedrest/dibantu perawat</td>
                                 <td class="text-center">0</td>
-                                <td class="text-center"><input class="form-check-input" type="radio" id="t_0" name="t_0" value="0"></td>
+                                <td class="text-center"><input class="form-check-input" type="radio" id="t_063" name="t_063" value="0"></td>
                             </tr>
                             <tr style="vertical-align: middle;">
                                 <td>Kruk/Tungkat</td>
                                 <td class="text-center">15</td>
-                                <td class="text-center"><input class="form-check-input" type="radio" id="t_0" name="t_0" value="15"></td>
+                                <td class="text-center"><input class="form-check-input" type="radio" id="t_063" name="t_063" value="15"></td>
                             </tr>
                             <tr style="vertical-align: middle;">
                                 <td>Alat sekitar mis : Kursi Roda (Perabot)</td>
                                 <td class="text-center">25</td>
-                                <td class="text-center"><input class="form-check-input" type="radio" id="t_0" name="t_0" value="25"></td>
+                                <td class="text-center"><input class="form-check-input" type="radio" id="t_063" name="t_063" value="25"></td>
                             </tr>
 
                             <tr style="vertical-align: middle;">
@@ -1552,17 +1553,17 @@
                                 <td rowspan="3" width="25%">Gaya Berjalan</td>
                                 <td>Normal/Bedrest/Kursi roda</td>
                                 <td class="text-center">0</td>
-                                <td class="text-center"><input class="form-check-input" type="radio" id="t_0" name="t_0" value="0"></td>
+                                <td class="text-center"><input class="form-check-input" type="radio" id="t_064" name="t_064" value="0"></td>
                             </tr>
                             <tr style="vertical-align: middle;">
                                 <td>Lemah</td>
                                 <td class="text-center">10</td>
-                                <td class="text-center"><input class="form-check-input" type="radio" id="t_0" name="t_0" value="10"></td>
+                                <td class="text-center"><input class="form-check-input" type="radio" id="t_064" name="t_064" value="10"></td>
                             </tr>
                             <tr style="vertical-align: middle;">
                                 <td>Terganggu</td>
                                 <td class="text-center">20</td>
-                                <td class="text-center"><input class="form-check-input" type="radio" id="t_0" name="t_0" value="20"></td>
+                                <td class="text-center"><input class="form-check-input" type="radio" id="t_064" name="t_064" value="20"></td>
                             </tr>
 
                             <tr style="vertical-align: middle;">
@@ -1570,12 +1571,12 @@
                                 <td rowspan="2" width="25%">Status mental</td>
                                 <td>Menyadari kemampan</td>
                                 <td class="text-center">0</td>
-                                <td class="text-center"><input class="form-check-input" type="radio" id="t_0" name="t_0" value="0"></td>
+                                <td class="text-center"><input class="form-check-input" type="radio" id="t_065" name="t_065" value="0"></td>
                             </tr>
                             <tr style="vertical-align: middle;">
                                 <td>Dimensia(Lupa)/Agitasi/Konfius(gelisah)</td>
                                 <td class="text-center">15</td>
-                                <td class="text-center"><input class="form-check-input" type="radio" id="t_0" name="t_0" value="15"></td>
+                                <td class="text-center"><input class="form-check-input" type="radio" id="t_065" name="t_065" value="15"></td>
                             </tr>
 
                             <tr style="vertical-align: middle;">
@@ -1583,12 +1584,12 @@
                                 <td rowspan="2" width="25%">Menggunakan infuse/ heparin (pengencer darah)</td>
                                 <td>Tidak</td>
                                 <td class="text-center">0</td>
-                                <td class="text-center"><input class="form-check-input" type="radio" id="t_0" name="t_0" value="0"></td>
+                                <td class="text-center"><input class="form-check-input" type="radio" id="t_066" name="t_066" value="0"></td>
                             </tr>
                             <tr style="vertical-align: middle;">
                                 <td>Ya</td>
                                 <td class="text-center">20</td>
-                                <td class="text-center"><input class="form-check-input" type="radio" id="t_0" name="t_0" value="20"></td>
+                                <td class="text-center"><input class="form-check-input" type="radio" id="t_066" name="t_066" value="20"></td>
                             </tr>
 
                             <tr style="vertical-align: middle;">
@@ -1596,17 +1597,17 @@
                                 <td rowspan="3" width="25%">Medikasi</td>
                                 <td>Sedative</td>
                                 <td class="text-center">10</td>
-                                <td class="text-center"><input class="form-check-input" type="radio" id="t_0" name="t_0" value="10"></td>
+                                <td class="text-center"><input class="form-check-input" type="radio" id="t_067" name="t_067" value="10"></td>
                             </tr>
                             <tr style="vertical-align: middle;">
                                 <td>Post anastesiumum dan reginal dalam 24 jam terakhir</td>
                                 <td class="text-center">20</td>
-                                <td class="text-center"><input class="form-check-input" type="radio" id="t_0" name="t_0" value="20"></td>
+                                <td class="text-center"><input class="form-check-input" type="radio" id="t_067" name="t_067" value="20"></td>
                             </tr>
                             <tr style="vertical-align: middle;">
                                 <td>Tidak</td>
                                 <td class="text-center">0</td>
-                                <td class="text-center"><input class="form-check-input" type="radio" id="t_0" name="t_0" value="0"></td>
+                                <td class="text-center"><input class="form-check-input" type="radio" id="t_067" name="t_067" value="0"></td>
                             </tr>
                             <tr class="text-center">
                                 <td colspan="3">
@@ -1614,7 +1615,7 @@
                                 </td>
                                 <td>190</td>
                                 <td>
-                                    <input class="form-control" type="text" name="t_0" id="t_0" readonly>
+                                    <input class="form-control" type="text" name="t_068" id="t_068" readonly>
                                 </td>
                             </tr>
 
@@ -1626,20 +1627,20 @@
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" id="t_0" name="t_0" value="1">
-                                                <b><label for="t_0">Rendah, skor : 0-24</label></b>
+                                                <input class="form-check-input" type="radio" id="t_069_1" name="t_069" value="1">
+                                                <b><label for="t_069_1">Rendah, skor : 0-24</label></b>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" id="t_0" name="t_0" value="2">
-                                                <b><label for="t_0">Sedang, skor : 33-34</label></b>
+                                                <input class="form-check-input" type="radio" id="t_069_2" name="t_069" value="2">
+                                                <b><label for="t_069_2">Sedang, skor : 33-34</label></b>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" id="t_0" name="t_0" value="3">
-                                                <b><label for="t_0">Tinggi, > 44</label></b>
+                                                <input class="form-check-input" type="radio" id="t_069_3" name="t_069" value="3">
+                                                <b><label for="t_069_3">Tinggi, > 44</label></b>
                                             </div>
                                         </div>
                                     </div>
@@ -1657,20 +1658,20 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" id="t_0" name="t_0" value="3">
-                                                    <label for="t_0">Tidak</label>
+                                                    <input class="form-check-input" type="radio" id="t_070_0" name="t_070" value="0">
+                                                    <label for="t_070_0">Tidak</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-5">
                                                 <div class="row align-items-center">
                                                     <div class="col-md-5">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" id="t_0" name="t_0" value="3">
-                                                            <label for="t_0">Ya, Bila Ya, Skala : </label>
+                                                            <input class="form-check-input" type="radio" id="t_070_1" name="t_070" value="1">
+                                                            <label for="t_070_1">Ya, Bila Ya, Skala : </label>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <input class="form-control" type="text" name="v_02" id="v_02">
+                                                        <input class="form-control" type="text" name="V_125" id="V_125">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1683,7 +1684,7 @@
                                 <td>Deskripsi Nyeri</td>
                                 <td>P</td>
                                 <td>
-                                    <input class="form-control" type="text" name="v_02" id="v_02">
+                                    <input class="form-control" type="text" name="V_126" id="V_126">
                                 </td>
                                 <td colspan="2">Karakteristik Nyeri</td>
                             </tr>
@@ -1691,12 +1692,12 @@
                                 <td></td>
                                 <td>Q</td>
                                 <td>
-                                    <input class="form-control" type="text" name="v_02" id="v_02">
+                                    <input class="form-control" type="text" name="V_127" id="V_127">
                                 </td>
                                 <td>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" id="t_0" name="t_0" value="3">
-                                        <label for="t_0">Tidak Nyeri</label>
+                                        <input class="form-check-input" type="radio" id="t_071_0" name="t_071" value="0">
+                                        <label for="t_071_0">Tidak Nyeri</label>
                                     </div>
                                 </td>
                                 <td>Skor : 0</td>
@@ -1705,12 +1706,12 @@
                                 <td></td>
                                 <td>R</td>
                                 <td>
-                                    <input class="form-control" type="text" name="v_02" id="v_02">
+                                    <input class="form-control" type="text" name="V_128" id="V_128">
                                 </td>
                                 <td>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" id="t_0" name="t_0" value="3">
-                                        <label for="t_0">Nyeri Ringan</label>
+                                        <input class="form-check-input" type="radio" id="t_071_1" name="t_071" value="1">
+                                        <label for="t_071_1">Nyeri Ringan</label>
                                     </div>
                                 </td>
                                 <td>Skor : 1-3</td>
@@ -1719,12 +1720,12 @@
                                 <td></td>
                                 <td>S</td>
                                 <td>
-                                    <input class="form-control" type="text" name="v_02" id="v_02">
+                                    <input class="form-control" type="text" name="V_129" id="V_129">
                                 </td>
                                 <td>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" id="t_0" name="t_0" value="3">
-                                        <label for="t_0">Nyeri Sedang</label>
+                                        <input class="form-check-input" type="radio" id="t_071_2" name="t_071" value="2">
+                                        <label for="t_071_2">Nyeri Sedang</label>
                                     </div>
                                 </td>
                                 <td>Skor : 4-6</td>
@@ -1733,12 +1734,12 @@
                                 <td></td>
                                 <td>T</td>
                                 <td>
-                                    <input class="form-control" type="text" name="v_02" id="v_02">
+                                    <input class="form-control" type="text" name="V_130" id="V_130">
                                 </td>
                                 <td>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" id="t_0" name="t_0" value="3">
-                                        <label for="t_0">Nyeri Berat</label>
+                                        <input class="form-check-input" type="radio" id="t_071_3" name="t_071" value="3">
+                                        <label for="t_071_3">Nyeri Berat</label>
                                     </div>
                                 </td>
                                 <td>Skor : 7-10</td>
@@ -1762,7 +1763,7 @@
                             <tr>
                                 <td>IMT</td>
                                 <td>
-                                    <select class="form-select" name="t_0">
+                                    <select class="form-select" name="T_072">
                                         <option selected>Pilih</option>
                                         <option value="0">0</option>
                                         <option value="1">1</option>
@@ -1771,23 +1772,23 @@
                                 </td>
                                 <td rowspan="3" style="vertical-align: middle;">
                                     <div class="form-check mb-4">
-                                        <input class="form-check-input" type="radio" id="t_0" name="t_0" value="3">
-                                        <label for="t_0">Resiko rendah Skor : 0</label>
+                                        <input class="form-check-input" type="radio" id="T_073_0" name="t_073" value="0">
+                                        <label for="t_073_0">Resiko rendah Skor : 0</label>
                                     </div>
                                     <div class="form-check mb-4">
-                                        <input class="form-check-input" type="radio" id="t_0" name="t_0" value="3">
-                                        <label for="t_0">Resiko sedang skor : 1</label>
+                                        <input class="form-check-input" type="radio" id="t_073_1" name="t_073" value="1">
+                                        <label for="t_073_1">Resiko sedang skor : 1</label>
                                     </div>
                                     <div class="form-check mb-4">
-                                        <input class="form-check-input" type="radio" id="t_0" name="t_0" value="3">
-                                        <label for="t_0">Resiko, tinggi, skor : 2</label>
+                                        <input class="form-check-input" type="radio" id="t_073_2" name="t_073" value="2">
+                                        <label for="t_073_2">Resiko, tinggi, skor : 2</label>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Presentasi kehilangan BB yang tidak diharapkan</td>
                                 <td>
-                                    <select class="form-select" name="t_0">
+                                    <select class="form-select" name="t_074">
                                         <option selected>Pilih</option>
                                         <option value="0">0</option>
                                         <option value="1">1</option>
@@ -1798,7 +1799,7 @@
                             <tr>
                                 <td>Efek penyakit yang diterima</td>
                                 <td>
-                                    <select class="form-select" name="t_0">
+                                    <select class="form-select" name="t_075">
                                         <option selected>Pilih</option>
                                         <option value="0">0</option>
                                         <option value="1">1</option>
@@ -1808,18 +1809,67 @@
                             </tr>
                             <tr>
                                 <td>Total Skor</td>
-                                <td><input class="form-control" type="text" name="t_0" id="t_0" readonly></td>
+                                <td><input class="form-control" type="text" name="t_076" id="t_076" readonly></td>
                                 <td></td>
                             </tr>
                         </table>
                     </td>
                 </tr>
+                <tr>
+                    <td colspan="2">
+                        <h6><strong>G. ANALISA DAN PENATALAKSANAAN KEBIDANAN</strong></h6>
+                        <textarea name="V_131" id="V_131" class="form-control" rows="3"></textarea>
+                    </td>
+                </tr>
+            </table>
+            </table>
+            <table class="table table-bordered mt-0" style="border: 1px;">
+                <tr>
+                    <td class="text-center" style="vertical-align: middle;" width="10px">
+                        Tanggal/Jam
+                    </td>
+                    <td>
+
+                    </td>
+                    <td class="text-center" style="vertical-align: middle;" width="10px">
+                        Jam Diberikan
+                    </td>
+                    <td class="text-center" style="vertical-align: middle;">
+                        Paraf
+                    </td>
+                </tr>
+                <tbody id="tambah">
+                    <tr>
+                        <td>
+                            <input type="datetime-local" class="form-control" id="V_132" name="V_132">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" id="V_134" name="V_134">
+                        </td>
+                        <td>
+                            <input type="time" class="form-control" id="V_135" name="V_135">
+                        </td>
+                        <td class="text-center">
+                            <canvas id="canvas" width="150" height="90" style="border:1px solid #000;"></canvas>
+                            <input type="hidden" name="TTD" id="TTD">
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">
+                            <div class="container text-center mt-3">
+                                <button class="btn btn-primary" type="button" onclick="addRow1('tambah')">Tambah</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tfoot>
             </table>
         </form>
     </div>
     <script type="text/javascript">
         // JavaScript Document
-        var i = 65;
+        var i = 136;
         var no = 4;
 
         function addRow(tableID) {
@@ -1848,6 +1898,194 @@
             )
             i += 9;
             no += 1;
+        }
+    </script>
+
+    <script type="text/javascript">
+        // JavaScript Document
+        var j = 156;
+        var canvas = 0;
+        var TTD = 0;
+
+        function addRow1(tableID) {
+
+            j1 = j + 1;
+            j2 = j + 2;
+            canvas1 = canvas + 1;
+            TTD1 = TTD + 1
+
+            $("#" + tableID).append($("<tr>")
+                .append($("<td>").html('<div class="form-group"><input type="datetime-local" class="form-control" id="V_' + j + '" name="V_' + j + '"></div>'))
+                .append($("<td>").html('<div class="form-group"><input type="text" class="form-control" id="V_' + j1 + '" name="V_' + j1 + '"></div>'))
+                .append($("<td>").html('<div class="form-group"><input type="time" class="form-control" id="V_' + j2 + '" name="V_' + j2 + '"></div>'))
+                .append($("<td class='text-center'>").html('<canvas width="150" height="90" style="border:1px solid #000;" id="canvas' + canvas1 + '"></canvas><div class="form-group"><input type="hidden" class="form-control" id="TTD_' + TTD1 + '"></div>'))
+
+            )
+            j += 4;
+            canvas += 1;
+            TTD += 1;
+        }
+    </script>
+
+
+    <script>
+        var canvas = document.getElementById('canvas');
+        const canvasDataInput = document.getElementById('TTD');
+        var context = canvas.getContext('2d');
+        var drawing = false;
+
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('mousemove', draw);
+        canvas.addEventListener('mouseup', stopDrawing);
+        canvas.addEventListener('mouseout', stopDrawing);
+
+        function startDrawing(e) {
+            drawing = true;
+            draw(e);
+        }
+
+        function draw(e) {
+            if (!drawing) return;
+
+            context.lineWidth = 2;
+            context.lineCap = 'round';
+            context.strokeStyle = '#000';
+
+            context.lineTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
+            context.stroke();
+            context.beginPath();
+            context.moveTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
+        }
+
+        function stopDrawing() {
+            drawing = false;
+            context.beginPath();
+        }
+
+        function saveSignatureData() {
+            const canvasData = canvas.toDataURL('image/png');
+
+            canvasDataInput.value = canvasData;
+        }
+    </script>
+    <script>
+        var canvas1 = document.getElementById('canvas1');
+        const canvasDataInput1 = document.getElementById('TTD_1');
+        var context1 = canvas1.getContext('2d');
+        var drawing = false;
+
+        canvas1.addEventListener('mousedown', startDrawing);
+        canvas1.addEventListener('mousemove', draw);
+        canvas1.addEventListener('mouseup', stopDrawing);
+        canvas1.addEventListener('mouseout', stopDrawing);
+
+        function startDrawing(e) {
+            drawing = true;
+            draw(e);
+        }
+
+        function draw(e) {
+            if (!drawing) return;
+
+            context1.lineWidth = 2;
+            context1.lineCap = 'round';
+            context1.strokeStyle = '#000';
+
+            context1.lineTo(e.clientX - canvas1.getBoundingClientRect().left, e.clientY - canvas1.getBoundingClientRect().top);
+            context1.stroke();
+            context1.beginPath();
+            context1.moveTo(e.clientX - canvas1.getBoundingClientRect().left, e.clientY - canvas1.getBoundingClientRect().top);
+        }
+
+        function stopDrawing() {
+            drawing = false;
+            context1.beginPath();
+        }
+
+        function saveSignatureData1() {
+            const canvasData1 = canvas1.toDataURL('image/png');
+
+            canvasDataInput1.value = canvasData1;
+        }
+    </script>
+    <script>
+        var canvas2 = document.getElementById('canvas2');
+        const canvasDataInput2 = document.getElementById('TTD_2');
+        var context2 = canvas2.getContext('2d');
+        var drawing = false;
+
+        canvas2.addEventListener('mousedown', startDrawing);
+        canvas2.addEventListener('mousemove', draw);
+        canvas2.addEventListener('mouseup', stopDrawing);
+        canvas2.addEventListener('mouseout', stopDrawing);
+
+        function startDrawing(e) {
+            drawing = true;
+            draw(e);
+        }
+
+        function draw(e) {
+            if (!drawing) return;
+
+            context2.lineWidth = 2;
+            context2.lineCap = 'round';
+            context2.strokeStyle = '#000';
+
+            context2.lineTo(e.clientX - canvas2.getBoundingClientRect().left, e.clientY - canvas2.getBoundingClientRect().top);
+            context2.stroke();
+            context2.beginPath();
+            context2.moveTo(e.clientX - canvas2.getBoundingClientRect().left, e.clientY - canvas2.getBoundingClientRect().top);
+        }
+
+        function stopDrawing() {
+            drawing = false;
+            context2.beginPath();
+        }
+
+        function saveSignatureData2() {
+            const canvasData2 = canvas2.toDataURL('image/png');
+
+            canvasDataInput2.value = canvasData2;
+        }
+    </script>
+    <script>
+        var canvas3 = document.getElementById('canvas3');
+        const canvasDataInput3 = document.getElementById('TTD_3');
+        var context3 = canvas3.getContext('2d');
+        var drawing = false;
+
+        canvas3.addEventListener('mousedown', startDrawing);
+        canvas3.addEventListener('mousemove', draw);
+        canvas3.addEventListener('mouseup', stopDrawing);
+        canvas3.addEventListener('mouseout', stopDrawing);
+
+        function startDrawing(e) {
+            drawing = true;
+            draw(e);
+        }
+
+        function draw(e) {
+            if (!drawing) return;
+
+            context3.lineWidth = 2;
+            context3.lineCap = 'round';
+            context3.strokeStyle = '#000';
+
+            context3.lineTo(e.clientX - canvas3.getBoundingClientRect().left, e.clientY - canvas3.getBoundingClientRect().top);
+            context3.stroke();
+            context3.beginPath();
+            context3.moveTo(e.clientX - canvas3.getBoundingClientRect().left, e.clientY - canvas3.getBoundingClientRect().top);
+        }
+
+        function stopDrawing() {
+            drawing = false;
+            context3.beginPath();
+        }
+
+        function saveSignatureData3() {
+            const canvasData3 = canvas3.toDataURL('image/png');
+
+            canvasDataInput3.value = canvasData3;
         }
     </script>
 </body>
